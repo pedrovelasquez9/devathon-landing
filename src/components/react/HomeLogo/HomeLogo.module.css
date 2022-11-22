@@ -1,0 +1,12 @@
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageContainer img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
