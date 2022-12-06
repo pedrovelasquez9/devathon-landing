@@ -2,10 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/astro/Card.astro";
 import { HomeLogo } from "../components/react/HomeLogo";
+import { HomeTitle } from "../components/react/HomeTitle";
+import styles from "./index.module.css";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <HomeLogo client:load />
+    <div class={styles["main-container"]}>
+      <HomeTitle client:load />
+      <HomeLogo client:load />
+    </div>
   </main>
 </Layout>

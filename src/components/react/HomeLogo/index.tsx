@@ -14,6 +14,11 @@ export const HomeLogo = () => {
         src="/PEE_logo.png"
         alt="PEE logo"
       />
+      <p>
+        Comunidad hispanohablante de desarrollo de Software. Aprende, comparte,
+        enseña, desarrolla...
+      </p>
+      <p>¡Y que tengas buen código!</p>
     </div>
   );
 };
