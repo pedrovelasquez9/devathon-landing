@@ -1,4 +1,4 @@
-# Programación en español [landing page](https://progrmacion-es.dev)
+# [Landing page](https://programacion-es.dev)
 
 <div style="width:100%;display:flex;flex-direction:column;align-items:center">
     <img src="https://programacion-es.dev/assets/images/Logo-circle.png" with="150px" height="150px" />
@@ -6,6 +6,8 @@
 </div>
 
 ## Preview
+
+**[Visit site](https://programacion-es.dev)**
 
 ![preview](https://programacion-es.dev/assets/images/preview-pee-landing-v2.png)
 
