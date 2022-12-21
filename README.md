@@ -1,50 +1,45 @@
-# Welcome to [Astro](https://astro.build)
+# Programación en español [landing page](https://progrmacion-es.dev)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+<div style="width:100%;display:flex;flex-direction:column;align-items:center">
+    <img src="https://programacion-es.dev/assets/images/Logo-circle.png" with="150px" height="150px" />
+    <h1>Programación en español</h1>
+</div>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Preview
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+![preview](https://programacion-es.dev/assets/images/preview-pee-landing-v2.png)
 
+## About
 
-## 🚀 Project Structure
+### Powered by Astro
 
-Inside of your Astro project, you'll see the following folders and files:
+<a href="https://astro.build/"><img src="https://astro.build/assets/press/full-logo-light.svg" alt="Astro" width="300"/></a>
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+This is the landing page for Programación en español's community networks and activities.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+The project is built with [Astro](https://astro.build/) using a combination of static Astro Islands and client side [React](https://es.reactjs.org/) components in order to add some animations with [Framer motion](https://www.framer.com/docs/)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## How to start?
 
-Any static assets, like images, can be placed in the `public/` directory.
+To run the project, clone this repository and execute the following commands:
 
-## 🧞 Commands
+- **npm i**
+- **npm run dev**
 
-All commands are run from the root of the project, from a terminal:
+To build the static website run **npm run build**
 
-| Command                | Action                                             |
-| :--------------------- | :------------------------------------------------- |
-| `npm install`          | Installs dependencies                              |
-| `npm run dev`          | Starts local dev server at `localhost:3000`        |
-| `npm run build`        | Build your production site to `./dist/`            |
-| `npm run preview`      | Preview your build locally, before deploying       |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
-| `npm run astro --help` | Get help using the Astro CLI                       |
+## Want to collaborate with the project?
 
-## 👀 Want to learn more?
+If you wish to collaborate, you can **fork** the project in order to develop your own components using React, [Vue](https://vuejs.org/) or [Svelte](https://svelte.dev/) in your environment. Once you're ready to go, you can launch a PR to **develop branch** of this repository
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Join the community
+
+<div style="width:100%;display:flex;flex-direction:row;justify-content:center">
+    <a href="https://discord.gg/programacion-es"><img src="https://programacion-es.dev/assets/images/discord-icon.webp" with="50px" height="50px" /></a>
+    <a href="https://www.youtube.com/@programacion-es"><img src="https://programacion-es.dev/assets/images/youtube-icon.webp" with="50px" height="50px" /></a>
+    <a href="https://www.twitch.tv/programacion_en_esp"><img src="https://programacion-es.dev/assets/images/twitch-logo-borderless.webp" with="50px" height="50px" /></a>
+    <a href="https://instagram.com/programacion.es/"><img src="https://programacion-es.dev/assets/images/instagram-icon.webp" with="50px" height="50px" /></a>
+    <a href="https://twitter.com/program_es"><img src="https://programacion-es.dev/assets/images/twitter-icon.webp" with="50px" height="50px" /></a>
+    <a href="https://www.tiktok.com/@programacion.es"><img src="https://programacion-es.dev/assets/images/tiktok-icon.webp" with="50px" height="50px" /></a>
+    <a href="https://www.linkedin.com/in/pedroplasencia/"><img src="https://programacion-es.dev/assets/images/linkedin-icon.webp" with="50px" height="50px" /></a>
+</div>
