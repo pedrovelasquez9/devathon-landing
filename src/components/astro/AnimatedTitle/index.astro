@@ -1,0 +1,17 @@
+---
+import styles from "./AnimatedTitle.module.css";
+export interface Props {
+  text: string;
+  color: string;
+}
+
+const { text, color } = Astro.props;
+---
+
+<h1
+  class={color === "blue"
+    ? styles.animatedTitleBlue
+    : styles.animatedTitleOrange}
+>
+  {text}
+</h1>

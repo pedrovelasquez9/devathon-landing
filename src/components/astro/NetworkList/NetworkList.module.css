@@ -1,0 +1,27 @@
+.linksList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background: #fff1;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.linkContainer img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.linkContainer span {
+  color: #fff;
+}

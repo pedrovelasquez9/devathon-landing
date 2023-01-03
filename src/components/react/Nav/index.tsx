@@ -1,5 +1,4 @@
 import { motion, useCycle } from "framer-motion";
-import { useState } from "react";
 import styles from "./Nav.module.css";
 export const Nav = () => {
   const [isMenuOpen, toggleMenu] = useCycle(false, true);
@@ -10,6 +9,7 @@ export const Nav = () => {
     },
     { name: "Redes", href: "/networks" },
     { name: "Devathon", href: "/devathon" },
+    { name: "Retos de programación", href: "/retos" },
   ];
 
   const variants = {
