@@ -7,7 +7,7 @@ export const Nav = () => {
       name: "Inicio",
       href: "/",
     },
-    { name: "Redes", href: "/networks" },
+    { name: "Redes", href: "/redes" },
     { name: "Devathon", href: "/devathon" },
     { name: "Retos de programación", href: "/retos" },
   ];

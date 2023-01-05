@@ -36,6 +36,7 @@ p {
   border: 1px solid #fff;
   border-radius: 1rem;
   width: 45%;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .innerTimelineContainer {
@@ -61,6 +62,7 @@ p {
 
 .content h2 {
   text-align: center;
+  color: #38b6ff;
 }
 
 .ilustration {

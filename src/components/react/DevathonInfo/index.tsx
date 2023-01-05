@@ -8,7 +8,7 @@ import styles from "./index.module.css";
 export const DevathonInfo = ({ devathon }: Devathon) => {
   return devathon.map((item: DevathonData, index: number) => {
     return (
-      <div className={styles.container} key={index}>
+      <div className={styles.container} key={`data-${index}`}>
         <motion.div
           className={styles.timeline}
           initial={{ opacity: 0, x: -500 }}
@@ -19,10 +19,10 @@ export const DevathonInfo = ({ devathon }: Devathon) => {
               <>
                 <div className={styles.content}>
                   <h2>{item.title}</h2>
-                  <div>
+                  <div key={`odd-${index}`}>
                     {item.info.split("\n").map((str, index) => (
                       <>
-                        <p key={index}>{str}</p>
+                        <p>{str}</p>
                         <br />
                       </>
                     ))}
@@ -39,10 +39,10 @@ export const DevathonInfo = ({ devathon }: Devathon) => {
                 </div>
                 <div className={styles.content}>
                   <h2>{item.title}</h2>
-                  <div>
+                  <div key={`even-${index}`}>
                     {item.info.split("\n").map((str, index) => (
                       <>
-                        <p key={index}>{str}</p>
+                        <p>{str}</p>
                         <br />
                       </>
                     ))}

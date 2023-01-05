@@ -1,1 +1,33 @@
-<h1>Retos de programación</h1>
+---
+import Layout from "../../layouts/Layout.astro";
+import styles from "./index.module.css";
+---
+
+<Layout title="Retos de programación">
+  <main>
+    <section class={styles.mainSection}>
+      <h1>Retos de programación</h1>
+      <div class={styles.descriptionContainer}>
+        <h3>
+          Las habilidades se obtienen con la experiencia práctica, es por ello
+          que tenemos una sección en nuestro servidor de <a
+            href="https://discord.gg/programacion-es">Discord</a
+          > dedicada a retos de programación.
+        </h3>
+        <img src="./img/Group-Chat-color.svg" alt="retos de programación" />
+      </div>
+      <div class={styles.descriptionContainer}>
+        <img src="./img/undraw_programming.svg" alt="retos de programación" />
+        <h3>
+          Los retos se publican cada 15 días en el foro de <a
+            href="https://discord.gg/programacion-es">Discord</a
+          > y las soluciones de la comunidad se publicarán en <a
+            href="https://github.com/pedrovelasquez9/retos-de-programacion"
+            >este repositorio de GitHub</a
+          > siguiendo las instrucciones.
+        </h3>
+      </div>
+      <div></div>
+    </section>
+  </main>
+</Layout>
