@@ -5,8 +5,8 @@ import styles from "./index.module.css";
 export const FaqsComponent = ({ faqs }: FaqsList) => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -500 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       className={styles.gridContainer}
     >
       {faqs.map((item: Faqs, index: number) => {

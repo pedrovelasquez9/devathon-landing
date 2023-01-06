@@ -9,7 +9,7 @@
 
 **[Visit site](https://programacion-es.dev)**
 
-![preview](https://programacion-es.dev/assets/images/preview-pee-landing-v2.png)
+![preview](/preview.png)
 
 ## About
 

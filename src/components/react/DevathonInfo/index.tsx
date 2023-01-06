@@ -11,8 +11,8 @@ export const DevathonInfo = ({ devathon }: Devathon) => {
       <div className={styles.container} key={`data-${index}`}>
         <motion.div
           className={styles.timeline}
-          initial={{ opacity: 0, x: -500 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
         >
           <div className={styles.innerTimelineContainer}>
             {(index + 1) % 2 !== 0 ? (
