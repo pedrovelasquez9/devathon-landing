@@ -1,0 +1,25 @@
+---
+import { DevathonInfo } from "../../components/react/DevathonInfo";
+import Layout from "../../layouts/Layout.astro";
+import styles from "./index.module.css";
+import { devathon } from "../../data/devathon";
+import { faqs } from "../../data/faqs";
+import { FaqsComponent } from "../../components/react/Faqs";
+---
+
+<Layout title="Devathon">
+  <main>
+    <section class={styles.titleContainer}>
+      <h1>👨‍💻 Devathon</h1>
+    </section>
+    <div class={styles.container}>
+      <!-- DEVATHON INFORMATION -->
+      <DevathonInfo devathon={devathon} client:visible />
+      <section>
+        <h1>FAQ</h1>
+      </section>
+      <!-- FAQ -->
+      <FaqsComponent faqs={faqs} client:visible />
+    </div>
+  </main>
+</Layout>

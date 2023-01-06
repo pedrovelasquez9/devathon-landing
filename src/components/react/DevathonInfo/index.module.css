@@ -1,0 +1,146 @@
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  letter-spacing: 0.4px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 4rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  width: 45%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.innerTimelineContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innerTimelineContainer:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #004aad;
+  border: 4px solid #38b6ff;
+  border-radius: 50%;
+  z-index: 1;
+  right: 50%;
+  top: -1px;
+  margin-right: -16px;
+}
+
+.content h2 {
+  text-align: center;
+  color: #38b6ff;
+}
+
+.ilustration {
+  max-width: 50%;
+  padding: 4rem;
+}
+
+.ilustration img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .timeline {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 100%;
+  }
+
+  .timeline::after {
+    display: none;
+  }
+
+  .content {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 4rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    width: 45%;
+  }
+
+  .innerTimelineContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .innerTimelineContainer:after {
+    display: none;
+  }
+
+  .content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 4rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  .ilustration {
+    max-width: 50%;
+    padding: 4rem;
+    position: absolute;
+    top: -8rem;
+    right: 0;
+    width: 300px;
+  }
+}
+
+@media (max-width: 686px) {
+  .ilustration {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+  gap: 1rem;
+}
+
+.imageContainer img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+p {
+  font-size: 1.2em;
+}

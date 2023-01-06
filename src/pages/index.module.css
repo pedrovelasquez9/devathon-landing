@@ -1,0 +1,31 @@
+main {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+  gap: 10%;
+}
+
+@media (max-width: 800px) {
+  .main-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    overflow: visible;
+    gap: 3rem;
+  }
+}

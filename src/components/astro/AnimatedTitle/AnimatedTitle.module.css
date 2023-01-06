@@ -1,0 +1,41 @@
+.animatedTitleBlue {
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    #004aad 20%,
+    #38b6ff 40%,
+    #38b6ff 60%,
+    #004aad 80%
+  );
+  background-size: 200% auto;
+  font-size: 2rem;
+  color: #000;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: shine 6s linear infinite;
+}
+
+.animatedTitleOrange {
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    #ad3700 20%,
+    #ff8138 40%,
+    #ff8138 60%,
+    #ad3700 80%
+  );
+  background-size: 200% auto;
+  font-size: 2rem;
+  color: #000;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: shine 6s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}

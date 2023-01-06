@@ -1,0 +1,24 @@
+.networksContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+
+.networksContainer section {
+  padding: 2rem;
+  border-radius: 10px;
+  background: rgba(35, 35, 35, 0.42);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  border: 1px solid rgba(35, 35, 35, 0.27);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
