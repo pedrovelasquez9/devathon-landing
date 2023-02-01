@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import styles from "./index.module.css";
+
+export async function getStaticPaths() {
+  const pages = [
+    {
+      slug: "git",
+      title: "Curso GIT desde cero",
+      video: "https://www.youtube.com/embed/B5BALozzzL4",
+    },
+  ];
+  return pages.map(({ slug, title, video }) => {
+    return {
+      params: { slug },
+      props: { title, video },
+    };
+  });
+}
+
+const { title, video } = Astro.props;
+---
+
+<Layout title={title}>
+  <main>
+    <div class={styles["main-video-container"]}>
+      <h1>{title}</h1>
+      <iframe
+        width="560"
+        height="315"
+        src={video}
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </main>
+</Layout>
