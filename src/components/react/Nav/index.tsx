@@ -36,7 +36,7 @@ export const Nav = () => {
     <>
       <nav className={styles["nav-container"]}>
         <button onClick={() => toggleMenu()} className={styles.openMenuBtn}>
-          <img src="/nav-logo.svg" alt="nav logo" />
+          <i className="icofont-navigation-menu"></i>
         </button>
       </nav>
       <motion.div

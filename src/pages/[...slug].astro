@@ -90,6 +90,7 @@ export async function getStaticPaths() {
       video: "https://www.youtube.com/embed/S_9A2AUmV_8",
     },
   ];
+
   return pages.map(({ slug, title, video }) => {
     return {
       params: { slug },
