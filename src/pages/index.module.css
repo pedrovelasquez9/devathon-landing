@@ -17,15 +17,6 @@ main {
   gap: 10%;
 }
 
-.main-video-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
-
 @media (max-width: 800px) {
   .main-container {
     flex-direction: column;
