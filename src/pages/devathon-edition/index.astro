@@ -1,6 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import "./devathon-edition.css";
+import TeamExpandableCard from "../../components/astro/TeamExpandableCard/index.astro";
+import type { Data } from "../../interfaces/DevathonTeamsData";
+import { devathonTeamsData } from "../../data/devathon-teams";
+
+const { data } = devathonTeamsData;
 ---
 
 <Layout title="4ta edición">
@@ -8,37 +13,12 @@ import "./devathon-edition.css";
     <section>
       <h1>Devathon: 4ta edición</h1>
       <div class="teams-container">
-        <div data-opened="false" class="vertical-card-container">
-          <div></div>
-          <div class="team-card-title-section">
-            <h2 class="team-card-title">EQUIPO 1</h2>
-            <button class="team-card-btn"
-              ><i class="icofont-arrow-right"></i>
-            </button>
-          </div>
-          <div></div>
-        </div>
-
-        <div data-opened="false" class="vertical-card-container">
-          <div data-opened="false" class="card-central-section">
-            <div class="team-card-title-section">
-              <h2 class="team-card-title">EQUIPO 2</h2>
-              <button class="team-card-btn"
-                ><i class="icofont-arrow-right"></i>
-              </button>
-            </div>
-            <section data-opened="false" class="score-container">
-              <h2>Evaluación</h2>
-              <div data-opened="false" class="score-chart"></div>
-            </section>
-          </div>
-          <div class="team-card-footer" data-opened="false">
-            <a href="#criteria">Ver criterios de evaluación</a>
-            <a href="http://discord.gg/programacion-es"
-              >Comunícate con el equipo</a
-            >
-          </div>
-        </div>
+        {
+          data.map((teamData: Data) => {
+            const { name, score } = teamData;
+            return <TeamExpandableCard name={name} score={score} />;
+          })
+        }
       </div>
     </section>
     <section>
