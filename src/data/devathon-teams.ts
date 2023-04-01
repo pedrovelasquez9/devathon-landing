@@ -3,6 +3,7 @@ export const devathonTeamsData = {
         "max_score": 10,
         "data":[
         {
+            "id":"1",
             "name":"EQUIPO 1",
             "score":{
                 "team_integration": 6,
@@ -19,6 +20,7 @@ export const devathonTeamsData = {
             }
         },
         {
+            "id":"2",
             "name":"EQUIPO 2",
             "score":{
                 "team_integration": 6,
@@ -35,6 +37,7 @@ export const devathonTeamsData = {
             }
         },
         {
+            "id":"3",
             "name":"EQUIPO 3",
             "score":{
                 "team_integration": 6,
@@ -51,7 +54,25 @@ export const devathonTeamsData = {
             }
         },
         {
+            "id":"4",
             "name":"EQUIPO 4",
+            "score":{
+                "team_integration": 6,
+                "repository_management":6,
+                "management_tools":4,
+                "priority_definition":9,
+                "functional_score":1,
+                "visual_score":4,
+                "accessibility_score":7,
+                "technical_score":9,
+                "documentation":8,
+                "db_model":1,
+                "proyect_integration":6
+            }
+        },
+        {
+            "id":"5",
+            "name":"EQUIPO 5",
             "score":{
                 "team_integration": 6,
                 "repository_management":6,

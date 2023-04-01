@@ -49,15 +49,20 @@ const { title } = Astro.props;
     />
     <meta property="twitter:image" content="/programacion en español.webp" />
     <link rel="stylesheet" href="/fonts/icofont.min.css" />
+    <script
+      defer
+      data-domain="programacion-es.dev"
+      src="https://plausible.io/js/script.js"
+    ></script>
   </head>
   <body>
     <Nav client:load />
     <slot />
     <footer>
       Hecho con ❤ y <a href="https://astro.build/">Astro</a>. Por{" "}
-      <a href="https://programacion-es.dev">
-        Pedro Plasencia (Programación en español)
-      </a>
+      <a href="https://programacion-es.dev"
+        >Pedro Plasencia (Programación en español)</a
+      >
     </footer>
   </body>
 </html>

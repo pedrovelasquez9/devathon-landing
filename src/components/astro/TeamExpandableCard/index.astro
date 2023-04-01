@@ -4,15 +4,15 @@ import type { Data } from "../../../interfaces/DevathonTeamsData";
 
 interface Props extends Data {}
 
-const { name, score } = Astro.props;
+const { name, score, id } = Astro.props;
 ---
 
 <script src="./card-handler.ts"></script>
-<div data-opened="false" class="vertical-card-container">
+<div data-opened="false" class="vertical-card-container vertical-card-image-bg">
   <div class="card-central-section">
     <div class="team-card-title-section">
       <h2 class="team-card-title">{name}</h2>
-      <button class="team-card-btn">
+      <button class="team-card-btn" id={id}>
         <i class="icofont-arrow-right"></i>
       </button>
     </div>

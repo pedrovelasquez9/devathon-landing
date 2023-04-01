@@ -7,6 +7,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   site: 'https://programacion-es.dev/',
+  base:"./",
   server:{
     port: 3000
   }

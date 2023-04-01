@@ -15,6 +15,7 @@ export interface Score {
 export interface Data {
 	name: string;
 	score: Score;
+	id: string;
 }
 
 export interface RootObject {

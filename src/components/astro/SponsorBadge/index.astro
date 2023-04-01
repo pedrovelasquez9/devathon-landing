@@ -1,0 +1,24 @@
+---
+import type { NetworkInfo } from "../../../interfaces/DevathonSponsor";
+import "./index.css";
+
+const { id, networks, name, logo } = Astro.props;
+---
+
+<script src="./badge-handler.ts"></script>
+<div class="sponsor-badge" data-opened="false" id={name}>
+  <div class="sponsor-info">
+    <p>{name}</p>
+    <div class="sponsor-links-container">
+      {
+        networks.map((network: NetworkInfo) => {
+          return (
+            <a href={network.url}>
+              <i class={network.icon} />
+            </a>
+          );
+        })
+      }
+    </div>
+  </div>
+</div>

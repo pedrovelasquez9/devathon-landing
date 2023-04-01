@@ -2,27 +2,38 @@
 import Layout from "../../layouts/Layout.astro";
 import "./devathon-edition.css";
 import TeamExpandableCard from "../../components/astro/TeamExpandableCard/index.astro";
+import SponsorBadge from "../../components/astro/SponsorBadge/index.astro";
 import type { Data } from "../../interfaces/DevathonTeamsData";
 import { devathonTeamsData } from "../../data/devathon-teams";
+import { devathonSponsors } from "../../data/devathon-sponsors";
+import type { Sponsor } from "../../interfaces/DevathonSponsor";
 
 const { data } = devathonTeamsData;
 ---
 
 <Layout title="4ta edición">
-  <main>
-    <section>
+  <main class="devathon-edition-main-container">
+    <section class="edition-main-section">
       <h1>Devathon: 4ta edición</h1>
       <div class="teams-container">
         {
           data.map((teamData: Data) => {
-            const { name, score } = teamData;
-            return <TeamExpandableCard name={name} score={score} />;
+            const { name, score, id } = teamData;
+            return <TeamExpandableCard name={name} id={id} score={score} />;
           })
         }
       </div>
     </section>
-    <section>
+    <section class="edition-main-section">
       <h1>Sponsors de esta edición</h1>
+      <div class="sponsor-container">
+        {
+          devathonSponsors.map((sponsor: Sponsor) => {
+            const { id, name, networks, logo } = sponsor;
+            return <SponsorBadge id={id} name={name} networks={networks} logo={logo} />;
+          })
+        }
+      </div>
     </section>
     <section>
       <h1>Información general</h1>

@@ -6,3 +6,34 @@
   align-items: center;
   align-content: center;
 }
+
+.edition-main-section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.devathon-edition-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 3rem;
+  text-align: center;
+}
+
+.sponsor-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+@media (max-width: 961px) {
+  .teams-container {
+    gap: 2rem;
+  }
+}

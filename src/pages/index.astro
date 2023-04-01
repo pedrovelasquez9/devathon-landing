@@ -2,12 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import { HomeLogo } from "../components/react/HomeLogo";
 import { HomeTitle } from "../components/react/HomeTitle";
-import styles from "./index.module.css";
+import "./index.css";
 ---
 
 <Layout title="Programación en español">
   <main>
-    <div class={styles["main-container"]}>
+    <div class="main-container">
       <HomeTitle client:load />
       <HomeLogo client:load />
     </div>

@@ -7,8 +7,11 @@
   flex-direction: row;
 }
 
-a {
+.network-link {
   text-decoration: none;
+  gap: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .networksContainer section {

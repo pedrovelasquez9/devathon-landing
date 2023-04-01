@@ -1,6 +1,6 @@
 ---
 import type { networkLink } from "../../../interfaces/Networks.interface";
-import styles from "./NetworkList.module.css";
+import "./NetworkList.css";
 
 interface Props {
   networkList: networkLink[];
@@ -9,16 +9,16 @@ interface Props {
 const { networkList } = Astro.props;
 ---
 
-<ul class={styles.linksList}>
+<ul class="linksList">
   {
     networkList.map((network) => {
       return (
-        <a href={network.link}>
-          <li class={styles.linkContainer}>
+        <li class="linkContainer">
+          <a class="network-link" href={network.link}>
             <img src={network.imagePath} alt={network.alt} />
             <span>{network.title}</span>
-          </li>
-        </a>
+          </a>
+        </li>
       );
     })
   }

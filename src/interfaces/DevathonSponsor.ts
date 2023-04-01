@@ -1,0 +1,11 @@
+export interface NetworkInfo {
+	icon: string;
+	url: string;
+}
+
+export interface Sponsor {
+	id: string;
+	name: string;
+	logo: string;
+	networks: NetworkInfo[];
+}
