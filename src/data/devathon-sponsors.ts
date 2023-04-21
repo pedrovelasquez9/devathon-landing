@@ -4,7 +4,7 @@ export const devathonSponsors: Sponsor[] = [
     {
         "id":"1",
         "name":"DonWeb",
-        "logo":"./img/sponsors/logo-donweb-cloud.png",
+        "logo":"/img/sponsors/logo-donweb-cloud.png",
         "networks":[
             {"icon":"icofont-web", "url":"https://bit.ly/DWCloudxDevathon"},
             {"icon":"icofont-instagram", "url":"https://www.instagram.com/donweb_oficial"},
@@ -15,7 +15,7 @@ export const devathonSponsors: Sponsor[] = [
     {
         "id":"2",
         "name":"Malpicado",
-        "logo":"./img/sponsors/malpicado.jpg",
+        "logo":"/img/sponsors/malpicado.jpg",
         "circled": true,
         "networks":[
         {"icon":"icofont-web", "url":"http://malpicado.com/"},
@@ -27,7 +27,7 @@ export const devathonSponsors: Sponsor[] = [
     {
         "id":"3",
         "name":"Blockchain School for Management",
-        "logo":"./img/sponsors/bsm-logo.png",
+        "logo":"/img/sponsors/bsm-logo.png",
         "networks":[
             {"icon":"icofont-web", "url":"https://bsmexecutive.com/"},
             {"icon":"icofont-instagram", "url":"https://www.instagram.com/bsm_executive/"},
@@ -37,7 +37,7 @@ export const devathonSponsors: Sponsor[] = [
     {
         "id":"4",
         "name":"HACKABOSS",
-        "logo":"./img/sponsors/hackaboss.png",
+        "logo":"/img/sponsors/hackaboss.png",
         "networks":[
             {"icon":"icofont-web", "url":"https://www.hackaboss.com/cursos-programacion"},
             {"icon":"icofont-instagram", "url":"https://www.instagram.com/hackaboss_/"},
@@ -48,7 +48,7 @@ export const devathonSponsors: Sponsor[] = [
     {
         "id":"5",
         "name":"Domoblock",
-        "logo":"./img/sponsors/domoblock.png",
+        "logo":"/img/sponsors/domoblock.png",
         "bigLogo":true,
         "networks":[
             {"icon":"icofont-web", "url":"https://www.domoblock.io/"},
@@ -59,7 +59,7 @@ export const devathonSponsors: Sponsor[] = [
     {
         "id":"6",
         "name":"Connecting Tech People",
-        "logo":"./img/sponsors/connecting.png",
+        "logo":"/img/sponsors/connecting.png",
         "bigLogo":true,
         "networks":[
             {"icon":"icofont-web", "url":"https://www.connectingtechpeople.com/"},
@@ -69,7 +69,7 @@ export const devathonSponsors: Sponsor[] = [
     {
         "id":"7",
         "name":"Malt",
-        "logo":"./img/sponsors/malt.png",
+        "logo":"/img/sponsors/malt.png",
         "networks":[
             {"icon":"icofont-web", "url":"https://www.malt.es/"},
             {"icon":"icofont-brand-youtube", "url":"https://www.youtube.com/@maltspain"},
