@@ -1,45 +1,31 @@
 .sponsor-badge {
-  background-image: url("./PEE_logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 1px solid #fff;
-  height: 100px;
-}
-
-.sponsor-badge[data-opened="false"]:hover {
-  animation: shake 0.6s linear 1;
-}
-
-.sponsor-badge[data-opened="false"] {
-  width: 100px;
-  border-radius: 50%;
-  transition: ease 0.3s;
-}
-
-.sponsor-badge[data-opened="true"] {
   width: 300px;
+  height: 170px;
   border-radius: 15px;
   transition: ease 0.3s;
   display: flex;
-  justify-content: flex-end;
+  gap: 15px;
   align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-direction: column;
   border: 1px solid #fff1;
   box-shadow: 0px 4px 0px 0px rgb(255 255 255 / 12%);
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.sponsor-badge[data-opened="false"] > .sponsor-info {
-  visibility: hidden;
+.sponsor-logo {
+  width: 70px;
 }
 
-.sponsor-badge[data-opened="true"] > .sponsor-info {
+.sponsor-badge > .sponsor-info {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   width: 65%;
   height: -webkit-fill-available;
   justify-content: space-evenly;
+  gap: 10px;
 }
 
 .sponsor-links-container {
@@ -57,39 +43,8 @@
   text-decoration: none;
 }
 
-@media (max-width: 961px) {
-  .sponsor-badge[data-opened="false"],
-  .sponsor-badge[data-opened="true"] {
-    width: 80%;
-    border-radius: 15px;
-    transition: ease 0.3s;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    border: 1px solid #fff1;
-    box-shadow: 0px 4px 0px 0px rgb(255 255 255 / 12%);
-  }
-  .sponsor-badge[data-opened="false"] > .sponsor-info,
-  .sponsor-badge[data-opened="true"] > .sponsor-info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 65%;
-    height: -webkit-fill-available;
-    justify-content: space-evenly;
-    visibility: visible;
-  }
-
-  .sponsor-badge[data-opened="false"]:hover {
-    animation: none;
-  }
-}
-
 @media (max-width: 372px) {
-  .sponsor-badge[data-opened="false"] > .sponsor-info,
-  .sponsor-badge[data-opened="true"] > .sponsor-info {
+  .sponsor-badge > .sponsor-info {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
