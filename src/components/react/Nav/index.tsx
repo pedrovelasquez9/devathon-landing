@@ -9,7 +9,7 @@ export const Nav = () => {
     },
     { name: "Redes", href: "/redes" },
     { name: "Devathon", href: "/devathon" },
-    { name: "4ta edición del Devathon", href: "/devathon-edition" },
+    { name: "IV edición del Devathon", href: "/devathon-edition" },
     { name: "Retos de programación", href: "/retos" },
   ];
 
