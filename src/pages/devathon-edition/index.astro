@@ -18,8 +18,15 @@ const { data } = devathonTeamsData;
       <div class="teams-container">
         {
           data.map((teamData: Data) => {
-            const { name, score, id } = teamData;
-            return <TeamExpandableCard name={name} id={id} score={score} />;
+            const { name, score, id, winner } = teamData;
+            return (
+              <TeamExpandableCard
+                name={name}
+                id={id}
+                score={score}
+                winner={winner}
+              />
+            );
           })
         }
       </div>

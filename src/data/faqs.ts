@@ -3,7 +3,7 @@ import type { Faqs } from "../interfaces/Faqs.type";
 export const faqs: Faqs[] =[
     {
         title: '¿Cuánto dura una edición del Devathon?',
-        answer: 'Las ediciones suelen durar un máximo de 6 semanas, pudiendo variar entre ediciones.'
+        answer: 'Las ediciones del evento duran 4 semanas, divididas en 2 sprints de 2 semanas cada uno.'
     },
     {
         title: '¿Qué nivel debo tener para participar?',
@@ -23,7 +23,7 @@ export const faqs: Faqs[] =[
     },
     {
         title: '¿Qué tipo de proyectos se desarrollan?',
-        answer: 'Los proyectos son propuestos en el formulario de inscripción y, luego de armar los equipos, se asignan proyectos a cada uno de forma aleatoria.'
+        answer: 'El proyecto es el mismo para todos los equipos y se define en conjunto con los sponsors de la edición para evaluar distintos aspectos técnicos y funcionales.'
     },
     {
         title:'¿Qué pasa si me tengo que retirar de mi equipo en mitad del evento?',
@@ -35,7 +35,7 @@ export const faqs: Faqs[] =[
     },
     {
         title:'¿Cuándo comienza la próxima edición?',
-        answer:'Las fechas de cada edición se publicarán en las redes de la comunidad una vez culmine la edición actual.'
+        answer:'Las fechas de cada edición se publicarán en las redes de la comunidad, de haber una edición en curso, puedes participar como oyente en los directos de Twitch (lunes y miércoles a las 19:00 España).'
     },
     {
         title:'¿Puedo unirme a mitad de una edición?',

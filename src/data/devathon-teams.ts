@@ -5,6 +5,7 @@ export const devathonTeamsData = {
         {
             "id":"1",
             "name":"EQUIPO 1",
+            "winner":false,
             "score":{
                 "team_integration": 6,
                 "repository_management":6,
@@ -22,6 +23,7 @@ export const devathonTeamsData = {
         {
             "id":"2",
             "name":"EQUIPO 2",
+            "winner":true,
             "score":{
                 "team_integration": 6,
                 "repository_management":6,
@@ -39,6 +41,7 @@ export const devathonTeamsData = {
         {
             "id":"3",
             "name":"EQUIPO 3",
+            "winner":false,
             "score":{
                 "team_integration": 6,
                 "repository_management":6,
@@ -56,6 +59,7 @@ export const devathonTeamsData = {
         {
             "id":"4",
             "name":"EQUIPO 4",
+            "winner":false,
             "score":{
                 "team_integration": 6,
                 "repository_management":6,
@@ -73,6 +77,7 @@ export const devathonTeamsData = {
         {
             "id":"5",
             "name":"EQUIPO 5",
+            "winner":false,
             "score":{
                 "team_integration": 6,
                 "repository_management":6,

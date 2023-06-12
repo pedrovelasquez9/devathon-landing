@@ -16,6 +16,7 @@ export interface Data {
 	name: string;
 	score: Score;
 	id: string;
+	winner: boolean;
 }
 
 export interface RootObject {

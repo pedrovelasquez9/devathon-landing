@@ -20,6 +20,12 @@ export const networks: networkLink[] = [
       alt: "Twitch",
     },
     {
+      title: "Kick",
+      link: "https://kick.com/programacion-es",
+      imagePath: "/img/kick.png",
+      alt: "Kick"
+    },
+    {
       title: "Twitter",
       link: "https://twitter.com/program_es",
       imagePath: "/img/twitter-icon.webp",
@@ -60,5 +66,5 @@ export const networks: networkLink[] = [
       link: "https://www.amazon.es/dp/B08DM5JF8Z/ref=cm_sw_r_apan_NEJF4N6ZJZF8PYFWRB5V",
       imagePath: "/img/kindle-icon.webp",
       alt: "Libro",
-    },
+    }
   ];

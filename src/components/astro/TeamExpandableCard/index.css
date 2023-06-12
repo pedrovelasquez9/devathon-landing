@@ -116,6 +116,15 @@
   visibility: hidden;
 }
 
+.team-card-btn[data-winner="true"] {
+  border: none;
+  padding: 0;
+}
+
+.medal-btn {
+  width: 45px;
+}
+
 @media (max-width: 961px) {
   .vertical-card-container[data-opened="false"],
   .vertical-card-container[data-opened="true"] {
