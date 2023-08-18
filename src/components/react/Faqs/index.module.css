@@ -1,0 +1,24 @@
+.questionTitle {
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 1px solid #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+h3 {
+  color: #38b6ff;
+}
+
+.gridContainer {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+}

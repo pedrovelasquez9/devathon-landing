@@ -1,0 +1,46 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import AnimatedTitle from "../../components/astro/AnimatedTitle/index.astro";
+import "./networks.css";
+import type { networkLink } from "../../interfaces/Networks.interface";
+import NetworkList from "../../components/astro/NetworkList/index.astro";
+import { networks } from "../../data/networks";
+
+const sponsorList: networkLink[] = [
+  {
+    title: "Bootcamp gratuito",
+    link: "https://bit.ly/3PpUlBh",
+    imagePath: "/img/openbootcamp-icon.webp",
+    alt: "Open bootcamp",
+  },
+  {
+    title: "Malt España",
+    link: "https://www.malt.es/",
+    imagePath: "/img/malt-icon.webp",
+    alt: "Malt España",
+  },
+  {
+    title: "Campsite academy",
+    link: "https://campsite.academy/",
+    imagePath: "/img/campsite-icon.webp",
+    alt: "Campsite academy",
+  },
+  {
+    title: "Viva translate",
+    link: "https://beta.vivatranslate.com/",
+    imagePath: "/img/viva-translate-logo.avif",
+    alt: "Viva translate",
+  },
+];
+---
+
+<Layout title="Redes">
+  <main>
+    <div class="networksContainer">
+      <section class="networksSection">
+        <AnimatedTitle color="blue" text="Únete a la comunidad" />
+        <NetworkList networkList={networks} />
+      </section>
+    </div>
+  </main>
+</Layout>

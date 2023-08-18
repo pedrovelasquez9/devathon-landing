@@ -1,0 +1,34 @@
+---
+import type { NetworkInfo } from "../../../interfaces/DevathonSponsor";
+import "./index.css";
+
+const { id, networks, name, logo, bigLogo, circled } = Astro.props;
+const bigLogoStyle = bigLogo ? `width:200px;` : "";
+const circledStyle = circled ? `border-radius:50%;` : "";
+---
+
+<script src="./badge-handler.ts"></script>
+<div class="sponsor-badge" id={name}>
+  <div class="sponsor-image-container">
+    <img
+      src={logo}
+      alt={name}
+      class="sponsor-logo"
+      style={`${bigLogoStyle} ${circledStyle}`}
+    />
+  </div>
+  <div class="sponsor-info">
+    <p>{name}</p>
+    <div class="sponsor-links-container">
+      {
+        networks.map((network: NetworkInfo) => {
+          return (
+            <a href={network.url}>
+              <i class={network.icon} />
+            </a>
+          );
+        })
+      }
+    </div>
+  </div>
+</div>

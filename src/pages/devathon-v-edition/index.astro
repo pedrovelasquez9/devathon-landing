@@ -1,0 +1,167 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./devathon-edition.css";
+import TeamExpandableCard from "../../components/astro/TeamExpandableCard/index.astro";
+import SponsorBadge from "../../components/astro/SponsorBadge/index.astro";
+import type { Data } from "../../interfaces/DevathonTeamsData";
+import { devathonTeamsData } from "../../data/devathon-v-teams";
+import { devathonSponsors } from "../../data/devathon-v-sponsors";
+import type { Sponsor } from "../../interfaces/DevathonSponsor";
+
+const { data } = devathonTeamsData;
+---
+
+<Layout title="Devathon: IV edición">
+  <main class="devathon-edition-main-container">
+    <section class="edition-main-section">
+      <h1>Devathon: V edición</h1>
+      <div class="teams-container">
+        {
+          data.map((teamData: Data) => {
+            const { name, score, id, winner } = teamData;
+            return (
+              <TeamExpandableCard
+                name={name}
+                id={id}
+                score={score}
+                winner={winner}
+              />
+            );
+          })
+        }
+      </div>
+    </section>
+    <section class="edition-main-section">
+      <h1>Sponsors de esta edición</h1>
+      <div class="sponsor-container">
+        {
+          devathonSponsors.map((sponsor: Sponsor) => {
+            const { id, name, networks, logo, bigLogo, circled } = sponsor;
+            return (
+              <SponsorBadge
+                id={id}
+                name={name}
+                networks={networks}
+                logo={logo}
+                bigLogo={bigLogo}
+                circled={circled}
+              />
+            );
+          })
+        }
+      </div>
+    </section>
+    <section class="event-info-section">
+      <h1>Acerca del evento</h1>
+      <div class="event-info-container">
+        <section class="event-description">
+          <h1>👨‍💻 Descripción del proyecto desarrollado</h1>
+          <h2>Descripción:</h2>
+          <p>
+            📋 En esta edición, cada equipo elige y define el proyecto a
+            desarrollar, sin embargo, el proyecto debe de estar alineado a
+            alguna de las siguientes temáticas:
+          </p>
+          <h2>Objetivos:</h2>
+          <ul>
+            <li>
+              ✅ Mascotas y cuidados (entrenamiento, salud, tips, tutoriales y
+              protección)
+            </li>
+            <li>
+              ✅ Personas con movilidad y capacidades reducidas (servicios de
+              voluntariado, cuidadores, ofertas y demanda de ayuda)
+            </li><li>
+              ✅ Aprendizaje: plataformas tipo curso con suscripciones y
+              presentación de varios tipos de aprendizaje de forma dinámica e
+              interactiva en base a experiencia de autores, más que de formato
+              académico
+            </li><li>
+              ✅ Oferta y descubrimiento de servicios de desarrollo de software:
+              plataforma para encontrar desarrolladores por tarifa, tipo de
+              desarrollo y puntuación
+            </li>
+          </ul>
+        </section>
+        <section class="evaluation-criteria">
+          <h1>✍ Criterios de evaluación</h1>
+          <ul>
+            <li>
+              ✅ Integración del equipo (comunicación y organización): se evalúa
+              la participación y comunicación del equipo de forma interna a
+              través de sus canales de Discord, así como el avance en general
+              con respecto a su organización interna.
+            </li>
+            <li>
+              ✅ Uso y gestión del repositorio: se evalúa el uso de git flow,
+              revisión de PRs y mantenimiento de ramas principales, nomenclatura
+              y buenas prácticas en general al trabajar con repositorios usando
+              git y github.
+            </li>
+            <li>
+              ✅ Uso de herramientas de gestión: se evalúa el uso y
+              mantenimiento de trello como herramienta de gestión del proyecto.
+            </li>
+            <li>
+              ✅ Capacidad de desglose y definición de prioridades: se evalúa la
+              definición de historias de usuario por los participantes,
+              capacidad de desglose de tareas y priorización de backlog según
+              objetivos del sprint actual y proyecto en general.
+            </li>
+            <li>
+              ✅ Participación en ceremonias de framework agile (en llamada o
+              por escrito): constancia del equipo y participación en las
+              ceremonias (daily, planning, review, retrospective) sea de forma
+              presencial (en llamada por discord) o dejando (para las dailies)
+              resumen en el foro del equipo.
+            </li>
+            <li>
+              ✅ Nivel funcional del proyecto: se evalúa la cantidad de
+              funcionalidades estables del proyecto final con respecto a su
+              concepción/propuesta inicial.
+            </li>
+            <li>
+              ✅ Nivel visual del proyecto: se evalúan aspectos visuales, UI en
+              general, combinación de colores, ortografía, proporciones de
+              secciones, uso del espacio en la web, etc.
+            </li>
+            <li>
+              ✅ Nivel de accesibilidad del proyecto: se evalúan características
+              de UX y accesibilidad como legibilidad del contenido, combinación
+              de colores, uso de formularios, facilidad de uso del proyecto,
+              etc.
+            </li>
+            <li>
+              ✅ Nivel técnico del proyecto: en la review final, el sponsor
+              podrá hacer preguntas de nivel técnico en cuanto a las
+              consideraciones y stack usados por cada equipo para realizar su
+              evaluación particular.
+            </li>
+            <li>
+              ✅ Documentación del proyecto: documentación básica del proyecto
+              (cómo levantarlo en local, dependencias y consideraciones que
+              apliquen) y acuerdo de interfaz con swagger, postman, etc.
+            </li>
+            <li>
+              ✅ Modelado de entidades (BD): se podrá preguntar y revisar el
+              modelo de la BD del proyecto en la review final para ver cómo se
+              han estructurado las relaciones, se evaluará también el uso y
+              cuidado de estándares, nomenclatura, bitácora, etc.
+            </li>
+            <li>
+              ✅ Integración de proyecto y equipos: integración de front y back,
+              comunicación de ambas partes del equipo para esta integración y
+              funcionamiento de la app integrada.
+            </li>
+            <li>
+              ✅ Rentabilidad y factibilidad de monetización a largo plazo del
+              proyecto: desde el momento de su definición, los equipos deben
+              plantear una estrategia de rentabilidad del proyecto para poder
+              llevarlo a un norte estable y a un potencial retorno de inversión.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+</Layout>
