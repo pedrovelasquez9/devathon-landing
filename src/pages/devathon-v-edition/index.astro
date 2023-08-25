@@ -11,13 +11,13 @@ import type { Sponsor } from "../../interfaces/DevathonSponsor";
 const { data } = devathonTeamsData;
 ---
 
-<Layout title="Devathon: IV edición">
+<Layout title="Devathon: V edición">
   <main class="devathon-edition-main-container">
     <section class="edition-main-section">
       <h1>Devathon: V edición</h1>
       <div class="teams-container">
         {
-          data.map((teamData: Data) => {
+          data.map((teamData: Data): Object => {
             const { name, score, id, winner } = teamData;
             return (
               <TeamExpandableCard
@@ -35,7 +35,7 @@ const { data } = devathonTeamsData;
       <h1>Sponsors de esta edición</h1>
       <div class="sponsor-container">
         {
-          devathonSponsors.map((sponsor: Sponsor) => {
+          devathonSponsors.map((sponsor: Sponsor): Object => {
             const { id, name, networks, logo, bigLogo, circled } = sponsor;
             return (
               <SponsorBadge
