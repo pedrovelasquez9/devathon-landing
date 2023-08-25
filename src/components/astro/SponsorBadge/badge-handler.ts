@@ -1,6 +1,5 @@
 export const handleBadgeExpansion = (): void => {
     const badgeElements: HTMLCollectionOf<Element> = document.getElementsByClassName("sponsor-badge");
-    console.log(badgeElements);
     const closeOtherBadges = (clickedElemId: string | null): void => {
         for(let item of badgeElements){
             if(clickedElemId !== item?.getAttribute("id")){
