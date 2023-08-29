@@ -22,19 +22,10 @@ const { name, score, id, winner } = Astro.props;
               id={id}
             />
           ) : (
-            <i class="icofont-arrow-right" />
+            ""
           )
         }
       </button>
     </div>
-    <section class="score-container">
-      <h2>Evaluación</h2>
-      <!-- TODO: CHART WITH SCORE FROM PROPS -->
-      <div class="score-chart"></div>
-    </section>
-  </div>
-  <div class="team-card-footer" data-opened="false">
-    <a href="#criteria">Ver criterios de evaluación</a>
-    <a href="http://discord.gg/programacion-es">Comunícate con el equipo</a>
   </div>
 </div>
