@@ -5,7 +5,7 @@ export const devathonTeamsData = {
         {
             "id":"1",
             "name":"EQUIPO 1",
-            "winner":false,
+            "winner":true,
             "score":{
                 "team_integration": 6,
                 "repository_management":6,

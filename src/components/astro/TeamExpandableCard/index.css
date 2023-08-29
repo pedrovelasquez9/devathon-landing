@@ -10,15 +10,6 @@
   gap: 20px;
 }
 
-.team-card-btn {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-  border-radius: 50%;
-  padding: 10px;
-  font-size: 20px;
-}
-
 .vertical-card-image-bg {
   background: linear-gradient(
       rgb(0, 0, 0, 1),
@@ -31,7 +22,7 @@
   background-position: center;
 }
 
-.vertical-card-container[data-opened="false"] {
+.vertical-card-container {
   display: flex;
   flex-direction: column;
   width: 80px;
@@ -44,132 +35,30 @@
   transition-timing-function: ease;
 }
 
-.vertical-card-container[data-opened="true"] {
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-  border: 1px solid #fff;
-  align-items: center;
-  padding: 20px;
-  border-radius: 20px;
-  height: 350px;
-  gap: 10px;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-}
-
 .vertical-card-container a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-.vertical-card-container[data-opened="true"] > .card-central-section {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 4fr;
-  width: 100%;
-  transition: display, with;
-  transition-duration: 0.5s;
-  transition-timing-function: ease;
-}
-
-.vertical-card-container[data-opened="true"] > * .score-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: stretch;
-  flex-wrap: wrap;
-  opacity: 1;
-  transition: opacity;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-  transition-delay: 0.3s;
-}
-
-.vertical-card-container[data-opened="true"] > * .score-chart {
-  border: 1px solid #fff;
-  height: 250px;
-  width: 450px;
-  border-radius: 15px;
-  opacity: 1;
-  transition: opacity;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-  transition-delay: 0.3s;
-}
-
-.vertical-card-container[data-opened="true"] > .team-card-footer {
-  visibility: visible;
-  transition: visibility;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-  transition-delay: 0.3s;
-}
-
-.vertical-card-container[data-opened="false"] > * .score-chart,
+.vertical-card-container > * .score-chart,
 .score-container {
   opacity: 0;
 }
 
-.vertical-card-container[data-opened="false"] > .team-card-footer {
+.vertical-card-container > .team-card-footer {
   visibility: hidden;
 }
 
-.team-card-btn[data-winner="true"] {
+.team-card-btn {
   border: none;
   padding: 0;
+  background: transparent;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
 }
 
 .medal-btn {
   width: 45px;
-}
-
-@media (max-width: 961px) {
-  .vertical-card-container[data-opened="false"],
-  .vertical-card-container[data-opened="true"] {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    border: 1px solid #fff;
-    align-items: center;
-    padding: 20px;
-    border-radius: 20px;
-    height: -webkit-fill-available;
-    gap: 10px;
-  }
-
-  .vertical-card-container[data-opened="false"] > .card-central-section,
-  .vertical-card-container[data-opened="true"] > .card-central-section {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 4fr;
-    width: 100%;
-  }
-
-  .vertical-card-container[data-opened="false"] > * .score-container,
-  .vertical-card-container[data-opened="true"] > * .score-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: stretch;
-    flex-wrap: wrap;
-  }
-
-  .vertical-card-container[data-opened="false"] * .score-chart,
-  .vertical-card-container[data-opened="true"] > * .score-chart {
-    border: 1px solid #fff;
-    height: 250px;
-    width: 100%;
-    border-radius: 15px;
-  }
-
-  .vertical-card-container[data-opened="false"] > * .score-chart,
-  .score-container {
-    opacity: 1;
-  }
-
-  .vertical-card-container[data-opened="false"] > .team-card-footer {
-    visibility: visible;
-  }
 }
