@@ -14,12 +14,12 @@ import { FaqsComponent } from "../../components/react/Faqs";
     </section>
     <div class={styles.container}>
       <!-- DEVATHON INFORMATION -->
-      <DevathonInfo devathon={devathon} client:visible />
+      <DevathonInfo devathon={devathon} client:only="react" />
       <section>
         <h1>FAQ</h1>
       </section>
       <!-- FAQ -->
-      <FaqsComponent faqs={faqs} client:visible />
+      <FaqsComponent faqs={faqs} client:only="react" />
     </div>
   </main>
 </Layout>
