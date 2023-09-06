@@ -39,14 +39,14 @@ p {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.innerTimelineContainer {
+.inner-timeline-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.innerTimelineContainer:after {
+.inner-timeline-container:after {
   content: "";
   position: absolute;
   width: 25px;
@@ -107,14 +107,14 @@ p {
     width: 45%;
   }
 
-  .innerTimelineContainer {
+  .inner-timeline-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
 
-  .innerTimelineContainer:after {
+  .inner-timeline-container:after {
     display: none;
   }
 

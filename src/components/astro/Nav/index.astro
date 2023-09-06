@@ -1,0 +1,26 @@
+---
+import {links} from "../../../data/page-links";
+import type { LinkItem } from "../../../interfaces/Links.interface";
+import "./Nav.css";
+
+const toggleMenu = ():void =>{
+    
+}
+---
+
+<nav class="nav-container">
+    <button onclick=toggleMenu() class="open-menu-btn">
+      <i class="icofont-navigation-menu"></i>
+    </button>
+  </nav>
+  <div class="nav-ul-container">
+    <ul class="nav-ul">
+      {links.map((link: LinkItem): Element => {
+        return (
+          <li class="nav-link">
+            <a href={link.href}>{link.name}</a>
+          </li>
+        );
+      })}
+    </ul>
+  </div>

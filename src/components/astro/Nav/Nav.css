@@ -27,7 +27,7 @@
   font-size: 22px;
 }
 
-.navUlContainer {
+.nav-ul-container {
   background-color: #151c34;
   display: flex;
   min-width: 100vw;
@@ -43,7 +43,7 @@
   z-index: 2;
 }
 
-.navUl {
+.nav-ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +53,7 @@
   list-style: none;
 }
 
-.openMenuBtn {
+.open-menu-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
