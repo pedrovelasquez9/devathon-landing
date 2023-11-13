@@ -1,15 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { HomeLogo } from "../components/react/HomeLogo";
-import { HomeTitle } from "../components/react/HomeTitle";
+import HomeLogo  from "../components/astro/HomeLogo/index.astro";
+import HomeTitle from "../components/astro/HomeTitle/index.astro";
 import "./index.css";
 ---
 
 <Layout title="Programación en español">
   <main>
     <div class="main-container">
-      <HomeTitle client:load />
-      <HomeLogo client:load />
+      <HomeTitle />
+      <HomeLogo />
     </div>
   </main>
 </Layout>

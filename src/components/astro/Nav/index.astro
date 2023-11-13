@@ -1,0 +1,27 @@
+---
+import {links} from "../../../data/page-links";
+import type { LinkItem } from "../../../interfaces/Links.interface";
+import "./Nav.css";
+---
+<script is:inline>
+  const toggleMenu = () =>{
+    const navContainerNode = document.getElementById("nav-container");
+    navContainerNode.dataset.hidden = navContainerNode.dataset?.hidden === "true" ? "false" : "true";
+}
+</script>
+<nav class="nav-container">
+    <button onclick="toggleMenu()" class="open-menu-btn">
+      <i class="icofont-navigation-menu"></i>
+    </button>
+  </nav>
+  <div class="nav-ul-container" data-hidden="true" id="nav-container">
+    <ul class="nav-ul">
+      {links.map((link: LinkItem): Element => {
+        return (
+          <li class="nav-link">
+            <a href={link.href}>{link.name}</a>
+          </li>
+        );
+      })}
+    </ul>
+  </div>
