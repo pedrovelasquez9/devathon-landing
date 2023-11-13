@@ -27,7 +27,7 @@
   font-size: 22px;
 }
 
-.nav-ul-container {
+.nav-ul-container[data-hidden="false"] {
   background-color: #151c34;
   display: flex;
   min-width: 100vw;
@@ -41,6 +41,10 @@
   align-items: center;
   flex-wrap: nowrap;
   z-index: 2;
+}
+
+.nav-ul-container[data-hidden="true"] {
+  display: none;
 }
 
 .nav-ul {
