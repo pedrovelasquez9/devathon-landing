@@ -1,0 +1,21 @@
+---
+import type { FaqsList, Faqs } from "../../../interfaces/Faqs.type";
+import "./DevathonFaqs.css"
+
+interface Props{
+    faqs: Faqs[];
+}
+
+const {faqs} = Astro.props;
+---
+
+<div class="grid-container">
+    {faqs.map((item: Faqs): Element => {
+        return (
+          <div class="question-title">
+            <h3>{item.title}</h3>
+            <p>{item.answer}</p>
+          </div>
+        );
+      })}
+</div>

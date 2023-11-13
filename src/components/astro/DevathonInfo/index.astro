@@ -1,0 +1,52 @@
+---
+import type {
+    DevathonData,
+  } from "../../../interfaces/DevathonData.type";
+import "./DevathonInfo.css";
+
+interface Props {
+    devathon: DevathonData[];
+}
+
+const {devathon} = Astro.props;
+---
+{ devathon.map((item: DevathonData, index:number): Element => {
+    return (<div class="container">
+                <div class="timeline">
+                    <div class="inner-timeline-container">
+                        {(index + 1) % 2 !== 0 ? (
+                            <div class="content">
+                                <h2>{item.title}</h2>
+                                <div>
+                                    {item.info.split("\n").map((str:string) => (
+                                    <>
+                                        <p>{str}</p>
+                                        <br />
+                                    </>
+                                    ))}
+                                </div>
+                            </div>
+                            <div class="ilustration">
+                                <img src={item.img} alt={item.alt} />
+                            </div>
+                        ) : (
+                            <div class="ilustration">
+                                <img src={item.img} alt={item.alt} />
+                            </div>
+                            <div class="content">
+                                <h2>{item.title}</h2>
+                                <div>
+                                    {item.info.split("\n").map((str:string) => (
+                                        <p>{str}</p>
+                                        <br />
+                                    ))}
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </div>
+        )
+    })
+
+}

@@ -1,4 +1,4 @@
-.questionTitle {
+.question-title {
   width: 100%;
   text-align: center;
   background: rgba(0, 0, 0, 0.2);
@@ -14,7 +14,7 @@ h3 {
   color: #38b6ff;
 }
 
-.gridContainer {
+.grid-container {
   margin: 0 auto;
   margin-top: 20px;
   display: grid;
