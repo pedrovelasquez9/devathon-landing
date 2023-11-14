@@ -11,7 +11,7 @@ const { networkList } = Astro.props;
 
 <ul class="linksList">
   {
-    networkList.map((network) => {
+    networkList.map((network: networkLink): void => {
       return (
         <li class="linkContainer">
           <a class="network-link" href={network.link}>

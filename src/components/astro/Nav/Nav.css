@@ -70,6 +70,18 @@
   z-index: 3;
 }
 
+.active-link::before {
+  content: "<";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.active-link::after {
+  content: "/>";
+  font-size: 20px;
+  font-weight: bold;
+}
+
 @keyframes pulse-white {
   0% {
     transform: scale(1);
