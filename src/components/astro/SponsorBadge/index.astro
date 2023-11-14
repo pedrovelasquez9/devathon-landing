@@ -2,7 +2,7 @@
 import type { NetworkInfo } from "../../../interfaces/DevathonSponsor";
 import "./index.css";
 
-const { id, networks, name, logo, bigLogo, circled } = Astro.props;
+const { networks, name, logo, bigLogo, circled } = Astro.props;
 const bigLogoStyle = bigLogo ? `width:200px;` : "";
 const circledStyle = circled ? `border-radius:50%;` : "";
 ---
@@ -21,7 +21,7 @@ const circledStyle = circled ? `border-radius:50%;` : "";
     <p>{name}</p>
     <div class="sponsor-links-container">
       {
-        networks.map((network: NetworkInfo) => {
+        networks.map((network: NetworkInfo):Element => {
           return (
             <a href={network.url}>
               <i class={network.icon} />

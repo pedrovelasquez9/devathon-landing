@@ -18,7 +18,7 @@ const {devathon} = Astro.props;
                             <div class="content">
                                 <h2>{item.title}</h2>
                                 <div>
-                                    {item.info.split("\n").map((str:string) => (
+                                    {item.info.split("\n").map((str:string):void => (
                                     <>
                                         <p>{str}</p>
                                         <br />
@@ -36,7 +36,7 @@ const {devathon} = Astro.props;
                             <div class="content">
                                 <h2>{item.title}</h2>
                                 <div>
-                                    {item.info.split("\n").map((str:string) => (
+                                    {item.info.split("\n").map((str:string):void => (
                                         <p>{str}</p>
                                         <br />
                                     ))}
