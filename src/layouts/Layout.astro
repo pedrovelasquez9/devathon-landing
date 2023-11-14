@@ -45,7 +45,9 @@ const { title } = Astro.props;
       content="Programación en español. Comunidad de habla hispana de desarrollo web y multiplataforma donde compartimos recursos, realizamos eventos de desarrollo y aprendemos nuevas tecnologías."
     />
     <meta name="twitter:image" content="/programacion en español.webp" />
-    <link rel="stylesheet" href="/fonts/icofont.min.css" />
+    <link rel="stylesheet"  />
+    <link rel="preload" href="/fonts/icofont.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/fonts/icofont.min.css"></noscript>
     <script
       defer
       data-domain="programacion-es.dev"
