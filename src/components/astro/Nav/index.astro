@@ -2,6 +2,7 @@
 import {links} from "../../../data/page-links";
 import type { LinkItem } from "../../../interfaces/Links.interface";
 import "./Nav.css";
+const {pathname} = Astro.url;
 ---
 <script is:inline>
   const toggleMenu = () =>{
@@ -10,7 +11,7 @@ import "./Nav.css";
 }
 </script>
 <nav class="nav-container">
-    <button onclick="toggleMenu()" class="open-menu-btn">
+    <button onclick="toggleMenu()" aria-label="Menu button" role="button" class="open-menu-btn">
       <i class="icofont-navigation-menu"></i>
     </button>
   </nav>
@@ -18,7 +19,7 @@ import "./Nav.css";
     <ul class="nav-ul">
       {links.map((link: LinkItem): Element => {
         return (
-          <li class="nav-link">
+          <li class={`nav-link ${pathname.split('/')[1] === link.href.split('/')[1] ? 'active-link' : ''}`}>
             <a href={link.href}>{link.name}</a>
           </li>
         );
