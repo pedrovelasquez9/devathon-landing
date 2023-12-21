@@ -9,11 +9,11 @@ interface Props {
 const { networkList } = Astro.props;
 ---
 
-<ul class="linksList">
+<ul class="links-list">
   {
     networkList.map((network: networkLink): void => {
       return (
-        <li class="linkContainer">
+        <li class="link-container">
           <a class="network-link" href={network.link}>
             <img src={network.imagePath} alt={network.alt} />
             <span>{network.title}</span>
