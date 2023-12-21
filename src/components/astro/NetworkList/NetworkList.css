@@ -1,11 +1,11 @@
-.linksList {
+.links-list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.linkContainer {
+.link-container {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -18,11 +18,17 @@
   box-shadow: 0px 4px 0px 0px rgb(255 255 255 / 12%);
 }
 
-.linkContainer img {
+.link-container img {
   width: 3rem;
   height: 3rem;
 }
 
-.linkContainer span {
+.link-container span {
   color: #fff;
+}
+
+@media (max-width: 800px) {
+  .links-list {
+    grid-template-columns: 1fr;
+  }
 }
