@@ -1,7 +1,7 @@
 ---
 import DevathonInfo  from "../../components/astro/DevathonInfo/index.astro";
 import Layout from "../../layouts/Layout.astro";
-import styles from "./index.module.css";
+import "./index.css";
 import { devathon } from "../../data/devathon";
 import { faqs } from "../../data/faqs";
 import DevathonFaqs from "../../components/astro/DevathonFaqs/index.astro";
@@ -9,10 +9,10 @@ import DevathonFaqs from "../../components/astro/DevathonFaqs/index.astro";
 
 <Layout title="Devathon">
   <main>
-    <section class={styles.titleContainer}>
+    <section class="title-container">
       <h1>👨‍💻 Devathon</h1>
     </section>
-    <div class={styles.container}>
+    <div class="container">
       <DevathonInfo devathon={devathon} />
       <section>
         <h1>FAQ</h1>

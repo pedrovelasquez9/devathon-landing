@@ -1,0 +1,34 @@
+.links-list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background: #fff1;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+  box-shadow: 0px 4px 0px 0px rgb(255 255 255 / 12%);
+}
+
+.link-container img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.link-container span {
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .links-list {
+    grid-template-columns: 1fr;
+  }
+}
