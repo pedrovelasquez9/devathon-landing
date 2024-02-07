@@ -73,9 +73,6 @@
   font-weight: bold;
 }
 
-.evaluation-criteria {
-}
-
 @media (max-width: 1024px) {
   .event-description,
   .evaluation-criteria {
