@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import AnimatedTitle from "../../components/astro/AnimatedTitle/index.astro";
+import "./recursos.css";
+import ResourcesList from "../../components/astro/ResourcesList/index.astro";
+import { webResources } from "../../data/web-resources";
+
+---
+
+<Layout title="Recursos">
+  <main>
+    <div class="container">
+      <section>
+        <AnimatedTitle color="blue" text="Únete a la comunidad" />
+        <ResourcesList resourcesItemList={webResources} />
+      </section>
+    </div>
+  </main>
+</Layout>
