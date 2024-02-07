@@ -6,8 +6,6 @@ const { networks, name, logo, bigLogo, circled } = Astro.props;
 const bigLogoStyle = bigLogo ? `width:200px;` : "";
 const circledStyle = circled ? `border-radius:50%;` : "";
 ---
-
-<script src="./badge-handler.ts"></script>
 <div class="sponsor-badge" id={name}>
   <div class="sponsor-image-container">
     <img

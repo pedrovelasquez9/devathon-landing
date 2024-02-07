@@ -1,0 +1,32 @@
+---
+import type { ResourceItem, Resources } from "../../../interfaces/Resources.type";
+import AnimatedTitle from "../AnimatedTitle/index.astro";
+import "./LinkList.css";
+
+interface Props {
+  resourcesItemList: Resources[];
+}
+
+const { resourcesItemList } = Astro.props;
+---
+<section>
+  {resourcesItemList.map((resourceItem: Resources): void => {
+    return (
+      <h1>{resourceItem.category}</h1>
+      <ul class="links-list">
+        {
+          resourceItem.resources.map((resourceLinkItem: ResourceItem): void => {
+            return (
+              <li class="link-container">
+                <AnimatedTitle color="blue" text=">" />
+                <a class="network-link" href={resourceLinkItem.link}>
+                  <span>{resourceLinkItem.title}</span>
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+      )
+  })}
+</section>
