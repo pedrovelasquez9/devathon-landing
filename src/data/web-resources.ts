@@ -78,6 +78,12 @@ export const webResources: Resources[] = [
         }, {
             title: "Artículos de Java y Spring",
             link: "https://www.baeldung.com/",
+        }, {
+            title: "Kevin Powell",
+            link: "https://www.kevinpowell.co/"
+        }, {
+            title: "SVG Gator",
+            link: "https://www.svgator.com/"
         }],
     },
     {
