@@ -62,6 +62,85 @@ export const webResources: Resources[] = [
         }, {
             title: "Traducir páginas web desde Chrome",
             link: "https://chrome.google.com/webstore/detail/mate-translate-%E2%80%93-translat/ihmgiclibbndffejedjimfjmfoabpcke",
+        }, {
+            title: "Libros y guías de programación",
+            link: "https://goalkicker.com/",
+        }, {
+            title: "Handbooks de programación",
+            link: "https://www.freecodecamp.org/news/freecodecamp-press-books-handbooks/",
+        },
+        {
+            title: "Blog de Josh W. Comeau",
+            link: "https://www.joshwcomeau.com/",
+        }, {
+            title: "Recursos cósmicos (by Carmen Ansio)",
+            link: "https://recursoscosmicos.com/",
+        }, {
+            title: "Artículos de Java y Spring",
+            link: "https://www.baeldung.com/",
         }],
     },
+    {
+        category: "Noticias y newsletters",
+        resources: [{
+            title: "ZDNet",
+            link: "https://www.zdnet.com/topic/developer/2/"
+        },
+        {
+            title: "DevUrls",
+            link: "https://devurls.com/"
+        },
+        {
+            title: "Hacker News",
+            link: "https://news.ycombinator.com/newest"
+        },
+        {
+            title: "Dev To",
+            link: "https://dev.to/"
+        },
+        {
+            title: "Web Dev",
+            link: "https://web.dev/blog?hl=es-419"
+        },
+        {
+            title: "Microsoft dev blog",
+            link: "https://devblogs.microsoft.com/"
+        },
+        {
+            title: "Daily Dev",
+            link: "https://app.daily.dev/"
+        },
+        {
+            title: "Daily Dev",
+            link: "https://app.daily.dev/"
+        },
+        {
+            title: "Freecodecamp news",
+            link: "https://www.freecodecamp.org/news/"
+        },
+        {
+            title: "Lobster",
+            link: "https://lobste.rs/"
+        },
+        {
+            title: "UI From Mars (newsletter)",
+            link: "https://www.uifrommars.com/"
+        },
+        {
+            title: "Leadership in tech (newsletter)",
+            link: "https://newsletter.leadershipintech.com/"
+        },
+        {
+            title: "Techworld with Milan (newsletter)",
+            link: "https://newsletter.techworld-with-milan.com/"
+        },
+        {
+            title: "Frontend Weekly (newsletter)",
+            link: "https://www.frontendweekly.co/"
+        },
+        {
+            title: "Pragmatic Engineer (newsletter)",
+            link: "https://newsletter.pragmaticengineer.com/"
+        }]
+    }
 ];
