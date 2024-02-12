@@ -14,6 +14,13 @@ export const webResources: Resources[] = [
         }, {
             title: "Freecodecamp",
             link: "https://freecodecamp.org",
+        },
+        {
+            title: "The Odin Project",
+            link: "https://www.theodinproject.com/"
+        }, {
+            title: "FullStack Open",
+            link: "https://fullstackopen.com/es/faq"
         }],
     },
     {
