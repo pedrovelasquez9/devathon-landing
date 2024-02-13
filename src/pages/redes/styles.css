@@ -1,4 +1,4 @@
-.networksContainer {
+.networks-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.networksContainer section {
+.networks-container section {
   padding: 2rem;
   border-radius: 10px;
   background: rgba(35, 35, 35, 0.42);

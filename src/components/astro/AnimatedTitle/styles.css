@@ -1,4 +1,4 @@
-.animatedTitleBlue {
+.animated-title-blue {
   text-align: center;
   background: linear-gradient(
     to right,
@@ -16,7 +16,7 @@
   animation: shine 6s linear infinite;
 }
 
-.animatedTitleOrange {
+.animated-title-orange {
   text-align: center;
   background: linear-gradient(
     to right,
