@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import AnimatedTitle from "../../components/astro/AnimatedTitle/index.astro";
-import "./networks.css";
+import "./styles.css";
 import NetworkList from "../../components/astro/NetworkList/index.astro";
 import { networks } from "../../data/networks";
 
@@ -9,8 +9,8 @@ import { networks } from "../../data/networks";
 
 <Layout title="Redes">
   <main>
-    <div class="networksContainer">
-      <section class="networksSection">
+    <div class="networks-container">
+      <section>
         <AnimatedTitle color="blue" text="Únete a la comunidad" />
         <NetworkList networkList={networks} />
       </section>
