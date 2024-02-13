@@ -91,6 +91,9 @@ export const webResources: Resources[] = [
         }, {
             title: "SVG Gator",
             link: "https://www.svgator.com/"
+        }, {
+            title: "Codapi",
+            link: "https://codapi.org/"
         }],
     },
     {
@@ -118,10 +121,6 @@ export const webResources: Resources[] = [
         {
             title: "Microsoft dev blog",
             link: "https://devblogs.microsoft.com/"
-        },
-        {
-            title: "Daily Dev",
-            link: "https://app.daily.dev/"
         },
         {
             title: "Daily Dev",
