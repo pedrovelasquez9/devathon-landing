@@ -19,7 +19,7 @@ const { resourcesItemList } = Astro.props;
             return (
               <li class="link-container">
                 <AnimatedTitle color="blue" text=">" />
-                <a class="network-link" href={resourceLinkItem.link}>
+                <a class="network-link" target="_blank" href={resourceLinkItem.link}>
                   <span>{resourceLinkItem.title}</span>
                 </a>
               </li>

@@ -14,7 +14,7 @@ const { networkList } = Astro.props;
     networkList.map((network: networkLink): void => {
       return (
         <li class="link-container">
-          <a class="network-link" href={network.link}>
+          <a class="network-link" target="_blank" href={network.link}>
             <img src={network.imagePath} alt={network.alt} />
             <span>{network.title}</span>
           </a>
