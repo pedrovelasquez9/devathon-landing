@@ -94,6 +94,18 @@ export const webResources: Resources[] = [
         }, {
             title: "Codapi",
             link: "https://codapi.org/"
+        }, {
+            title: "Patrones de diseño en español",
+            link: "https://refactoring.guru/es/design-patterns"
+        }, {
+            title: "Guía de css moderno",
+            link: "https://moderncss.dev/"
+        }, {
+            title: "Tendencia de diseño web",
+            link: "https://www.linears.art/"
+        }, {
+            title: "Librería de fechas para JS",
+            link: "https://tempo.formkit.com/"
         }],
     },
     {
