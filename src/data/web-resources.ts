@@ -3,7 +3,7 @@ import type { Resources } from "../interfaces/Resources.type";
 
 export const webResources: Resources[] = [
     {
-        category: "Cursos",
+        category: "> Cursos",
         resources: [{
             title: "Cursos de desarrollo web de Google",
             link: "https://web.dev/learn",
@@ -24,7 +24,7 @@ export const webResources: Resources[] = [
         }],
     },
     {
-        category: "Ejercicios y retos",
+        category: "> Ejercicios y retos",
         resources: [{
             title: "30 Días de Javascript",
             link: "https://github.com/Asabeneh/30-Days-Of-JavaScript",
@@ -42,14 +42,14 @@ export const webResources: Resources[] = [
         }],
     },
     {
-        category: "Roadmaps",
+        category: "> Roadmaps",
         resources: [{
             title: "Roadmap sh",
             link: "https://roadmap.sh/",
         }],
     },
     {
-        category: "Canales",
+        category: "> Canales",
         resources: [{
             title: "Programación en español",
             link: "https://www.youtube.com/@programacion-es",
@@ -59,7 +59,7 @@ export const webResources: Resources[] = [
         }],
     },
     {
-        category: "Utilidades",
+        category: "> Utilidades",
         resources: [{
             title: "MDN web docs",
             link: "https://developer.mozilla.org/es/",
@@ -97,7 +97,7 @@ export const webResources: Resources[] = [
         }],
     },
     {
-        category: "Noticias y newsletters",
+        category: "> Noticias y newsletters",
         resources: [{
             title: "ZDNet",
             link: "https://www.zdnet.com/topic/developer/2/"
