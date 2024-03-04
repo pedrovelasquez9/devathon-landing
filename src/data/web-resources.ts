@@ -39,6 +39,12 @@ export const webResources: Resources[] = [
         {
             title: "Ejercicios Pseint",
             link: "https://pseint.sourceforge.net/index.php?page=ejemplos.php",
+        }, {
+            title: "100 días de CSS",
+            link: "https://100dayscss.com/days/1/"
+        }, {
+            title: "Ejercicios SQL",
+            link: "https://www.sql-practice.com/"
         }],
     },
     {
@@ -106,6 +112,21 @@ export const webResources: Resources[] = [
         }, {
             title: "Librería de fechas para JS",
             link: "https://tempo.formkit.com/"
+        }, {
+            title: "Buenas prácticas UX",
+            link: "https://lawsofux.com/es/"
+        }, {
+            title: "Analiza el CSS de tu web",
+            link: "https://www.projectwallace.com/css-code-quality"
+        }, {
+            title: "Recursos de HTML, CSS y JS (ManzDev)",
+            link: "https://manz.dev/"
+        }, {
+            title: "Excalidraw",
+            link: "https://excalidraw.com/"
+        }, {
+            title: "Elpatodraw",
+            link: "https://elpatodraw.com/"
         }],
     },
     {
