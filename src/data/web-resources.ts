@@ -127,6 +127,9 @@ export const webResources: Resources[] = [
         }, {
             title: "Elpatodraw",
             link: "https://elpatodraw.com/"
+        }, {
+            title: "Editor markdown online",
+            link: "https://stackedit.io/"
         }],
     },
     {
