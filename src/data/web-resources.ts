@@ -21,6 +21,9 @@ export const webResources: Resources[] = [
         }, {
             title: "FullStack Open",
             link: "https://fullstackopen.com/es/faq"
+        }, {
+            title: "Libro: Eloquent Javascript",
+            link: "https://eloquentjavascript.net/"
         }],
     },
     {
@@ -130,6 +133,12 @@ export const webResources: Resources[] = [
         }, {
             title: "Editor markdown online",
             link: "https://stackedit.io/"
+        }, {
+            title: "Tutoriales frontend",
+            link: "https://piccalil.li/"
+        }, {
+            title: "El valle del código",
+            link: "https://thevalleyofcode.com/"
         }],
     },
     {
@@ -169,6 +178,58 @@ export const webResources: Resources[] = [
         {
             title: "Lobster",
             link: "https://lobste.rs/"
+        },
+        {
+            title: "Tech news space",
+            link: "https://technewsspace.com/"
+        },
+        {
+            title: "The verge",
+            link: "https://www.theverge.com/"
+        },
+        {
+            title: "SFGate",
+            link: "https://www.sfgate.com/tech/"
+        },
+        {
+            title: "El otro lado",
+            link: "https://www.elotrolado.net/"
+        },
+        {
+            title: "Bleeping computer",
+            link: "https://www.bleepingcomputer.com/news"
+        },
+        {
+            title: "Webkit",
+            link: "https://webkit.org/"
+        },
+        {
+            title: "Developer tech",
+            link: "https://www.developer-tech.com/"
+        },
+        {
+            title: "Apple developer news",
+            link: "https://developer.apple.com/news/"
+        },
+        {
+            title: "Blog de GitHub",
+            link: "https://github.blog/"
+        },
+        {
+            title: "Info Q",
+            link: "https://www.infoq.com/development/"
+        },
+        {
+            title: "Tech Crunch",
+            link: "https://techcrunch.com/"
+        },
+        {
+            title: "Search engine round table",
+            link: "https://www.seroundtable.com/"
+        },
+        {
+            title: "Google news",
+            link: "https://news.google.com/"
         },
         {
             title: "UI From Mars (newsletter)",
