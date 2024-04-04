@@ -94,6 +94,9 @@ export const webResources: Resources[] = [
         }, {
             title: "Codapi",
             link: "https://codapi.org/"
+        }, {
+            title: "Emojis en tus commits",
+            link: "https://gitmoji.dev/"
         }],
     },
     {
