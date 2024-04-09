@@ -1,6 +1,6 @@
 import type { Faqs } from "../interfaces/Faqs.type";
 
-export const faqs: Faqs[] =[
+export const faqs: Faqs[] = [
     {
         title: '¿Cuánto dura una edición del Devathon?',
         answer: 'Las ediciones del evento duran 4 semanas, divididas en 2 sprints de 2 semanas cada uno.'
@@ -26,19 +26,19 @@ export const faqs: Faqs[] =[
         answer: 'El proyecto es el mismo para todos los equipos y se define en conjunto con los sponsors de la edición para evaluar distintos aspectos técnicos y funcionales.'
     },
     {
-        title:'¿Qué pasa si me tengo que retirar de mi equipo en mitad del evento?',
-        answer:'Todos tenemos otras actividades y asuntos personales, si debes retirarte del evento no pasa nada, solo se pide informar al equipo para que puedan adaptar su estrategia de desarrollo con respecto al número de participantes y magnitud del proyecto.'
+        title: '¿Qué pasa si me tengo que retirar de mi equipo en mitad del evento?',
+        answer: 'Todos tenemos otras actividades y asuntos personales, si debes retirarte del evento no pasa nada, solo se pide informar al equipo para que puedan adaptar su estrategia de desarrollo con respecto al número de participantes y magnitud del proyecto.'
     },
     {
-        title:'¿Puedo participar en nuevas ediciones si ya he participado antes?',
-        answer:'¡Por supuesto que sí!'
+        title: '¿Puedo participar en nuevas ediciones si ya he participado antes?',
+        answer: '¡Por supuesto que sí!'
     },
     {
-        title:'¿Cuándo comienza la próxima edición?',
-        answer:'Las fechas de cada edición se publicarán en las redes de la comunidad, de haber una edición en curso, puedes participar como oyente en los directos de Twitch (lunes y miércoles a las 19:00 España).'
+        title: '¿Cuándo comienza la próxima edición?',
+        answer: 'Las fechas de cada edición se publicarán en las redes de la comunidad, de haber una edición en curso, puedes participar como oyente en los directos de Twitch (lunes a vienes desde las 20:00 España).'
     },
     {
-        title:'¿Puedo unirme a mitad de una edición?',
-        answer:'Si hay participantes que se han retirado, solemos abrir inscripciones en directos de Twitch para cubrir estos puestos vacíos.'
+        title: '¿Puedo unirme a mitad de una edición?',
+        answer: 'Si hay participantes que se han retirado, solemos abrir inscripciones en directos de Twitch para cubrir estos puestos vacíos.'
     },
 ]

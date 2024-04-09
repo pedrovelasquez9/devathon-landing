@@ -97,6 +97,15 @@ export const webResources: Resources[] = [
         }, {
             title: "Emojis en tus commits",
             link: "https://gitmoji.dev/"
+        }, {
+            title: "Conventional commits",
+            link: "https://www.conventionalcommits.org/es/v1.0.0/"
+        }, {
+            title: "Swagger",
+            link: "https://swagger.io/"
+        }, {
+            title: "Editor markdown online",
+            link: "https://readme.so/"
         }],
     },
     {
