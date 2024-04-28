@@ -6,6 +6,7 @@
   max-width: 300px;
   text-wrap: balance;
   height: 450px;
+  flex: 1;
 }
 
 .judge-photo-container {
@@ -67,7 +68,10 @@
   }
 }
 
-@media (width <= 765px) {
+@media screen and (940px <= width <= 1020px) {
+  .judge-card-container {
+    flex-basis: 25%;
+  }
   .network-link,
   .judge-photo {
     filter: none;
@@ -80,5 +84,37 @@
   .jude-networks-container::after,
   .jude-networks-container::before {
     font-size: 20px;
+  }
+
+  .sponsor-container {
+    gap: 10px;
+  }
+}
+
+@media screen and (width <= 940px) {
+  .judge-card-container {
+    flex-basis: 100%;
+    flex: 3;
+  }
+
+  .judge-card-container {
+    flex-basis: 25%;
+  }
+  .network-link,
+  .judge-photo {
+    filter: none;
+  }
+
+  .network-link img {
+    width: 25px;
+  }
+
+  .jude-networks-container::after,
+  .jude-networks-container::before {
+    font-size: 20px;
+  }
+
+  .sponsor-container {
+    gap: 10px;
   }
 }
