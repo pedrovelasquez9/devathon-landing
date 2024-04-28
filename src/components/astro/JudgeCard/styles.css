@@ -19,7 +19,6 @@
   width: 300px;
   height: auto;
   object-fit: cover;
-  border-radius: 0 0 25% 25%;
   filter: grayscale(1);
   transition: filter 0.5s ease-in-out;
   max-height: 350px;
