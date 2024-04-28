@@ -1,0 +1,165 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./styles.css";
+import TeamExpandableCard from "../../components/astro/TeamExpandableCard/index.astro";
+import JudgeCard from "../../components/astro/JudgeCard/index.astro";
+import { devathonData } from "../../data/devathon-vi-edition";
+import type { Judge, Team } from "../../interfaces/DevathonVIEdition.interface";
+
+const { teams, judges } = devathonData;
+---
+
+<Layout title="Devathon: VI edición">
+  <main class="devathon-edition-main-container">
+    <section class="edition-main-section">
+      <h1>Devathon: VI edición</h1>
+      <div class="teams-container">
+        {
+          teams.map((teamData: Team): Object => {
+            const { name, id, isWinner, isRetired } = teamData;
+            return (
+              <TeamExpandableCard
+                name={name}
+                id={id}
+                isRetired={isRetired}
+                winner={isWinner}
+              />
+            );
+          })
+        }
+      </div>
+    </section>
+    <section class="edition-main-section">
+      <h1>Jueces de esta edición</h1>
+      <div class="sponsor-container">
+        {
+          judges.slice(1,4).map((judge: Judge): Object => {
+            const { name, networks, project, img } = judge;
+            return (
+              <JudgeCard 
+              name={name} 
+              networks={networks} 
+              project={project} 
+              img={img}
+              />
+            );
+          })
+        }
+      </div>
+      <div class="sponsor-container">
+        {
+          judges.slice(4,7).map((judge: Judge): Object => {
+            const { name, networks, project, img } = judge;
+            return (
+              <JudgeCard 
+              name={name} 
+              networks={networks} 
+              project={project} 
+              img={img}
+              />
+            );
+          })
+        }
+      </div>
+      <div class="sponsor-container large">
+        <JudgeCard 
+              name={judges[0].name} 
+              networks={judges[0].networks} 
+              project={judges[0].project} 
+              img={judges[0].img}
+        />
+      </div>
+    </section>
+    <section class="event-info-section">
+      <h1>Acerca del evento</h1>
+      <div class="event-info-container">
+        <section class="event-description">
+          <h1>👨‍💻 Descripción de los proyectos desarrollados</h1>
+          <h2>Descripción:</h2>
+          <p>
+            📋 En esta edición, cada equipo elige de entre uno de los dos proyectos planteados a continuación:
+          </p>
+          <ul>
+            <li>
+              ✅ Gestor de contraseñas (password manager)
+            </li>
+            <li>
+              ✅ App de quiz (juego de preguntas) de hasta 4 participantes implementando websockets 
+            </li>
+          </ul>
+          <h1>👨‍💻 Mentores voluntarios</h1>
+          <p>En esta edición, participaron desarrolladores con el rol de mentores para poder ayudar a los equipos con dudas y bloqueos técnicos, mi total agradecimiento y mención honorífica a los mentores que estuvieron presentes en el servidor de Discord:</p>
+          <ul>
+            <li>
+              👨‍💻 Andrés Zapata
+            </li>
+            <li>
+              👨‍💻 DarkDerte
+            </li>
+            <li>
+              👨‍💻 DavidGL
+            </li>
+            <li>
+              👨‍💻 Luis Manuel Dev
+            </li>
+            <li>
+              👨‍💻 Manuel Gil
+            </li>
+            <li>
+              👨‍💻 Mario Dante
+            </li>
+          </ul>
+        </section>
+        <section class="evaluation-criteria">
+          <h1>✍ Criterios de evaluación</h1>
+          <ul>
+            <li>
+              ✅ Uso y gestión del repositorio: se evalúa el uso de git flow,
+              revisión de PRs y mantenimiento de ramas principales, nomenclatura
+              y buenas prácticas en general al trabajar con repositorios usando
+              git y github.
+            </li>
+            <li>
+              ✅ Nivel funcional del proyecto: se evalúa la cantidad de
+              funcionalidades estables del proyecto final con respecto a su
+              concepción/propuesta inicial.
+            </li>
+            <li>
+              ✅ Nivel visual del proyecto: se evalúan aspectos visuales, UI en
+              general, combinación de colores, ortografía, proporciones de
+              secciones, uso del espacio en la web, etc.
+            </li>
+            <li>
+              ✅ Nivel de accesibilidad del proyecto: se evalúan características
+              de UX y accesibilidad como legibilidad del contenido, combinación
+              de colores, uso de formularios, facilidad de uso del proyecto,
+              etc.
+            </li>
+            <li>
+              ✅ Nivel técnico del proyecto: en la review final, el sponsor
+              podrá hacer preguntas de nivel técnico en cuanto a las
+              consideraciones y stack usados por cada equipo para realizar su
+              evaluación particular.
+            </li>
+            <li>
+              ✅ Documentación del proyecto: documentación básica del proyecto
+              (cómo levantarlo en local, dependencias y consideraciones que
+              apliquen), diseño técnico con diagrama de flujo y acuerdo de interfaz con swagger, postman, etc.
+            </li>
+            <li>
+              ✅ Modelado de entidades (BD): se podrá preguntar y revisar el
+              modelo de la BD del proyecto en la review final para ver cómo se
+              han estructurado las relaciones, se evaluará también el uso y
+              cuidado de estándares, nomenclatura, bitácora, etc.
+            </li>
+            <li>
+              ✅ Integración de proyecto y equipos: integración de front y back,
+              comunicación de ambas partes del equipo para esta integración y
+              funcionamiento de la app integrada.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+</Layout>

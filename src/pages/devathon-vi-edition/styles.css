@@ -1,0 +1,125 @@
+.teams-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.edition-main-section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.devathon-edition-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 3rem;
+  text-align: center;
+}
+
+.background-grid {
+  background-size: 100px 100px;
+  z-index: -2;
+  background-image: url(/img/bg-grid.png);
+  background-position-y: -9px;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    10%,
+    white,
+    90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    10%,
+    white,
+    90%,
+    transparent
+  );
+}
+
+.background-grid-gradient {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    white 0%,
+    white 33%,
+    transparent 90%
+  );
+  mask-image: linear-gradient(to bottom, white 0%, white 33%, transparent 90%);
+}
+
+.sponsor-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.event-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.event-info-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.event-info-container ul {
+  list-style: none;
+  text-align: justify;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-description,
+.evaluation-criteria {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 4rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  width: 45%;
+  background: rgba(0, 0, 0, 0.2);
+  text-align: left;
+  align-items: flex-start;
+}
+
+.event-description h2,
+.evaluation-criteria h2 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .event-description,
+  .evaluation-criteria {
+    width: 100%;
+  }
+
+  .event-info-container {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 961px) {
+  .teams-container {
+    gap: 2rem;
+  }
+}
