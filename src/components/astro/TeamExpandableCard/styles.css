@@ -35,6 +35,10 @@
   transition-timing-function: ease;
 }
 
+.vertical-card-container[data-retired="true"] {
+  text-decoration: line-through;
+}
+
 .vertical-card-container a {
   color: #fff;
   text-decoration: none;
@@ -61,4 +65,5 @@
 
 .medal-btn {
   width: 45px;
+  filter: none;
 }

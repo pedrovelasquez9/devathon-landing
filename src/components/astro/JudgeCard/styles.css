@@ -1,0 +1,85 @@
+/* JUDGES */
+.judge-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+  text-wrap: balance;
+  height: 450px;
+}
+
+.judge-photo-container {
+  background-image: url("/img/pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.judge-photo {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0 0 25% 25%;
+  filter: grayscale(1);
+  transition: filter 0.5s ease-in-out;
+  max-height: 350px;
+  max-width: max-content;
+  align-self: center;
+}
+
+.judge-photo:hover,
+.network-link:hover {
+  filter: none;
+}
+
+.background-grid-gradient {
+  mask-image: linear-gradient(#151c34 80%, transparent);
+}
+
+.jude-networks-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.jude-networks-container::after {
+  content: "/>";
+  color: #fff6;
+}
+
+.jude-networks-container::before {
+  content: "<";
+  color: #fff6;
+}
+
+.network-link {
+  filter: grayscale(1);
+  transition: filter 0.4s ease-in-out;
+  max-height: 25px;
+  img {
+    width: 22px;
+  }
+}
+
+.network-link:hover {
+  .judge-photo {
+    filter: none;
+  }
+}
+
+@media (width <= 765px) {
+  .network-link,
+  .judge-photo {
+    filter: none;
+  }
+
+  .network-link img {
+    width: 25px;
+  }
+
+  .jude-networks-container::after,
+  .jude-networks-container::before {
+    font-size: 20px;
+  }
+}

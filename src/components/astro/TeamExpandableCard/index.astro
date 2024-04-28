@@ -1,13 +1,10 @@
 ---
 import "./styles.css";
-import type { Data } from "../../../interfaces/DevathonTeamsData";
 
-interface Props extends Data {}
-
-const { name, id, winner } = Astro.props;
+const { name, id, winner, isRetired=false } = Astro.props;
 ---
 
-<div data-opened="false" class="vertical-card-container vertical-card-image-bg">
+<div data-opened="false" class="vertical-card-container vertical-card-image-bg" title=`${isRetired?'Equipo retirado':''}` data-retired={isRetired.toString()}>
   <div class="card-central-section">
     <div class="team-card-title-section">
       <h2 class="team-card-title">{name}</h2>
@@ -25,6 +22,17 @@ const { name, id, winner } = Astro.props;
           )
         }
       </button>
+      <span>
+        {
+          isRetired ? <img
+              src="/img/retired.webp"
+              class="medal-btn"
+              alt="Equipo retirado"
+              title="Equipo retirado"
+              id={id}
+            /> : ""
+        }
+      </span>
     </div>
   </div>
 </div>

@@ -21,9 +21,17 @@ const {devathon} = Astro.props;
                                     {item.info.split("\n").map((str:string):void => (
                                     <>
                                         <p>{str}</p>
-                                        <br />
                                     </>
                                     ))}
+                                    {index === 0 ? 
+                                        <h2>Detalles de ediciones anteriores</h2>
+                                        <div>
+                                            <ul class="edition-list">
+                                                <li><a href="/devathon-edition">✅ IV edición</a></li>
+                                                <li><a href="/devathon-v-edition">✅ V edición</a></li>
+                                            </ul>
+                                        </div>
+                                    : ""}
                                 </div>
                             </div>
                             <div class="ilustration">
@@ -38,7 +46,6 @@ const {devathon} = Astro.props;
                                 <div>
                                     {item.info.split("\n").map((str:string):void => (
                                         <p>{str}</p>
-                                        <br />
                                     ))}
                                 </div>
                             </div>
