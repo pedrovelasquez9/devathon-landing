@@ -28,7 +28,7 @@ export const devathonData = {
         {
             "id": "5",
             "name": "EQUIPO 5",
-            "isWinner": false,
+            "isWinner": true,
             "isRetired": false
         },
         {
