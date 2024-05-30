@@ -2,6 +2,17 @@ h1 {
   font-size: 3rem;
 }
 
+.testimonials-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 25dvh;
+  text-align: center;
+}
+
 .title-container {
   display: flex;
   flex-direction: row;

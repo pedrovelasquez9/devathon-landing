@@ -1,0 +1,15 @@
+.testimonials {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.slide {
+  flex: 0 0 250px; /* Ajustar ancho según tus necesidades */
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
