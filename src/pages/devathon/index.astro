@@ -5,6 +5,7 @@ import "./styles.css";
 import { devathon } from "../../data/devathon";
 import { faqs } from "../../data/faqs";
 import DevathonFaqs from "../../components/astro/DevathonFaqs/index.astro";
+import Slider from "../../components/astro/Slider/index.astro";
 ---
 
 <Layout title="Devathon">
@@ -14,6 +15,10 @@ import DevathonFaqs from "../../components/astro/DevathonFaqs/index.astro";
     </section>
     <div class="container">
       <DevathonInfo devathon={devathon} />
+      <section class="testimonials-container">
+        <h1>Testimonios</h1>
+        <Slider />
+      </section>
       <section>
         <h1>FAQ</h1>
       </section>
