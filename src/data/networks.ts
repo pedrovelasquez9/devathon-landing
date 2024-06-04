@@ -72,5 +72,11 @@ export const networks: networkLink[] = [
     link: "https://www.amazon.es/dp/B08DM5JF8Z/ref=cm_sw_r_apan_NEJF4N6ZJZF8PYFWRB5V",
     imagePath: "/img/kindle-icon.webp",
     alt: "Libro",
+  },
+  {
+    title: "Onlyfans",
+    link: "",
+    imagePath: "/img/of-icon.webp",
+    alt: "OnlyFans"
   }
 ];
