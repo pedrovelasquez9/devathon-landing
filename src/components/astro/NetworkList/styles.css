@@ -27,6 +27,62 @@
   color: #fff;
 }
 
+.network-link {
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+
+.youtube-sub-link {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+[popover] {
+  width: 50dvw;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #151c34;
+  color: #fff;
+  padding: 12px;
+  transition: translate 0.7s ease-in-out,
+    display 0.7s ease-in-out allow-discrete;
+  translate: 0 -100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+[popover] p {
+  line-height: 2rem;
+}
+
+.close-popover-btn {
+  background-color: #38b6ff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+[popover]:popover-open {
+  translate: 50% 100%;
+}
+
+[popover]::backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@starting-style {
+  [popover]:popover-open {
+    translate: 50% -100%;
+  }
+}
+
 @media (max-width: 800px) {
   .links-list {
     grid-template-columns: 1fr;

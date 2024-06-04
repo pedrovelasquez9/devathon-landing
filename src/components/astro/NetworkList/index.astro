@@ -12,6 +12,7 @@ const { networkList } = Astro.props;
 <ul class="links-list">
   {
     networkList.map((network: networkLink): void => {
+      if(network.title !== "Onlyfans"){
       return (
         <li class="link-container">
           <a class="network-link" target="_blank" href={network.link}>
@@ -20,6 +21,27 @@ const { networkList } = Astro.props;
           </a>
         </li>
       );
+    }else{
+      return (
+        <li class="link-container">
+          <button class="network-link" popovertarget="of-popover">
+            <img src={network.imagePath} alt={network.alt} />
+            <span>{network.title}</span>
+          </button>
+        </li>
+        <div id="of-popover" popover="manual" class="popover-body">
+        <h1>😒 A ver, deja de pensar guarradas...</h1>
+        <p>¡😎 Mejor suscríbete a mi <a href="https://www.youtube.com/channel/UCNliuGyPizt7uNcdCrUoduQ" target="_blank" title="Canal de YouTube" class="youtube-sub-link">canal de YouTube</a> y apoya el contenido de programación de calidad y en español!</p>
+        <button
+          popovertarget="of-popover"
+          popover-action="hide"
+          class="close-popover-btn"
+        >
+          🤣 Vale, ya me he suscrito
+        </button>
+      </div>
+      );
+    }
     })
   }
 </ul>
