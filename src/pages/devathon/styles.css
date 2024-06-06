@@ -2,6 +2,18 @@ h1 {
   font-size: 3rem;
 }
 
+.testimonials-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
 .title-container {
   display: flex;
   flex-direction: row;
