@@ -6,6 +6,7 @@ import { devathon } from "../../data/devathon";
 import { faqs } from "../../data/faqs";
 import DevathonFaqs from "../../components/astro/DevathonFaqs/index.astro";
 import Slider from "../../components/astro/Slider/index.astro";
+import { testimonials } from "../../data/testimonials";
 ---
 
 <Layout title="Devathon">
@@ -16,8 +17,8 @@ import Slider from "../../components/astro/Slider/index.astro";
     <div class="container">
       <DevathonInfo devathon={devathon} />
       <section class="testimonials-container">
-        <h1>Testimonios</h1>
-        <Slider />
+        <h1>Testimonios de los participantes</h1>
+        <Slider testimonials={testimonials}/>
       </section>
       <section>
         <h1>FAQ</h1>

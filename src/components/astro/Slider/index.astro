@@ -1,28 +1,43 @@
 ---
+import { testimonials } from "../../../data/testimonials";
+import type { Testimonials } from "../../../interfaces/Testimonials";
+import AnimatedTitle from "../AnimatedTitle/index.astro";
 import "./styles.css";
+interface Props {
+    testimonials: Testimonials[];
+}
+
+const i:number = 0;
 ---
 <div class="testimonials">
     <div class="slide">
-        <p>"Este es el primer testimonio. Excelente servicio y muy recomendado!"</p>
-        <h4>- Cliente 1</h4>
-    </div>
-    <div class="slide">
-        <p>"Muy satisfecho con el producto. Definitivamente compraría de nuevo."</p>
-        <h4>- Cliente 2</h4>
-    </div>
-    <div class="slide">
-        <p>"La mejor experiencia de compra que he tenido. Cinco estrellas!"</p>
-        <h4>- Cliente 3</h4>
-    </div>
-    <div class="slide">
-        <p>"La mejor experiencia de compra que he tenido. Cinco estrellas!"</p>
-        <h4>- Cliente 3</h4>
-    </div>
-    <div class="slide">
-        <p>"La mejor experiencia de compra que he tenido. Cinco estrellas!"</p>
-        <h4>- Cliente 3</h4>
+        <div class="slide-content">
+            <p id="testimonial-message">{testimonials[i].message}</p>
+            <p id="testimonial-author">{testimonials[i].author}</p>
+        </div>
+        <button class="slider-next-btn" id="next-btn" data-testimonials={JSON.stringify(testimonials)} data-actual-slide={i}><AnimatedTitle color="blue" text=">" /></button>
     </div>
 </div>
 
 <script>
+import type { Testimonials } from "../../../interfaces/Testimonials";
+    const nextBtnElement = document.querySelector("#next-btn") as HTMLElement;
+    const testimonialMessageElem = document.querySelector("#testimonial-message") as HTMLElement;
+    const testimonialAuthorElem = document.querySelector("#testimonial-author") as HTMLElement;
+    
+    nextBtnElement.addEventListener("click", ()=>{
+        const actualSlide:number = parseInt(nextBtnElement.dataset.actualSlide as string);
+        const testimonials:Testimonials[] = JSON.parse(nextBtnElement.dataset.testimonials as string);
+        const testimonialsTotal:number = testimonials.length;
+        if(actualSlide+1 >= testimonialsTotal){
+            nextBtnElement.dataset.actualSlide = (0).toString();
+            testimonialAuthorElem.innerText = testimonials[0].author;
+            testimonialMessageElem.innerText = testimonials[0].message;
+            nextBtnElement.dataset.actualSlide = (0).toString();
+        }else{
+            testimonialAuthorElem.innerText = testimonials[actualSlide+1].author;
+            testimonialMessageElem.innerText = testimonials[actualSlide+1].message;
+            nextBtnElement.dataset.actualSlide = (actualSlide+1).toString();
+        }
+    });
 </script>
