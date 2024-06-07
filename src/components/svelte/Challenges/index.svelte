@@ -26,10 +26,10 @@
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
         height="1em"
-        viewBox="0 0 16 16"
+        viewBox="0 0 24 24"
         ><path
           fill="currentColor"
-          d="M4.5 6h-3c-.275 0-.5.225-.5.5v9c0 .275.225.5.5.5h3c.275 0 .5-.225.5-.5v-9c0-.275-.225-.5-.5-.5m0 9h-3v-4h3zm5-11h-3c-.275 0-.5.225-.5.5v11c0 .275.225.5.5.5h3c.275 0 .5-.225.5-.5v-11c0-.275-.225-.5-.5-.5m0 11h-3v-5h3zm5-13h-3c-.275 0-.5.225-.5.5v13c0 .275.225.5.5.5h3c.275 0 .5-.225.5-.5v-13c0-.275-.225-.5-.5-.5m0 13h-3V9h3z"
+          d="M14 6.5V14q0 .214.143.357t.357.143t.357-.143T15 14V6.308q0-.348-.23-.578t-.578-.23H12.5q-.213 0-.357.143T12 6t.143.357t.357.143zM8.116 17q-.691 0-1.153-.462T6.5 15.385V4.615q0-.69.463-1.153T8.116 3h10.769q.69 0 1.153.462t.462 1.153v10.77q0 .69-.462 1.152T18.884 17zm-3 3q-.691 0-1.153-.462T3.5 18.385V7.115q0-.213.143-.356T4 6.616t.357.143t.143.357v11.269q0 .23.192.423t.423.192h11.27q.213 0 .356.143t.144.357t-.144.357t-.356.143z"
         /></svg
       ></button
     >
@@ -38,10 +38,10 @@
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
         height="1em"
-        viewBox="0 0 16 16"
+        viewBox="0 0 24 24"
         ><path
           fill="currentColor"
-          d="M4.5 6h-3c-.275 0-.5.225-.5.5v9c0 .275.225.5.5.5h3c.275 0 .5-.225.5-.5v-9c0-.275-.225-.5-.5-.5m0 9h-3v-4h3zm5-11h-3c-.275 0-.5.225-.5.5v11c0 .275.225.5.5.5h3c.275 0 .5-.225.5-.5v-11c0-.275-.225-.5-.5-.5m0 11h-3v-5h3zm5-13h-3c-.275 0-.5.225-.5.5v13c0 .275.225.5.5.5h3c.275 0 .5-.225.5-.5v-13c0-.275-.225-.5-.5-.5m0 13h-3V9h3z"
+          d="M12 13.5v-2.384q0-.27.173-.443t.443-.173h1.769q.69 0 1.153-.462T16 8.884V7.115q0-.69-.462-1.153T14.385 5.5H11.5q-.213 0-.357.143T11 6t.143.357t.357.143h2.885q.269 0 .442.173t.173.443v1.769q0 .269-.173.442t-.442.173h-1.77q-.69 0-1.153.463T11 11.116v2.576q0 .349.23.578t.578.23H15.5q.214 0 .357-.143T16 14t-.143-.357t-.357-.143zM8.116 17q-.691 0-1.153-.462T6.5 15.385V4.615q0-.69.463-1.153T8.116 3h10.769q.69 0 1.153.462t.462 1.153v10.77q0 .69-.462 1.152T18.884 17zm-3 3q-.691 0-1.153-.462T3.5 18.385V7.115q0-.213.143-.356T4 6.616t.357.143t.143.357v11.269q0 .23.192.423t.423.192h11.27q.213 0 .356.143t.144.357t-.144.357t-.356.143z"
         /></svg
       ></button
     >
@@ -50,48 +50,50 @@
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
         height="1em"
-        viewBox="0 0 16 16"
+        viewBox="0 0 24 24"
         ><path
           fill="currentColor"
-          d="M4.5 6h-3c-.275 0-.5.225-.5.5v9c0 .275.225.5.5.5h3c.275 0 .5-.225.5-.5v-9c0-.275-.225-.5-.5-.5m0 9h-3v-4h3zm5-11h-3c-.275 0-.5.225-.5.5v11c0 .275.225.5.5.5h3c.275 0 .5-.225.5-.5v-11c0-.275-.225-.5-.5-.5m0 11h-3v-5h3zm5-13h-3c-.275 0-.5.225-.5.5v13c0 .275.225.5.5.5h3c.275 0 .5-.225.5-.5v-13c0-.275-.225-.5-.5-.5m0 13h-3V9h3z"
+          d="M14.385 14.5q.69 0 1.153-.462T16 12.884v-1.653q0-.593-.31-.883T15 10q.38-.058.69-.348t.31-.883V7.115q0-.69-.462-1.153T14.385 5.5H11.5q-.213 0-.357.143T11 6t.143.357t.357.143h2.885q.269 0 .442.173t.173.443v1.769q0 .269-.173.442t-.442.173h-1.27q-.213 0-.356.143t-.143.357t.143.357t.357.143h1.269q.269 0 .442.173t.173.443v1.769q0 .269-.173.442t-.442.173H11.5q-.213 0-.357.143T11 14t.143.357t.357.143zM8.115 17q-.69 0-1.152-.462T6.5 15.385V4.615q0-.69.463-1.153T8.116 3h10.769q.69 0 1.153.462t.462 1.153v10.77q0 .69-.462 1.152T18.884 17zm-3 3q-.69 0-1.152-.462T3.5 18.385V7.115q0-.213.143-.356T4 6.616t.357.143t.143.357v11.269q0 .23.192.423t.423.192h11.27q.213 0 .356.143t.144.357t-.144.357t-.356.143z"
         /></svg
       ></button
     >
     <button class="filter-clear-btn" on:click={() => clearFilter()}
       ><svg
         xmlns="http://www.w3.org/2000/svg"
-        width="1em"
+        width="1.13em"
         height="1em"
-        viewBox="0 0 1024 1024"
+        viewBox="0 0 576 512"
         ><path
           fill="currentColor"
-          d="m899.1 869.6l-53-305.6H864c14.4 0 26-11.6 26-26V346c0-14.4-11.6-26-26-26H618V138c0-14.4-11.6-26-26-26H432c-14.4 0-26 11.6-26 26v182H160c-14.4 0-26 11.6-26 26v192c0 14.4 11.6 26 26 26h17.9l-53 305.6c-.3 1.5-.4 3-.4 4.4c0 14.4 11.6 26 26 26h723c1.5 0 3-.1 4.4-.4c14.2-2.4 23.7-15.9 21.2-30M204 390h272V182h72v208h272v104H204zm468 440V674c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v156H416V674c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v156H202.8l45.1-260H776l45.1 260z"
+          d="M3.9 22.9C10.5 8.9 24.5 0 40 0h432c15.5 0 29.5 8.9 36.1 22.9s4.6 30.5-5.2 42.5L396.4 195.6C316.2 212.1 256 283 256 368c0 27.4 6.3 53.4 17.5 76.5c-1.6-.8-3.2-1.8-4.7-2.9l-64-48c-8.1-6-12.8-15.5-12.8-25.6v-79.1L9 65.3C-.7 53.4-2.8 36.8 3.9 22.9M432 224a144 144 0 1 1 0 288a144 144 0 1 1 0-288m59.3 107.3c6.2-6.2 6.2-16.4 0-22.6s-16.4-6.2-22.6 0L432 345.4l-36.7-36.7c-6.2-6.2-16.4-6.2-22.6 0s-6.2 16.4 0 22.6l36.7 36.7l-36.7 36.7c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l36.7-36.7l36.7 36.7c6.2 6.2 16.4 6.2 22.6 0s6.2-16.4 0-22.6L454.6 368z"
         /></svg
       ></button
     >
   </div>
-  <div class="challenges-list" transition:slide>
+  <div class="challenges-list" transition:slide={{ duration: 1000 }}>
     {#if challengeListCopy.length === 0}
-      <h1 transition:slide>¡Todavía no hay retos en esta dificultad!</h1>
+      <h1 transition:slide={{ duration: 1000 }}>
+        ¡Todavía no hay retos en esta dificultad!
+      </h1>
     {:else}
       {#each challengeListCopy as item}
-        <div transition:slide class="challenge-card">
-          <div class="corner-dot-container">
-            <div class="corner-dot {item.level}" />
+        <a href={item.link} target="_blank" class="challenge-link">
+          <div transition:slide={{ duration: 1000 }} class="challenge-card">
+            <div class="corner-dot-container">
+              <div class="corner-dot {item.level}" />
+            </div>
+            <div class="challenge-card-body">
+              <img
+                class="challenge-image"
+                src={logo.src}
+                alt="Reto de programación"
+              />
+              <h2>{item.title}</h2>
+              <p>Nivel: {levels[item.level]}</p>
+              <p>Ir al reto</p>
+            </div>
           </div>
-          <div class="challenge-card-body">
-            <img
-              class="challenge-image"
-              src={logo.src}
-              alt="Reto de programación"
-            />
-            <h2>{item.title}</h2>
-            <p>Nivel: {levels[item.level]}</p>
-            <a href={item.link} target="_blank" class="challenge-link">
-              Ir al reto
-            </a>
-          </div>
-        </div>
+        </a>
       {/each}
     {/if}
   </div>
@@ -109,7 +111,7 @@
     height: auto;
     justify-content: flex-start;
     gap: 35px;
-    padding-top: 25px;
+    padding: 25px 0 25px 0;
   }
 
   .challenges-content {
@@ -126,7 +128,7 @@
     background-color: rgb(9 12 38 / 41%);
     padding: 20px;
     width: 210px;
-    height: 260px;
+    height: 285px;
     border-radius: 15px;
   }
 
@@ -167,6 +169,7 @@
 
   .challenge-link {
     color: #fff;
+    text-decoration: none;
   }
 
   .corner-dot {
@@ -184,7 +187,7 @@
   .filter-clear-btn {
     background: transparent;
     border: none;
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
   }
 
