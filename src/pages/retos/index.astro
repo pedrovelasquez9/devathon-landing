@@ -1,33 +1,16 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import Challenges from "../../components/svelte/Challenges/index.svelte";
+import {challengeList} from "../../data/challenges";
 import "./styles.css";
+
 ---
 
 <Layout title="Retos de programación">
   <main>
     <section class="main-section">
-      <h1>👨‍💻 Retos de programación</h1>
-      <div class="description-container">
-        <h3>
-          Las habilidades se obtienen con la experiencia práctica, es por ello
-          que tenemos una sección en nuestro servidor de <a
-            href="https://discord.gg/programacion-es">Discord</a
-          > dedicada a retos de programación.
-        </h3>
-        <img src="/img/Group-Chat-color.svg" alt="retos de programación" />
-      </div>
-      <div class="description-container">
-        <img src="/img/undraw_programming.svg" alt="retos de programación" />
-        <h3>
-          Los retos se publican cada 15 días en el foro de <a
-            href="https://discord.gg/programacion-es">Discord</a
-          > y las soluciones de la comunidad se publicarán en <a
-            href="https://github.com/pedrovelasquez9/retos-de-programacion"
-            >este repositorio de GitHub</a
-          > siguiendo las instrucciones.
-        </h3>
-      </div>
-      <div></div>
+      <h1 class="challenges-page-title">👨‍💻 Retos de programación</h1>
+      <Challenges challengesList={challengeList} client:load />
     </section>
   </main>
 </Layout>
