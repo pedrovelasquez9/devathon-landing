@@ -1,6 +1,6 @@
 <script>
   import { slide } from "svelte/transition";
-
+  import logo from "../assets/PEE_logo.png";
   export let challengesList = [];
   let challengeListCopy = structuredClone(challengesList);
   const levels = {
@@ -82,7 +82,7 @@
           <div class="challenge-card-body">
             <img
               class="challenge-image"
-              src="PEE_logo.png"
+              src={logo.src}
               alt="Reto de programación"
             />
             <h2>{item.title}</h2>
