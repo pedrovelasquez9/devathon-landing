@@ -236,7 +236,8 @@
   }
 
   @media (max-width: 537px) {
-    .challenge-card {
+    .challenge-card,
+    .challenge-link {
       width: 100%;
     }
   }
