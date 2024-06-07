@@ -34,8 +34,8 @@
 }
 
 .youtube-sub-link {
-  background-color: #ff0000;
-  color: #fff;
+  color: red;
+  font-weight: bold;
   padding: 10px;
   border-radius: 10px;
 }
