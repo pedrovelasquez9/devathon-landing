@@ -239,6 +239,7 @@
     .challenge-card,
     .challenge-link {
       width: 100%;
+      min-width: 244px;
     }
   }
 </style>
