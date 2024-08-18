@@ -23,4 +23,11 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  min-width: 310px;
+}
+
+@media (max-width: 430px) {
+  .container section {
+    padding: 10px;
+  }
 }
