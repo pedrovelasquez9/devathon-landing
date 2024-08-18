@@ -4,6 +4,7 @@ import AnimatedTitle from "../../components/astro/AnimatedTitle/index.astro";
 import "./styles.css";
 import ResourcesList from "../../components/astro/ResourcesList/index.astro";
 import { webResources } from "../../data/web-resources";
+import WebResources from "../../components/svelte/WebResources/index.svelte";
 
 ---
 
@@ -12,7 +13,10 @@ import { webResources } from "../../data/web-resources";
     <div class="container">
       <section>
         <AnimatedTitle color="blue" text="Recursos para aprender y practicar programación" />
-        <ResourcesList resourcesItemList={webResources} />
+        <!-- <ResourcesList resourcesItemList={webResources} /> -->
+        <WebResources client:load resourceList={webResources}>
+          <AnimatedTitle slot="animated-title" color="blue" text=">" />
+        </WebResources>
       </section>
     </div>
   </main>

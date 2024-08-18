@@ -115,7 +115,7 @@ export const webResources: Resources[] = [
         }, {
             title: "Editor markdown online",
             link: "https://readme.so/"
-        },{
+        }, {
             title: "Patrones de diseño en español",
             link: "https://refactoring.guru/es/design-patterns"
         }, {
