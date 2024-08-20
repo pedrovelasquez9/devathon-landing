@@ -1,0 +1,173 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "./styles.css";
+import TeamExpandableCard from "../../components/astro/TeamExpandableCard/index.astro";
+import JudgeCard from "../../components/astro/JudgeCard/index.astro";
+import { devathonData } from "../../data/devathon-vii-edition";
+import type {
+  Judge,
+  Team,
+  TeamMember,
+  DevathonMenthor,
+} from "../../interfaces/DevathonVIEdition.interface";
+
+const { teams, judges, menthors } = devathonData;
+---
+
+<Layout title="Devathon: VII edición">
+  <main class="devathon-edition-main-container">
+    <section class="edition-main-section">
+      <h1>Devathon: VII edición</h1>
+      <div class="teams-container">
+        {
+          teams.map((teamData: Team): Object => {
+            const {
+              name,
+              id,
+              isWinner,
+              isRetired,
+              project,
+              frontendRepo,
+              backendRepo,
+              members,
+            } = teamData;
+            return (
+              <section class="team-detail-card">
+                <h2>Equipo {id}</h2>
+                <p>Proyecto: {project}</p>
+                <p>Integrantes:</p>
+                <ul class="team-member-list">
+                  {members?.map((member: TeamMember) => {
+                    return (
+                      <li>
+                        <img
+                          class="team-avatar"
+                          src={member.img}
+                          alt={member.name}
+                        />
+                        <p>
+                          <a href={member.linkedin}>{member.name}</a>
+                        </p>
+                      </li>
+                    );
+                  })}
+                </ul>
+                <p>Repositorios:</p>
+                <ul>
+                  <li>
+                    <a href={frontendRepo} target="_blank">
+                      Frontend
+                    </a>
+                  </li>
+                  <li>
+                    <a href={backendRepo} target="_blank">
+                      Backend
+                    </a>
+                  </li>
+                </ul>
+              </section>
+            );
+          })
+        }
+      </div>
+    </section>
+    <section class="menthors-container">
+      <h1>Mentores de esta edición</h1>
+      <p>
+        En esta edición, participaron desarrolladores Sr. de forma voluntaria
+        con el rol de mentores para poder ayudar a los equipos con dudas y
+        bloqueos técnicos, mi total agradecimiento y mención honorífica a los
+        mentores que estuvieron presentes, atentos y siempre con buena vibra y
+        disposición a ayudar a los equipos en el servidor de Discord:
+      </p>
+      <ul class="menthor-list">
+        {
+          menthors.map((menthor: DevathonMenthor) => {
+            return (
+              <li>
+                <img class="team-avatar" src={menthor.img} alt={menthor.name} />
+                <p>
+                  <a href={menthor.linkedin}>{menthor.name}</a>
+                </p>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </section>
+
+    <section class="edition-main-section">
+      <h1>Jueces de esta edición</h1>
+      <div class="sponsor-container">
+        {
+          judges.map((judge: Judge): Object => {
+            const { name, networks, project, img } = judge;
+            return (
+              <JudgeCard
+                name={name}
+                networks={networks}
+                project={project}
+                img={img}
+              />
+            );
+          })
+        }
+      </div>
+    </section>
+    <section class="event-info-section">
+      <h1>Acerca del evento</h1>
+      <div class="event-info-container">
+        <section class="evaluation-criteria">
+          <h1>✍ Criterios de evaluación</h1>
+          <ul>
+            <li>
+              ✅ Uso y gestión del repositorio: se evalúa el uso de git flow,
+              revisión de PRs y mantenimiento de ramas principales, nomenclatura
+              y buenas prácticas en general al trabajar con repositorios usando
+              git y github.
+            </li>
+            <li>
+              ✅ Nivel funcional del proyecto: se evalúa la cantidad de
+              funcionalidades estables del proyecto final con respecto a su
+              concepción/propuesta inicial.
+            </li>
+            <li>
+              ✅ Nivel visual del proyecto: se evalúan aspectos visuales, UI en
+              general, combinación de colores, ortografía, proporciones de
+              secciones, uso del espacio en la web, etc.
+            </li>
+            <li>
+              ✅ Nivel de accesibilidad del proyecto: se evalúan características
+              de UX y accesibilidad como legibilidad del contenido, combinación
+              de colores, uso de formularios, facilidad de uso del proyecto,
+              etc.
+            </li>
+            <li>
+              ✅ Nivel técnico del proyecto: en la review final, el sponsor
+              podrá hacer preguntas de nivel técnico en cuanto a las
+              consideraciones y stack usados por cada equipo para realizar su
+              evaluación particular.
+            </li>
+            <li>
+              ✅ Documentación del proyecto: documentación básica del proyecto
+              (cómo levantarlo en local, dependencias y consideraciones que
+              apliquen), diseño técnico con diagrama de flujo y acuerdo de
+              interfaz con swagger, postman, etc.
+            </li>
+            <li>
+              ✅ Modelado de entidades (BD): se podrá preguntar y revisar el
+              modelo de la BD del proyecto en la review final para ver cómo se
+              han estructurado las relaciones, se evaluará también el uso y
+              cuidado de estándares, nomenclatura, bitácora, etc.
+            </li>
+            <li>
+              ✅ Integración de proyecto y equipos: integración de front y back,
+              comunicación de ambas partes del equipo para esta integración y
+              funcionamiento de la app integrada.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+</Layout>

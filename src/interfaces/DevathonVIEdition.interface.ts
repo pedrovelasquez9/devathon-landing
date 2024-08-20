@@ -3,6 +3,22 @@ export interface Team {
     name: string;
     isWinner: boolean;
     isRetired: boolean;
+    project?: string;
+    frontendRepo?: string;
+    backendRepo?: string;
+    members?: TeamMember[];
+}
+
+export interface TeamMember {
+    name: string;
+    img: string;
+    linkedin: string;
+}
+
+export interface DevathonMenthor {
+    name: string;
+    img: string;
+    linkedin: string;
 }
 
 export interface Network {
@@ -22,4 +38,5 @@ export interface DevathonVIEditionData {
     devathon_edition: number;
     teams: Team[];
     judges: Judge[];
+    mehtors: DevathonMenthor[];
 }
