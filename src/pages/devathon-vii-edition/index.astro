@@ -38,18 +38,20 @@ const { teams, judges, menthors } = devathonData;
                 <p>Integrantes:</p>
                 <ul class="team-member-list">
                   {members?.map((member: TeamMember) => {
-                    return (
-                      <li>
-                        <img
-                          class="team-avatar"
-                          src={member.img}
-                          alt={member.name}
-                        />
-                        <p>
-                          <a href={member.linkedin}>{member.name}</a>
-                        </p>
-                      </li>
-                    );
+                    if (member.name) {
+                      return (
+                        <li>
+                          <img
+                            class="team-avatar"
+                            src={member.img}
+                            alt={member.name}
+                          />
+                          <p>
+                            <a href={member.linkedin}>{member.name}</a>
+                          </p>
+                        </li>
+                      );
+                    }
                   })}
                 </ul>
                 <p>Repositorios:</p>
@@ -71,8 +73,8 @@ const { teams, judges, menthors } = devathonData;
         }
       </div>
     </section>
+    <h1>Mentores de esta edición</h1>
     <section class="menthors-container">
-      <h1>Mentores de esta edición</h1>
       <p>
         En esta edición, participaron desarrolladores Sr. de forma voluntaria
         con el rol de mentores para poder ayudar a los equipos con dudas y
@@ -118,7 +120,7 @@ const { teams, judges, menthors } = devathonData;
       <h1>Acerca del evento</h1>
       <div class="event-info-container">
         <section class="evaluation-criteria">
-          <h1>✍ Criterios de evaluación</h1>
+          <h2>✍ Criterios de evaluación</h2>
           <ul>
             <li>
               ✅ Uso y gestión del repositorio: se evalúa el uso de git flow,
