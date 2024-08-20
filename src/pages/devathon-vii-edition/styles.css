@@ -1,6 +1,10 @@
 a {
   color: #fff;
 }
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
 
 .teams-container {
   display: flex;
@@ -14,8 +18,8 @@ a {
 }
 
 .team-avatar {
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
 }
 
@@ -147,12 +151,6 @@ a {
   background: rgba(0, 0, 0, 0.2);
   text-align: left;
   align-items: flex-start;
-}
-
-.event-description h2,
-.evaluation-criteria h2 {
-  font-size: 1rem;
-  font-weight: bold;
 }
 
 @media (max-width: 1024px) {
