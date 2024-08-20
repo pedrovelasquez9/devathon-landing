@@ -8,7 +8,7 @@ export const links: LinkItem[] = [
   { name: "Redes", href: "/redes" },
   { name: "Recursos", href: "/recursos" },
   { name: "Devathon", href: "/devathon" },
-  { name: "VI edición del Devathon", href: "/devathon-vi-edition" },
+  // { name: "VII edición del Devathon", href: "/devathon-vii-edition" },
   { name: "Retos de programación", href: "/retos" },
   { name: "Jugar a Órbita", href: "/orbita" }
 ];
