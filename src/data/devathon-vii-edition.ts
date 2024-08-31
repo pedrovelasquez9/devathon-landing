@@ -4,7 +4,7 @@ export const devathonData = {
         {
             "id": "1",
             "name": "EQUIPO 1",
-            "isWinner": false,
+            "isWinner": true,
             "isRetired": false,
             "project": "Foro de discusión online",
             "frontendRepo": "https://github.com/Dialosoft/frontend",
@@ -15,9 +15,9 @@ export const devathonData = {
                 "linkedin": "https://www.linkedin.com/in/alexander-rios-8a03b820b/"
             },
             {
-                "name": "Zzz",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
+                "name": "Aliester",
+                "img": "/img/ed7-team1/aliester.webp",
+                "linkedin": "https://www.linkedin.com/in/alejandro-salvatierra-0651a2222/"
             },
             {
                 "name": "Alejandro",
@@ -25,19 +25,19 @@ export const devathonData = {
                 "linkedin": "https://www.linkedin.com/in/js-alejandro"
             },
             {
-                "name": "Columbo",
+                "name": "Busta",
                 "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
+                "linkedin": "https://www.linkedin.com/in/josuebusta/"
             },
             {
-                "name": "Aleister",
+                "name": "Flavio",
                 "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
+                "linkedin": "https://www.linkedin.com/in/flavioramses"
             },
             {
                 "name": "Matdev",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
+                "img": "/img/ed7-team1/matdev.webp",
+                "linkedin": "https://www.linkedin.com/in/mateogarciag/"
             }]
         },
         {
@@ -50,31 +50,26 @@ export const devathonData = {
             "backendRepo": "https://github.com/ScanDaLouS47/devathon-backend",
             "members": [{
                 "name": "Joselu",
-                "img": "/img/devathon-avatar.webp",
+                "img": "/img/ed7-team2/joselu.webp",
                 "linkedin": "https://www.linkedin.com/in/j0selu/"
             },
             {
-                "name": "Scandalous",
-                "img": "/img/devathon-avatar.webp",
+                "name": "Maico Beas",
+                "img": "/img/ed7-team2/maico.webp",
                 "linkedin": "https://www.linkedin.com/in/maico-beas-developer/"
             },
             {
                 "name": "Jose",
-                "img": "/img/devathon-avatar.webp",
+                "img": "/img/ed7-team2/jose.webp",
                 "linkedin": "https://www.linkedin.com/in/jose-luis-garc%C3%ADa-pelayo"
             },
             {
                 "name": "Marcos",
-                "img": "/img/devathon-avatar.webp",
+                "img": "/img/ed7-team2/marcos.webp",
                 "linkedin": "https://www.linkedin.com/in/mlt93/"
             },
             {
                 "name": "MrWilly",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
-            },
-            {
-                "name": "SirJulian",
                 "img": "/img/devathon-avatar.webp",
                 "linkedin": ""
             }]
@@ -89,7 +84,7 @@ export const devathonData = {
             "backendRepo": "https://github.com/StefanoIG/Devathon",
             "members": [{
                 "name": "Stefano",
-                "img": "/img/devathon-avatar.webp",
+                "img": "/img/ed7-team3/stefano.webp",
                 "linkedin": "https://www.linkedin.com/in/stefano-aguilar-a3219931a/"
             },
             {
@@ -101,21 +96,6 @@ export const devathonData = {
                 "name": "Andrés",
                 "img": "/img/devathon-avatar.webp",
                 "linkedin": "https://www.linkedin.com/in/andresito87/"
-            },
-            {
-                "name": "",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
-            },
-            {
-                "name": "",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
-            },
-            {
-                "name": "",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
             }]
         },
         {
@@ -128,7 +108,7 @@ export const devathonData = {
             "backendRepo": "https://github.com/Deva-Coders/inventario-backend",
             "members": [{
                 "name": "MiguelDecode",
-                "img": "/img/devathon-avatar.webp",
+                "img": "/img/ed7-team4/miguel.webp",
                 "linkedin": "https://www.linkedin.com/in/miguel-lema-garc%C3%ADa/"
             },
             {
@@ -142,19 +122,13 @@ export const devathonData = {
                 "linkedin": "https://www.linkedin.com/in/mario-quinteros-a47372171/"
             },
             {
-                "name": "DevFicho",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
-            },
-            {
-                "name": "",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
-            },
-            {
-                "name": "",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
+                "name": "DevCrash",
+                "img": "/img/ed7-team4/devcrash.webp",
+                "linkedin": "https://linkedin.com/in/fichovis/"
+            }, {
+                "name": "Alejandro",
+                "img": "/img/ed7-team4/alejandro.webp",
+                "linkedin": "https://www.linkedin.com/in/alejandro-ra-dev/"
             }]
         },
         {
@@ -167,33 +141,28 @@ export const devathonData = {
             "backendRepo": "https://github.com/asmel2020/back-end-devathon",
             "members": [{
                 "name": "ComikSama",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
+                "img": "/img/ed7-team5/comiksama.webp",
+                "linkedin": "https://www.linkedin.com/in/christian-tapia-araya"
             },
             {
                 "name": "jom3",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
+                "img": "/img/ed7-team5/jom3.webp",
+                "linkedin": "https://www.linkedin.com/in/joams-mogro-gomez-442691103/"
             },
             {
                 "name": "mohtadi",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
+                "img": "/img/ed7-team5/mohtadi.webp",
+                "linkedin": "https://www.linkedin.com/in/tedy-bakali-05593130/"
             },
             {
                 "name": "wjmmk",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
+                "img": "/img/ed7-team5/william.webp",
+                "linkedin": "https://www.linkedin.com/in/william~mosquera/"
             },
             {
-                "name": "",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
-            },
-            {
-                "name": "",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
+                "name": "Eublan",
+                "img": "/img/ed7-team5/eublan.webp",
+                "linkedin": "https://www.linkedin.com/in/eublan-mata/"
             }]
         },
         {
@@ -204,36 +173,22 @@ export const devathonData = {
             "project": "Sistema de reserva de espacios (cowork)",
             "frontendRepo": "https://github.com/Team6-ED7/frontend",
             "backendRepo": "https://github.com/Team6-ED7/backend",
-            "members": [{
-                "name": "Jhon",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": "https://www.linkedin.com/in/jhonwil/"
-            },
-            {
-                "name": "Luis",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": "https://www.linkedin.com/in/appbraham/"
-            },
-            {
-                "name": "Jhoandris",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": "https://www.linkedin.com/in/jhoandris-baron/"
-            },
-            {
-                "name": "Juan",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": "https://www.linkedin.com/in/juan-manuel-acosta-benitez/"
-            },
-            {
-                "name": "Diego",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": "https://www.linkedin.com/in/diego-avendaño-51828830b"
-            },
-            {
-                "name": "Alex",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": "https://www.linkedin.com/in/alex-velasquez08/"
-            }]
+            "members": [
+                {
+                    "name": "Luis",
+                    "img": "/img/ed7-team6/luis.webp",
+                    "linkedin": "https://www.linkedin.com/in/appbraham/"
+                },
+                {
+                    "name": "Jhoandris",
+                    "img": "/img/ed7-team6/jhoandris.webp",
+                    "linkedin": "https://www.linkedin.com/in/jhoandris-baron/"
+                },
+                {
+                    "name": "Alex",
+                    "img": "/img/ed7-team6/alex.webp",
+                    "linkedin": "https://www.linkedin.com/in/alex-velasquez08/"
+                }]
         },
         {
             "id": "7",
@@ -245,33 +200,23 @@ export const devathonData = {
             "backendRepo": "https://github.com/devathon-ed7/backend",
             "members": [{
                 "name": "Luis",
-                "img": "/img/devathon-avatar.webp",
+                "img": "/img/ed7-team7/luised.webp",
                 "linkedin": "https://www.linkedin.com/in/luiseduardoocegueda"
             },
             {
                 "name": "Bolivar",
-                "img": "/img/devathon-avatar.webp",
+                "img": "/img/ed7-team7/bolivar.webp",
                 "linkedin": "https://www.linkedin.com/in/bolivar-delgado-5522b0108/"
             },
             {
                 "name": "Raydberg",
-                "img": "/img/devathon-avatar.webp",
+                "img": "/img/ed7-team7/raidberg.webp",
                 "linkedin": "https://www.linkedin.com/in/raydbergchuquival"
             },
             {
                 "name": "Lésther",
                 "img": "/img/devathon-avatar.webp",
                 "linkedin": "https://www.linkedin.com/in/lésther-josué-gonzález-aguilar-7bb470178"
-            },
-            {
-                "name": "",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
-            },
-            {
-                "name": "",
-                "img": "/img/devathon-avatar.webp",
-                "linkedin": ""
             }]
         }
     ],

@@ -153,6 +153,21 @@ h1 {
   align-items: flex-start;
 }
 
+.medal-btn {
+  width: 80px;
+  filter: none;
+}
+
+.repository-title {
+  text-align: center;
+}
+
+.repository-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @media (max-width: 1024px) {
   .event-description,
   .evaluation-criteria {
@@ -178,5 +193,12 @@ h1 {
 
   .team-detail-card {
     width: 100%;
+  }
+
+  .repository-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
   }
 }
