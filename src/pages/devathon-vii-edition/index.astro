@@ -1,7 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import "./styles.css";
-import TeamExpandableCard from "../../components/astro/TeamExpandableCard/index.astro";
 import JudgeCard from "../../components/astro/JudgeCard/index.astro";
 import { devathonData } from "../../data/devathon-vii-edition";
 import type {
@@ -54,8 +53,8 @@ const { teams, judges, menthors } = devathonData;
                     }
                   })}
                 </ul>
-                <p>Repositorios:</p>
-                <ul>
+                <h2 class="repository-title">Repositorios</h2>
+                <ul class="repository-list">
                   <li>
                     <a href={frontendRepo} target="_blank">
                       Frontend
@@ -66,6 +65,18 @@ const { teams, judges, menthors } = devathonData;
                       Backend
                     </a>
                   </li>
+                  {isWinner ? (
+                    <li>
+                      <img
+                        src="/img/devathon-medal.png"
+                        class="medal-btn"
+                        alt="Equipo ganador"
+                        id={id}
+                      />
+                    </li>
+                  ) : (
+                    ""
+                  )}
                 </ul>
               </section>
             );
