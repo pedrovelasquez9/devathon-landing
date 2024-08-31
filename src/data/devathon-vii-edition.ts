@@ -137,8 +137,8 @@ export const devathonData = {
             "isWinner": false,
             "isRetired": false,
             "project": "Sistema de reserva de espacios (cine)",
-            "frontendRepo": "https://github.com/asmel2020/front-end-devathon",
-            "backendRepo": "https://github.com/asmel2020/back-end-devathon",
+            "frontendRepo": "https://github.com/jom3/front-end-devathon.git",
+            "backendRepo": "https://github.com/jom3/back-end-devathon.git",
             "members": [{
                 "name": "ComikSama",
                 "img": "/img/ed7-team5/comiksama.webp",
