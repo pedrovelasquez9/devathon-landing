@@ -48,5 +48,11 @@ export const challengeList: Challenge[] = [
         title: "Calculadora de estadísticas",
         level: "medium",
         link: "https://github.com/pedrovelasquez9/retos-de-programacion/blob/main/retos/Reto-8/enunciado.md"
+    },
+    {
+        id: 9,
+        title: "Contador de promedio de vocales",
+        level: "easy",
+        link: "https://github.com/pedrovelasquez9/retos-de-programacion/blob/main/retos/Reto-9/enunciado.md"
     }
 ];
