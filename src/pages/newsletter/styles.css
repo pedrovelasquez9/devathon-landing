@@ -1,0 +1,9 @@
+section {
+  justify-items: center;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 620px;
+}
