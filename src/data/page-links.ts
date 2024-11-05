@@ -5,6 +5,10 @@ export const links: LinkItem[] = [
     name: "Inicio",
     href: "/",
   },
+  {
+    name: "Newsletter",
+    href: "/newsletter",
+  },
   { name: "Redes", href: "/redes" },
   { name: "Recursos", href: "/recursos" },
   { name: "Devathon", href: "/devathon" },
