@@ -7,3 +7,11 @@ h1 {
   word-wrap: break-word;
   max-width: 620px;
 }
+.policies {
+  text-align: center;
+}
+
+.policies a {
+  color: #fff;
+  font-weight: bold;
+}
