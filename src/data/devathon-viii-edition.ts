@@ -1,14 +1,14 @@
 export const devathonData = {
-	devathon_edition: 7,
+	devathon_edition: 8,
 	teams: [
 		{
 			id: "1",
 			name: "EQUIPO 1",
-			isWinner: true,
-			isRetired: true,
-			project: "Foro de discusión online",
-			frontendRepo: "https://github.com/Dialosoft/frontend",
-			backendRepo: "https://github.com/Dialosoft/backend",
+			isWinner: false,
+			isRetired: false,
+			project: "Dashboard navideño",
+			frontendRepo: "https://github.com/alejandroluisacosta/devathon-8-frontend",
+			backendRepo: "https://github.com/jvngarcia/devathon-8-backend",
 			members: [
 				{
 					name: "Joselu",
@@ -48,35 +48,20 @@ export const devathonData = {
 			name: "EQUIPO 2",
 			isWinner: false,
 			isRetired: false,
-			project: "Sistema de reserva de espacios (restaurante)",
+			project: "Dashboard navideño",
 			frontendRepo: "https://github.com/ScanDaLouS47/devathon-frontend",
-			backendRepo: "https://github.com/ScanDaLouS47/devathon-backend",
+			backendRepo: "https://github.com/DiegoVega87/santas-dashboard-backend.git",
 			members: [
 				{
-					name: "Joselu",
-					img: "/img/ed7-team2/joselu.webp",
-					linkedin: "https://www.linkedin.com/in/j0selu/",
-				},
-				{
-					name: "Maico Beas",
-					img: "/img/ed7-team2/maico.webp",
-					linkedin: "https://www.linkedin.com/in/maico-beas-developer/",
-				},
-				{
-					name: "Jose",
-					img: "/img/ed7-team2/jose.webp",
-					linkedin: "https://www.linkedin.com/in/jose-luis-garc%C3%ADa-pelayo",
-				},
-				{
-					name: "Marcos",
-					img: "/img/ed7-team2/marcos.webp",
-					linkedin: "https://www.linkedin.com/in/mlt93/",
-				},
-				{
-					name: "MrWilly",
+					name: "DevDiego",
 					img: "/img/devathon-avatar.webp",
-					linkedin: "",
+					linkedin: "www.linkedin.com/in/diegovega87",
 				},
+				{
+					name: "Juancho",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "www.linkedin.com/in/juan-josé-sierra-ortega-869012207",
+				}
 			],
 		},
 		{
@@ -84,24 +69,39 @@ export const devathonData = {
 			name: "EQUIPO 3",
 			isWinner: false,
 			isRetired: false,
-			project: "Sistema de reserva de espacios (restaurante)",
-			frontendRepo: "https://github.com/StefanoIG/Devathon-Front",
-			backendRepo: "https://github.com/StefanoIG/Devathon",
+			project: "Dashboard navideño",
+			frontendRepo: "https://github.com/TEAM3-ED8/front-end",
+			backendRepo: "https://github.com/TEAM3-ED8/back-end",
 			members: [
 				{
-					name: "Stefano",
-					img: "/img/ed7-team3/stefano.webp",
-					linkedin: "https://www.linkedin.com/in/stefano-aguilar-a3219931a/",
+					name: "Emmanuel Van Dick",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "",
 				},
 				{
-					name: "JorgeRicardo",
+					name: "Luis Eduardo Ocegueda Cortés",
 					img: "/img/devathon-avatar.webp",
-					linkedin: "https://www.linkedin.com/in/jorgericardo1/",
+					linkedin: "",
 				},
 				{
-					name: "Andrés",
+					name: "Roberto J. Vargas",
 					img: "/img/devathon-avatar.webp",
-					linkedin: "https://www.linkedin.com/in/andresito87/",
+					linkedin: "https://www.linkedin.com/in/roberto-j-vargas-d-69631159/",
+				},
+				{
+					name: "Máximo de Jesús Estrada Vigil",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "https://www.linkedin.com/in/maximoev",
+				},
+				{
+					name: "Raydberg Gabriel Chuquival Gil",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "https://www.linkedin.com/in/raydbergchuquival",
+				},
+				{
+					name: "Pedro Purihuaman Purihuaman",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "",
 				},
 			],
 		},
@@ -110,35 +110,20 @@ export const devathonData = {
 			name: "EQUIPO 4",
 			isWinner: false,
 			isRetired: false,
-			project: "Sistema de inventario",
-			frontendRepo: "https://github.com/Deva-Coders/inventario-frontend",
-			backendRepo: "https://github.com/Deva-Coders/inventario-backend",
+			project: "Dashboard navideño",
+			frontendRepo: "https://github.com/Devathon2024-Equipo4/frontend",
+			backendRepo: "https://github.com/Devathon2024-Equipo4/backend",
 			members: [
 				{
-					name: "MiguelDecode",
-					img: "/img/ed7-team4/miguel.webp",
-					linkedin: "https://www.linkedin.com/in/miguel-lema-garc%C3%ADa/",
-				},
-				{
-					name: "Valderrama",
+					name: "Bolívar Delgado",
 					img: "/img/devathon-avatar.webp",
-					linkedin: "https://www.linkedin.com/in/ismael-valderrama-67933b17",
+					linkedin: "https://www.linkedin.com/in/bolivar-delgado-5522b0108/",
 				},
 				{
-					name: "DarkMario",
+					name: "Fernando Juárez",
 					img: "/img/devathon-avatar.webp",
-					linkedin: "https://www.linkedin.com/in/mario-quinteros-a47372171/",
-				},
-				{
-					name: "DevCrash",
-					img: "/img/ed7-team4/devcrash.webp",
-					linkedin: "https://linkedin.com/in/fichovis/",
-				},
-				{
-					name: "Alejandro",
-					img: "/img/ed7-team4/alejandro.webp",
-					linkedin: "https://www.linkedin.com/in/alejandro-ra-dev/",
-				},
+					linkedin: "https://www.linkedin.com/in/fernando-juarez-baca/",
+				}
 			],
 		},
 		{
@@ -146,93 +131,10 @@ export const devathonData = {
 			name: "EQUIPO 5",
 			isWinner: false,
 			isRetired: false,
-			project: "Sistema de reserva de espacios (cine)",
-			frontendRepo: "https://github.com/jom3/front-end-devathon.git",
-			backendRepo: "https://github.com/jom3/back-end-devathon.git",
+			project: "Dashboard navideño",
+			frontendRepo: "https://github.com/Devathon-TEAM5-ED8/santa-dashboard",
+			backendRepo: "https://github.com/Devathon-TEAM5-ED8/santa-dashboard_backend",
 			members: [
-				{
-					name: "ComikSama",
-					img: "/img/ed7-team5/comiksama.webp",
-					linkedin: "https://www.linkedin.com/in/christian-tapia-araya",
-				},
-				{
-					name: "jom3",
-					img: "/img/ed7-team5/jom3.webp",
-					linkedin: "https://www.linkedin.com/in/joams-mogro-gomez-442691103/",
-				},
-				{
-					name: "mohtadi",
-					img: "/img/ed7-team5/mohtadi.webp",
-					linkedin: "https://www.linkedin.com/in/tedy-bakali-05593130/",
-				},
-				{
-					name: "wjmmk",
-					img: "/img/ed7-team5/william.webp",
-					linkedin: "https://www.linkedin.com/in/william~mosquera/",
-				},
-				{
-					name: "Eublan",
-					img: "/img/ed7-team5/eublan.webp",
-					linkedin: "https://www.linkedin.com/in/eublan-mata/",
-				},
-			],
-		},
-		{
-			id: "6",
-			name: "EQUIPO 6",
-			isWinner: false,
-			isRetired: false,
-			project: "Sistema de reserva de espacios (cowork)",
-			frontendRepo: "https://github.com/Team6-ED7/frontend",
-			backendRepo: "https://github.com/Team6-ED7/backend",
-			members: [
-				{
-					name: "Luis",
-					img: "/img/ed7-team6/luis.webp",
-					linkedin: "https://www.linkedin.com/in/appbraham/",
-				},
-				{
-					name: "Jhoandris",
-					img: "/img/ed7-team6/jhoandris.webp",
-					linkedin: "https://www.linkedin.com/in/jhoandris-baron/",
-				},
-				{
-					name: "Alex",
-					img: "/img/ed7-team6/alex.webp",
-					linkedin: "https://www.linkedin.com/in/alex-velasquez08/",
-				},
-			],
-		},
-		{
-			id: "7",
-			name: "EQUIPO 7",
-			isWinner: false,
-			isRetired: false,
-			project: "Sistema de inventario",
-			frontendRepo: "https://github.com/devathon-ed7/FrontEndV2",
-			backendRepo: "https://github.com/devathon-ed7/backend",
-			members: [
-				{
-					name: "Luis",
-					img: "/img/ed7-team7/luised.webp",
-					linkedin: "https://www.linkedin.com/in/luiseduardoocegueda",
-				},
-				{
-					name: "Bolivar",
-					img: "/img/ed7-team7/bolivar.webp",
-					linkedin: "https://www.linkedin.com/in/bolivar-delgado-5522b0108/",
-				},
-				{
-					name: "Raydberg",
-					img: "/img/ed7-team7/raidberg.webp",
-					linkedin: "https://www.linkedin.com/in/raydbergchuquival",
-				},
-				{
-					name: "Lésther",
-					img: "/img/devathon-avatar.webp",
-					linkedin:
-						"https://www.linkedin.com/in/lésther-josué-gonzález-aguilar-7bb470178",
-				},
 			],
 		},
 	],
@@ -270,41 +172,37 @@ export const devathonData = {
 	],
 	judges: [
 		{
-			name: "Luisina de Paula",
-			project: "TodoCode",
-			img: "luisina.webp",
-			networks: [
-				{
-					name: "linkedin",
-					link: "https://www.linkedin.com/in/luisinaadp",
-					icon: "linkedin.png",
-				},
-				{
-					name: "YouTube",
-					link: "https://www.youtube.com/@TodoCode",
-					icon: "youtube.png",
-				},
-				{
-					name: "Twitch",
-					link: "https://www.twitch.tv/todocode",
-					icon: "twitch.png",
-				},
-				{
-					name: "Instagram",
-					link: "https://www.instagram.com/todo_code/",
-					icon: "instagram.png",
-				},
-				{
-					name: "X",
-					link: "https://twitter.com/todo_code",
-					icon: "x.png",
-				},
-				{
-					name: "TikTok",
-					link: "https://www.tiktok.com/@todocode",
-					icon: "tiktok.png",
-				},
-			],
+			"name": "Carlos Belenguer",
+			"project": "MelenitasDev",
+			"img": "melenitas.webp",
+			"networks": [{
+				"name": "linkedin",
+				"link": "https://www.linkedin.com/in/carlos-belenguer-jover/",
+				"icon": "linkedin.png"
+			}, {
+				"name": "YouTube",
+				"link": "https://www.youtube.com/@MelenitasDev",
+				"icon": "youtube.png"
+			},
+			{
+				"name": "Twitch",
+				"link": "https://www.twitch.tv/melenitasdev",
+				"icon": "twitch.png"
+			},
+			{
+				"name": "Instagram",
+				"link": "https://www.instagram.com/melenitasdev/",
+				"icon": "instagram.png"
+			},
+			{
+				"name": "X",
+				"link": "https://twitter.com/MelenitasDev",
+				"icon": "x.png"
+			}, {
+				"name": "TikTok",
+				"link": "https://www.tiktok.com/@melenitasdev",
+				"icon": "tiktok.png"
+			}]
 		},
 		{
 			name: "Arturo Zarzalejo",
@@ -381,63 +279,59 @@ export const devathonData = {
 			],
 		},
 		{
-			name: "Carlos Gauto",
-			project: "Charly Automatiza",
-			img: "charly.webp",
+			name: "Isaac Pavón",
+			project: "Altaskur",
+			img: "altaskur.webp",
 			networks: [
 				{
 					name: "linkedin",
-					link: "https://www.linkedin.com/in/gautocarlos",
+					link: "https://www.linkedin.com/in/isaac-juli%C3%A1n/",
 					icon: "linkedin.png",
 				},
 				{
 					name: "YouTube",
-					link: "https://www.youtube.com/@CharlyAutomatiza",
+					link: "https://www.youtube.com/@altaskur",
 					icon: "youtube.png",
 				},
 				{
 					name: "Twitch",
-					link: "https://www.twitch.tv/charlyautomatiza",
+					link: "https://www.twitch.tv/altaskur",
 					icon: "twitch.png",
 				},
 				{
 					name: "Instagram",
-					link: "https://www.instagram.com/charlyautomatiza/",
+					link: "https://www.instagram.com/altaskur",
 					icon: "instagram.png",
 				},
 				{
 					name: "X",
-					link: "https://twitter.com/char_automatiza",
+					link: "https://x.com/Altaskur",
 					icon: "x.png",
 				},
 				{
 					name: "TikTok",
-					link: "https://www.tiktok.com/@charlyautomatiza",
+					link: "https://www.tiktok.com/@altaskur",
 					icon: "tiktok.png",
 				},
 			],
 		},
 		{
-			name: "Leifer Mendez",
-			project: "Leifer Mendez",
-			img: "leifer.webp",
-			networks: [
-				{
-					name: "linkedin",
-					link: "https://www.linkedin.com/in/leifermendez/",
-					icon: "linkedin.png",
-				},
-				{
-					name: "YouTube",
-					link: "https://www.youtube.com/LeiferMendez",
-					icon: "youtube.png",
-				},
-				{
-					name: "X",
-					link: "https://x.com/leifermendez",
-					icon: "x.png",
-				},
-			],
-		},
-	],
+			"name": "Dani Rodriguez",
+			"project": "Makigas",
+			"img": "danirod.webp",
+			"networks": [{
+				"name": "linkedin",
+				"link": "https://www.linkedin.com/in/danirod",
+				"icon": "linkedin.png"
+			}, {
+				"name": "YouTube",
+				"link": "https://www.youtube.com/@makigas",
+				"icon": "youtube.png"
+			},
+			{
+				"name": "Twitch",
+				"link": "https://www.twitch.tv/danirod_",
+				"icon": "twitch.png"
+			}]
+		}]
 };
