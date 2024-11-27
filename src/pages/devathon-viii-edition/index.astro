@@ -71,7 +71,7 @@ const { teams, judges, menthors } = devathonData;
                       Backend
                     </a>
                   </li>
-                  {isWinner ? (
+                  {isWinner && 
                     <li>
                       <img
                         src="/img/devathon-medal.png"
@@ -80,9 +80,7 @@ const { teams, judges, menthors } = devathonData;
                         id={id}
                       />
                     </li>
-                  ) : (
-                    ""
-                  )}
+                  }
                 </ul>
 
                 </div>
@@ -94,7 +92,7 @@ const { teams, judges, menthors } = devathonData;
     </section>
     <h1>Mentores de esta edición</h1>
     <section class="menthors-container">
-      <p>
+      <p >
         En esta edición, participaron desarrolladores Sr. de forma voluntaria
         con el rol de mentores para poder ayudar a los equipos con dudas y
         bloqueos técnicos, mi total agradecimiento y mención honorífica a los
