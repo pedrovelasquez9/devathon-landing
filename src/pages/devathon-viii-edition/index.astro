@@ -2,10 +2,10 @@
 import JudgeCard from "../../components/astro/JudgeCard/index.astro";
 import { devathonData } from "../../data/devathon-viii-edition";
 import type {
-DevathonMenthor,
-Judge,
-Team,
-TeamMember,
+  DevathonMenthor,
+  Judge,
+  Team,
+  TeamMember,
 } from "../../interfaces/DevathonVIEdition.interface";
 import Layout from "../../layouts/Layout.astro";
 import "./styles.css";
@@ -16,8 +16,13 @@ const { teams, judges, menthors } = devathonData;
 <Layout title="Devathon: VIII edición">
   <main class="devathon-edition-main-container">
     <section class="edition-main-section">
-      <h1 class="title">Devathon: VIII edición
-        <img class="title__image" src="/img/devathon-viii/devathon_viii_image.webp" alt="">
+      <h1 class="title">
+        Devathon: VIII edición
+        <img
+          class="title__image"
+          src="/img/devathon-viii/devathon_viii_image.webp"
+          alt=""
+        />
       </h1>
       <div class="teams-container">
         {
@@ -34,11 +39,11 @@ const { teams, judges, menthors } = devathonData;
             } = teamData;
             return (
               <section class="team-detail-card">
-              <div>
-                <h2>Equipo {id}</h2>
-                <p>Proyecto: {project}</p>
-                <p>Integrantes:</p>
-              </div>
+                <div>
+                  <h2>Equipo {id}</h2>
+                  <p>Proyecto: {project}</p>
+                  <p>Integrantes:</p>
+                </div>
                 <ul class="team-member-list">
                   {members?.map((member: TeamMember) => {
                     if (member.name) {
@@ -59,30 +64,29 @@ const { teams, judges, menthors } = devathonData;
                 </ul>
 
                 <div class="repository">
-                <h2 class="repository-title">Repositorios</h2>
-                <ul class="repository-list">
-                  <li>
-                    <a href={frontendRepo} target="_blank">
-                      Frontend
-                    </a>
-                  </li>
-                  <li>
-                    <a href={backendRepo} target="_blank">
-                      Backend
-                    </a>
-                  </li>
-                  {isWinner && 
+                  <h2 class="repository-title">Repositorios</h2>
+                  <ul class="repository-list">
                     <li>
-                      <img
-                        src="/img/devathon-medal.png"
-                        class="medal-btn"
-                        alt="Equipo ganador"
-                        id={id}
-                      />
+                      <a href={frontendRepo} target="_blank">
+                        Frontend
+                      </a>
                     </li>
-                  }
-                </ul>
-
+                    <li>
+                      <a href={backendRepo} target="_blank">
+                        Backend
+                      </a>
+                    </li>
+                    {isWinner && (
+                      <li>
+                        <img
+                          src="/img/devathon-medal.png"
+                          class="medal-btn"
+                          alt="Equipo ganador"
+                          id={id}
+                        />
+                      </li>
+                    )}
+                  </ul>
                 </div>
               </section>
             );
@@ -92,7 +96,7 @@ const { teams, judges, menthors } = devathonData;
     </section>
     <h1>Mentores de esta edición</h1>
     <section class="menthors-container">
-      <p >
+      <p>
         En esta edición, participaron desarrolladores Sr. de forma voluntaria
         con el rol de mentores para poder ayudar a los equipos con dudas y
         bloqueos técnicos, mi total agradecimiento y mención honorífica a los
@@ -190,3 +194,34 @@ const { teams, judges, menthors } = devathonData;
     </section>
   </main>
 </Layout>
+<script is:inline>
+  const mainContainer = document.querySelector(
+    ".devathon-edition-main-container"
+  );
+
+  const getRandomValue = (max, min = 1) => {
+    return Math.floor(Math.random() * max) + min;
+  };
+
+  const createSnow = (density) => {
+    for (let i = 0; i < density; i++) {
+      const snowFlake = document.createElement("span");
+      const horizontalPosition = `${getRandomValue(100)}%`;
+      const fallDelay = `${getRandomValue(100)}s`;
+      const fallDuration = `${getRandomValue(20, 5)}s`;
+      const flakeSize = `${getRandomValue(7, 1)}px`;
+      const flakeOpacity = Math.random().toFixed(2);
+
+      snowFlake.classList.add("snow");
+      snowFlake.style.opacity = flakeOpacity;
+      snowFlake.style.width = flakeSize;
+      snowFlake.style.height = flakeSize;
+      snowFlake.style.animation = `fall ${fallDuration} ${fallDelay} linear infinite`;
+      snowFlake.style.right = horizontalPosition;
+
+      mainContainer.appendChild(snowFlake);
+    }
+  };
+
+  createSnow(250);
+</script>
