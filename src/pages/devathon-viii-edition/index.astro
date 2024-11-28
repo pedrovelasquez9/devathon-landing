@@ -1,0 +1,227 @@
+---
+import JudgeCard from "../../components/astro/JudgeCard/index.astro";
+import { devathonData } from "../../data/devathon-viii-edition";
+import type {
+  DevathonMenthor,
+  Judge,
+  Team,
+  TeamMember,
+} from "../../interfaces/DevathonVIEdition.interface";
+import Layout from "../../layouts/Layout.astro";
+import "./styles.css";
+
+const { teams, judges, menthors } = devathonData;
+---
+
+<Layout title="Devathon: VIII edición">
+  <main class="devathon-edition-main-container">
+    <section class="edition-main-section">
+      <h1 class="title">
+        Devathon: VIII edición
+        <img
+          class="title__image"
+          src="/img/devathon-viii/devathon_viii_image.webp"
+          alt=""
+        />
+      </h1>
+      <div class="teams-container">
+        {
+          teams.map((teamData: Team): Object => {
+            const {
+              name,
+              id,
+              isWinner,
+              isRetired,
+              project,
+              frontendRepo,
+              backendRepo,
+              members,
+            } = teamData;
+            return (
+              <section class="team-detail-card">
+                <div>
+                  <h2>Equipo {id}</h2>
+                  <p>Proyecto: {project}</p>
+                  <p>Integrantes:</p>
+                </div>
+                <ul class="team-member-list">
+                  {members?.map((member: TeamMember) => {
+                    if (member.name) {
+                      return (
+                        <li class="team-member-item">
+                          <img
+                            class="team-avatar"
+                            src={member.img}
+                            alt={member.name}
+                          />
+                          <p>
+                            <a href={member.linkedin}>{member.name}</a>
+                          </p>
+                        </li>
+                      );
+                    }
+                  })}
+                </ul>
+
+                <div class="repository">
+                  <h2 class="repository-title">Repositorios</h2>
+                  <ul class="repository-list">
+                    <li>
+                      <a href={frontendRepo} target="_blank">
+                        Frontend
+                      </a>
+                    </li>
+                    <li>
+                      <a href={backendRepo} target="_blank">
+                        Backend
+                      </a>
+                    </li>
+                    {isWinner && (
+                      <li>
+                        <img
+                          src="/img/devathon-medal.png"
+                          class="medal-btn"
+                          alt="Equipo ganador"
+                          id={id}
+                        />
+                      </li>
+                    )}
+                  </ul>
+                </div>
+              </section>
+            );
+          })
+        }
+      </div>
+    </section>
+    <h1>Mentores de esta edición</h1>
+    <section class="menthors-container">
+      <p>
+        En esta edición, participaron desarrolladores Sr. de forma voluntaria
+        con el rol de mentores para poder ayudar a los equipos con dudas y
+        bloqueos técnicos, mi total agradecimiento y mención honorífica a los
+        mentores que estuvieron presentes, atentos y siempre con buena vibra y
+        disposición a ayudar a los equipos en el servidor de Discord:
+      </p>
+      <ul class="menthor-list">
+        {
+          menthors.map((menthor: DevathonMenthor) => {
+            return (
+              <li class="menthor-list__item">
+                <img class="team-avatar" src={menthor.img} alt={menthor.name} />
+                <p>
+                  <a href={menthor.linkedin}>{menthor.name}</a>
+                </p>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </section>
+
+    <section class="edition-main-section">
+      <h1>Jueces de esta edición</h1>
+      <div class="sponsor-container">
+        {
+          judges.map((judge: Judge): Object => {
+            const { name, networks, project, img } = judge;
+            return (
+              <JudgeCard
+                name={name}
+                networks={networks}
+                project={project}
+                img={img}
+              />
+            );
+          })
+        }
+      </div>
+    </section>
+    <section class="event-info-section">
+      <h1>Acerca del evento</h1>
+      <div class="event-info-container">
+        <section class="evaluation-criteria">
+          <h2>✍ Criterios de evaluación</h2>
+          <ul class="evaluation-criteria__list">
+            <li class="evaluation-criteria__item">
+              ✅ Uso y gestión del repositorio: se evalúa el uso de git flow,
+              revisión de PRs y mantenimiento de ramas principales, nomenclatura
+              y buenas prácticas en general al trabajar con repositorios usando
+              git y github.
+            </li>
+            <li class="evaluation-criteria__item">
+              ✅ Nivel funcional del proyecto: se evalúa la cantidad de
+              funcionalidades estables del proyecto final con respecto a su
+              concepción/propuesta inicial.
+            </li>
+            <li class="evaluation-criteria__item">
+              ✅ Nivel visual del proyecto: se evalúan aspectos visuales, UI en
+              general, combinación de colores, ortografía, proporciones de
+              secciones, uso del espacio en la web, etc.
+            </li>
+            <li class="evaluation-criteria__item">
+              ✅ Nivel de accesibilidad del proyecto: se evalúan características
+              de UX y accesibilidad como legibilidad del contenido, combinación
+              de colores, uso de formularios, facilidad de uso del proyecto,
+              etc.
+            </li>
+            <li class="evaluation-criteria__item">
+              ✅ Nivel técnico del proyecto: en la review final, el sponsor
+              podrá hacer preguntas de nivel técnico en cuanto a las
+              consideraciones y stack usados por cada equipo para realizar su
+              evaluación particular.
+            </li>
+            <li class="evaluation-criteria__item">
+              ✅ Documentación del proyecto: documentación básica del proyecto
+              (cómo levantarlo en local, dependencias y consideraciones que
+              apliquen), diseño técnico con diagrama de flujo y acuerdo de
+              interfaz con swagger, postman, etc.
+            </li>
+            <li class="evaluation-criteria__item">
+              ✅ Modelado de entidades (BD): se podrá preguntar y revisar el
+              modelo de la BD del proyecto en la review final para ver cómo se
+              han estructurado las relaciones, se evaluará también el uso y
+              cuidado de estándares, nomenclatura, bitácora, etc.
+            </li>
+            <li class="evaluation-criteria__item">
+              ✅ Integración de proyecto y equipos: integración de front y back,
+              comunicación de ambas partes del equipo para esta integración y
+              funcionamiento de la app integrada.
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+</Layout>
+<script is:inline>
+  const mainContainer = document.querySelector(
+    ".devathon-edition-main-container"
+  );
+
+  const getRandomValue = (max, min = 1) => {
+    return Math.floor(Math.random() * max) + min;
+  };
+
+  const createSnow = (density) => {
+    for (let i = 0; i < density; i++) {
+      const snowFlake = document.createElement("span");
+      const horizontalPosition = `${getRandomValue(100)}%`;
+      const fallDelay = `${getRandomValue(100)}s`;
+      const fallDuration = `${getRandomValue(20, 5)}s`;
+      const flakeSize = `${getRandomValue(7, 1)}px`;
+      const flakeOpacity = Math.random().toFixed(2);
+
+      snowFlake.classList.add("snow");
+      snowFlake.style.opacity = flakeOpacity;
+      snowFlake.style.width = flakeSize;
+      snowFlake.style.height = flakeSize;
+      snowFlake.style.animation = `fall ${fallDuration} ${fallDelay} linear infinite`;
+      snowFlake.style.right = horizontalPosition;
+
+      mainContainer.appendChild(snowFlake);
+    }
+  };
+
+  createSnow(250);
+</script>

@@ -1,0 +1,259 @@
+a {
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.title__image {
+  width: 4rem;
+}
+.teams-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 1.875rem;
+  line-height: 1.3lh;
+}
+
+.team-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.team-detail-card {
+  padding: 2rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.menthors-container {
+  padding: 2rem;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  border-radius: 1rem;
+}
+
+.menthor-list {
+  padding-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  justify-items: center;
+  gap: 1.5rem;
+}
+.menthor-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.team-member-list {
+  padding: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  gap: 1.5625rem;
+}
+.team-member-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-wrap: pretty;
+  text-align: center;
+}
+
+.edition-main-section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.devathon-edition-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 3rem;
+  text-align: center;
+}
+
+.background-grid {
+  background-size: 100px 100px;
+  z-index: -2;
+  background-image: url(/img/bg-grid.png);
+  background-position-y: -9px;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    10%,
+    white,
+    90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    10%,
+    white,
+    90%,
+    transparent
+  );
+}
+
+.background-grid-gradient {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    white 0%,
+    white 33%,
+    transparent 90%
+  );
+  mask-image: linear-gradient(to bottom, white 0%, white 33%, transparent 90%);
+}
+
+.sponsor-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.event-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.event-info-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.event-info-container ul {
+  list-style: none;
+  text-align: justify;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.evaluation-criteria {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  align-items: flex-start;
+}
+.evaluation-criteria__item {
+  text-align: initial;
+  text-wrap: pretty;
+}
+
+.medal-btn {
+  width: 80px;
+  filter: none;
+}
+.repository {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.repository-title {
+  text-align: center;
+}
+
+.repository-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .event-description,
+  .evaluation-criteria {
+    width: 100%;
+  }
+
+  .event-info-container {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 961px) {
+  .repository-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .teams-container {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+  .team-member-list {
+    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+
+    width: 100%;
+    text-wrap: nowrap;
+  }
+}
+
+/* snow */
+
+.snow {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+}
+
+.snow-floor {
+  width: 100%;
+  height: 3%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+@keyframes fall {
+  0% {
+    top: -100px;
+  }
+
+  100% {
+    top: 98dvh;
+  }
+}
