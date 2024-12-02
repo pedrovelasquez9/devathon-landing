@@ -320,9 +320,9 @@ export const devathonData = {
 			"project": "Makigas",
 			"img": "danirod.webp",
 			"networks": [{
-				"name": "linkedin",
-				"link": "https://www.linkedin.com/in/danirod",
-				"icon": "linkedin.png"
+				"name": "Mastodon",
+				"link": "https://masto.es/@danirod",
+				"icon": "mastodon.png"
 			}, {
 				"name": "YouTube",
 				"link": "https://www.youtube.com/@makigas",
