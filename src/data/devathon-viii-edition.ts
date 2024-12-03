@@ -55,12 +55,22 @@ export const devathonData = {
 				{
 					name: "DevDiego",
 					img: "/img/devathon-avatar.webp",
-					linkedin: "www.linkedin.com/in/diegovega87",
+					linkedin: "https://linkedin.com/in/diegovega87",
 				},
 				{
 					name: "Juancho",
 					img: "/img/devathon-avatar.webp",
-					linkedin: "www.linkedin.com/in/juan-josé-sierra-ortega-869012207",
+					linkedin: "https://linkedin.com/in/juan-josé-sierra-ortega-869012207",
+				},
+				{
+					name: "Jose Rangel",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "https://www.linkedin.com/in/jose-rangel-martinez-120863231"
+				},
+				{
+					name: "Fidel Coque",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "https://www.linkedin.com/in/fichovis/"
 				}
 			],
 		},
@@ -124,6 +134,16 @@ export const devathonData = {
 					name: "Fernando Juárez",
 					img: "/img/devathon-avatar.webp",
 					linkedin: "https://www.linkedin.com/in/fernando-juarez-baca/",
+				},
+				{
+					name: "Juan Mendoza",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "https://www.linkedin.com/in/juan-alejandro-mendoza-zapata",
+				},
+				{
+					name: "Oscar Bermudez",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "https://www.linkedin.com/in/oscarbermudezdev/",
 				}
 			],
 		},
@@ -136,6 +156,31 @@ export const devathonData = {
 			frontendRepo: "https://github.com/Devathon-TEAM5-ED8/santa-dashboard",
 			backendRepo: "https://github.com/Devathon-TEAM5-ED8/santa-dashboard_backend",
 			members: [
+				{
+					name: "Santiago Orozco",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "https://www.linkedin.com/in/santiago-everardo-orozco-carmona/",
+				},
+				{
+					name: "Jerson Navarro",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "https://linkedin.com/in/jerson-navarro-1370081b1",
+				},
+				{
+					name: "Matias Ortega",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "https://www.linkedin.com/in/matias-ortega-330121246/",
+				},
+				{
+					name: "Stefano Aguilar",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "https://www.linkedin.com/in/stefano-aguilar-a3219931a/",
+				},
+				{
+					name: "Joan Chulilla",
+					img: "/img/devathon-avatar.webp",
+					linkedin: "https://www.linkedin.com/in/joan-alemany-chulilla/",
+				}
 			],
 		},
 	],
