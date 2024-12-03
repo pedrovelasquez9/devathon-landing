@@ -88,12 +88,6 @@ export const devathonData = {
 					img: "https://i.postimg.cc/hPdn8BMt/emma-vandick.png",
 					linkedin: "https://linkedin.com/in/emmanuel-vandyk/",
 				},
-				//Salio del Proyecto
-				// {
-				// 	name: "Luis Eduardo Ocegueda Cortés",
-				// 	img: "/img/devathon-avatar.webp",
-				// 	linkedin: "",
-				// },
 				{
 					name: "Roberto J. Vargas",
 					img: "https://media.licdn.com/dms/image/v2/C4E03AQEPjro6DWwS_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1552840536368?e=1738800000&v=beta&t=3TuWHJFoc5tEtXmIq2P76y54hcXDLMYbn3FQc_i-xxU",
