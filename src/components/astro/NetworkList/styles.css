@@ -55,6 +55,7 @@
   align-items: center;
   gap: 4rem;
   overflow: hidden;
+  visibility: hidden;
 }
 
 [popover] p {
@@ -74,6 +75,7 @@
 
 [popover]:popover-open {
   translate: 25dvw 30dvh;
+  visibility: visible;
 }
 
 [popover]::backdrop {
