@@ -75,33 +75,34 @@ export const devathonData = {
 			members: [
 				{
 					name: "Emmanuel Van Dick",
-					img: "/img/devathon-avatar.webp",
-					linkedin: "",
+					img: "https://i.postimg.cc/hPdn8BMt/emma-vandick.png",
+					linkedin: "https://linkedin.com/in/emmanuel-vandyk/",
 				},
-				{
-					name: "Luis Eduardo Ocegueda Cortés",
-					img: "/img/devathon-avatar.webp",
-					linkedin: "",
-				},
+				//Salio del Proyecto
+				// {
+				// 	name: "Luis Eduardo Ocegueda Cortés",
+				// 	img: "/img/devathon-avatar.webp",
+				// 	linkedin: "",
+				// },
 				{
 					name: "Roberto J. Vargas",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/C4E03AQEPjro6DWwS_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1552840536368?e=1738800000&v=beta&t=3TuWHJFoc5tEtXmIq2P76y54hcXDLMYbn3FQc_i-xxU",
 					linkedin: "https://www.linkedin.com/in/roberto-j-vargas-d-69631159/",
 				},
 				{
 					name: "Máximo de Jesús Estrada Vigil",
-					img: "/img/devathon-avatar.webp",
+					img: "https://github.com/maximoev.png",
 					linkedin: "https://www.linkedin.com/in/maximoev",
 				},
 				{
 					name: "Raydberg Gabriel Chuquival Gil",
-					img: "/img/devathon-avatar.webp",
+					img: "https://avatars.githubusercontent.com/u/144204205?v=4p",
 					linkedin: "https://www.linkedin.com/in/raydbergchuquival",
 				},
 				{
 					name: "Pedro Purihuaman Purihuaman",
-					img: "/img/devathon-avatar.webp",
-					linkedin: "",
+					img: "https://avatars.githubusercontent.com/u/91698863?v=4",
+					linkedin: "https://www.linkedin.com/in/puriihuaman/",
 				},
 			],
 		},
