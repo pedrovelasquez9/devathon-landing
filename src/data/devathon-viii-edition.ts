@@ -209,6 +209,11 @@ export const devathonData = {
 			img: "/img/menthors/mario.webp",
 			linkedin: "https://www.linkedin.com/in/mario-dante-mariani/",
 		},
+		{
+			name: "David Ramón Thomen",
+			img: "https://media.licdn.com/dms/image/v2/C4D03AQHwlln_yZ0oJA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1648737534248?e=1738800000&v=beta&t=VH1HMjA52P2NLDxwEViSnMc1CaqbOGC54GAe11hJ9fk",
+			linkedin: "https://ar.linkedin.com/in/david-ramon-thomen"
+		}
 	],
 	judges: [
 		{
