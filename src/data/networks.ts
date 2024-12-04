@@ -32,6 +32,12 @@ export const networks: networkLink[] = [
     alt: "Twitter",
   },
   {
+    title: "Bluesky",
+    link: "https://bsky.app/profile/programacion.bsky.social",
+    imagePath: "/img/bluesky.png",
+    alt: "Bluesky"
+  },
+  {
     title: "Instagram",
     link: "https://www.instagram.com/programacion.es/",
     imagePath: "/img/instagram-icon.webp",

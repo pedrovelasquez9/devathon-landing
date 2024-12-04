@@ -11,7 +11,7 @@ export const devathonData = {
 			backendRepo: "https://github.com/jvngarcia/devathon-8-backend",
 			members: [
 				{
-					name: "Joselu",
+					name: "Jose Gonzales",
 					img: "/img/ed7-team2/joselu.webp",
 					linkedin: "https://www.linkedin.com/in/j0selu/",
 				},
@@ -21,23 +21,23 @@ export const devathonData = {
 					linkedin: "https://www.linkedin.com/in/alejandroluisacosta/",
 				},
 				{
-					name: "Miguel Decode",
+					name: "Miguel Lema",
 					img: "/img/ed7-team1/alejandro.webp",
 					linkedin: "https://www.linkedin.com/in/miguel-lema-garcía/",
 				},
 				{
-					name: "Juanjo",
-					img: "/img/devathon-avatar.webp",
+					name: "Juan José Romero",
+					img: "https://media.licdn.com/dms/image/v2/D4E35AQGzkucGq_jkyQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1725283179758?e=1733943600&v=beta&t=xYE2CrvfM-5izw0XkPvoBs_YpZgxQoKYYlEz0X4p7sw",
 					linkedin:
 						"https://www.linkedin.com/in/juan-josé-romero-montes-b65293280/",
 				},
 				{
-					name: "Darío",
-					img: "/img/devathon-avatar.webp",
+					name: "Darío Ramírez",
+					img: "https://media.licdn.com/dms/image/v2/D4E35AQHUq_q_lYJ2nw/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1730224629913?e=1733943600&v=beta&t=l6g1pGVcjXOp8ttAWIjIbRNen-cupYiUc_kFYfabBYc",
 					linkedin: "https://www.linkedin.com/in/darío-j-ramírez-49a422303/",
 				},
 				{
-					name: "heysoydev",
+					name: "Angel Garcia",
 					img: "/img/ed7-team1/matdev.webp",
 					linkedin: "https://www.linkedin.com/in/jvngarcia/",
 				},
@@ -54,22 +54,22 @@ export const devathonData = {
 			members: [
 				{
 					name: "DevDiego",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4D03AQFfcS7IRBHO6Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1706631490405?e=1738800000&v=beta&t=Bw1rCSeUX2QB-J5EaRAtLgFmb2c767N9UksFplsh6uc",
 					linkedin: "https://linkedin.com/in/diegovega87",
 				},
 				{
 					name: "Juancho",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4E03AQHY4SuK1VhxJw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731444622754?e=1738800000&v=beta&t=-A-2AbpEhEbqQwj7kxO169aydONNty6jRRgcgPEGz1g",
 					linkedin: "https://linkedin.com/in/juan-josé-sierra-ortega-869012207",
 				},
 				{
 					name: "Jose Rangel",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4E03AQFxo5mR62LgbQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1675088458409?e=1738800000&v=beta&t=Hi0cIIYZ2Om3uz-1iVhJgJbEn-e2Fq8xJJcZjx8i7fg",
 					linkedin: "https://www.linkedin.com/in/jose-rangel-martinez-120863231"
 				},
 				{
 					name: "Fidel Coque",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4D03AQH7Bsfl-ROxeg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724855730680?e=1738800000&v=beta&t=ub6ymxKQkJq19w4YNWzyiPuU7R-O5SAhXqsJjbQPmqs",
 					linkedin: "https://www.linkedin.com/in/fichovis/"
 				}
 			],
@@ -121,22 +121,22 @@ export const devathonData = {
 			members: [
 				{
 					name: "Bolívar Delgado",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4E35AQF-FQHAh5us1A/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1719439843434?e=1733943600&v=beta&t=r1cAOPa6oji8aK_em4vIj_RS-F9z6hTXOHQ7FMk0Qec",
 					linkedin: "https://www.linkedin.com/in/bolivar-delgado-5522b0108/",
 				},
 				{
 					name: "Fernando Juárez",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4E03AQGAjUN0zU_B-w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715357862443?e=1738800000&v=beta&t=QkEP8a0_GfbfOPiQIqJdAHqIWeeOeqwBx217se5P8n0",
 					linkedin: "https://www.linkedin.com/in/fernando-juarez-baca/",
 				},
 				{
 					name: "Juan Mendoza",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4E35AQGiRl5Qp221eg/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1724395232669?e=1733943600&v=beta&t=Ou6wvR9sTL-pTKIFHrS8bZN4cKyqJSsHPwGBtmpLiK8",
 					linkedin: "https://www.linkedin.com/in/juan-alejandro-mendoza-zapata",
 				},
 				{
 					name: "Oscar Bermudez",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4E35AQHkgu5P69DxqQ/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1721354825766?e=1733943600&v=beta&t=mcnGjpFsc4JJp8EWCDJBOr7VtUYyJGEjFCI5K6MjA2I",
 					linkedin: "https://www.linkedin.com/in/oscarbermudezdev/",
 				}
 			],
@@ -152,17 +152,17 @@ export const devathonData = {
 			members: [
 				{
 					name: "Santiago Orozco",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4E03AQGOae-rwAWJTw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1670169144838?e=1738800000&v=beta&t=qK7e005JlJ761cZvbOiAv_cKYDg_Y7PBWn8wqQgDfN8",
 					linkedin: "https://www.linkedin.com/in/santiago-everardo-orozco-carmona/",
 				},
 				{
 					name: "Jerson Navarro",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4E03AQGjwl4_x-Wqfw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1704314784279?e=1738800000&v=beta&t=GYsxbm4oiGe_0TwpUyNJTutYLP6wY3p5TDBykHISCbA",
 					linkedin: "https://linkedin.com/in/jerson-navarro-1370081b1",
 				},
 				{
 					name: "Matias Ortega",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4D35AQGidPAfrS_q7g/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1713388231147?e=1733943600&v=beta&t=IOEl59y3RmbUHdOuHAUQXZq0r6Ua6_k2jjyd1RsSF6E",
 					linkedin: "https://www.linkedin.com/in/matias-ortega-330121246/",
 				},
 				{
@@ -172,7 +172,7 @@ export const devathonData = {
 				},
 				{
 					name: "Joan Chulilla",
-					img: "/img/devathon-avatar.webp",
+					img: "https://media.licdn.com/dms/image/v2/D4D35AQEjHyDlv0tb4w/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1725275383461?e=1733943600&v=beta&t=y2lCezuw8THwTHkl0s2yNo2Zy9PG4CHElPMe5Rf_d9c",
 					linkedin: "https://www.linkedin.com/in/joan-alemany-chulilla/",
 				}
 			],
@@ -186,7 +186,7 @@ export const devathonData = {
 		},
 		{
 			name: "Santiago Rey",
-			img: "/img/devathon-avatar.webp",
+			img: "https://media.licdn.com/dms/image/v2/D4E03AQFQmQ5W0HunAQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1683544850842?e=1738800000&v=beta&t=LKcZR0LDfUbrc54BfzkY9pATH4LQFLmO5WRZfnt-rCc",
 			linkedin: "https://www.ksreyr.dev/",
 		},
 		{
@@ -213,6 +213,11 @@ export const devathonData = {
 			name: "David Ramón Thomen",
 			img: "https://media.licdn.com/dms/image/v2/C4D03AQHwlln_yZ0oJA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1648737534248?e=1738800000&v=beta&t=VH1HMjA52P2NLDxwEViSnMc1CaqbOGC54GAe11hJ9fk",
 			linkedin: "https://ar.linkedin.com/in/david-ramon-thomen"
+		},
+		{
+			name: "Jeyson Guzman",
+			img: "https://media.licdn.com/dms/image/v2/D4E03AQHX_SNHKCRQag/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1694454115930?e=1738800000&v=beta&t=o93yuBhn11WV60MXopGrq4g67wy_PrPk_RIs_2joUls",
+			linkedin: "https://www.linkedin.com/in/jeyson-guzman/"
 		}
 	],
 	judges: [
