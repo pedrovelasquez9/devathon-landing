@@ -49,7 +49,7 @@ export const devathonData = {
 			isWinner: false,
 			isRetired: false,
 			project: "Dashboard navideño",
-			frontendRepo: "https://github.com/ScanDaLouS47/devathon-frontend",
+			frontendRepo: "https://github.com/joserangel25/devathon-8",
 			backendRepo: "https://github.com/DiegoVega87/santas-dashboard-backend.git",
 			members: [
 				{
