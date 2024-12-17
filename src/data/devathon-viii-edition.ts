@@ -172,7 +172,7 @@ export const devathonData = {
 				},
 				{
 					name: "Joan Chulilla",
-					img: "https://media.licdn.com/dms/image/v2/D4D35AQEjHyDlv0tb4w/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1725275383461?e=1733943600&v=beta&t=y2lCezuw8THwTHkl0s2yNo2Zy9PG4CHElPMe5Rf_d9c",
+					img: "/img/devathon-avatar.webp",
 					linkedin: "https://www.linkedin.com/in/joan-alemany-chulilla/",
 				}
 			],
