@@ -1,9 +1,9 @@
 <script>
   import SortingHatImage from "../assets/sorting-hat.png";
-  import GryffindorShield from "../assets/gryffindor.png";
-  import SlytherinShield from "../assets/slytherin.png";
-  import HufflepuffShield from "../assets/hufflepuff.png";
-  import RavenclawShield from "../assets/ravenclaw.png";
+  import GryffindorShield from "../assets/gryffindor.webp";
+  import SlytherinShield from "../assets/slytherin.webp";
+  import HufflepuffShield from "../assets/hufflepuff.webp";
+  import RavenclawShield from "../assets/ravenclaw.webp";
 
   let name = "";
   let selectedHouse = "";
@@ -92,6 +92,8 @@
 </div>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap");
+
   .container {
     display: flex;
     flex-direction: column;
@@ -104,6 +106,18 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: "Cinzel Decorative", cursive;
+  }
+
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
   }
 
   .gray-bg {
@@ -129,7 +143,7 @@
   }
 
   .ravenclaw-shield {
-    filter: drop-shadow(0px 0px 20px #0e1a40);
+    filter: drop-shadow(0px 0px 20px #213b91);
   }
 
   .hufflepuff-shield {
@@ -158,6 +172,7 @@
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
     color: #fff;
     max-width: 400px;
+    font-size: 20px;
   }
 
   .sorting-hat-image {
@@ -171,6 +186,9 @@
     border-radius: 8px;
     border: none;
     width: 80%;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Cinzel Decorative", cursive;
   }
 
   .button {
@@ -182,7 +200,10 @@
     cursor: pointer;
     font-weight: bold;
     transition: transform 0.2s;
+    font-size: 16px;
+    font-family: "Cinzel Decorative", cursive;
   }
+
   .button:hover {
     transform: scale(1.1);
   }
@@ -204,20 +225,6 @@
   .hat-svg {
     width: 250px;
     height: auto;
-  }
-
-  @keyframes blink {
-    0%,
-    100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
-
-  .eye {
-    animation: blink 3s infinite;
   }
 
   @keyframes float {
