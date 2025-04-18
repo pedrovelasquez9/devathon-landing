@@ -16,7 +16,6 @@
 
     // Actualiza los puntos en tiempo real
     socket.on('pointsUpdate', data => {
-      console.log('Puntos actualizados:', data);
       houses = houses.map(house => {
         if (house.name === data.houseName) {
           return { ...house, points: data.newPoints };
