@@ -1,0 +1,436 @@
+a {
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+body {
+  padding: 0;
+}
+.wrapper {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+.devathonIX {
+  /* COLORES BASE COMUNES */
+  --bg: #0a0a14;
+  --text-primary: #fff;
+  --text-secondary: #fff; /* Con opacidad 70% */
+  --title-color: #fff;
+  --accent-color: #fff;
+  --border-common: #78350f; /* Con opacidad 30% */
+  --gradient-title-from: #00d9ff;
+  --gradient-title-to: #00d9ff;
+
+  /* EFECTOS Y DECORACIONES */
+  --stars: #fde68a;
+  --magic-elements: #00d9ff;
+  --hover-elements: #92400e; /* Con opacidad 50% */
+  --button-bg: #78350f; /* Con opacidad 30% */
+  --hover-border: #00d9ff; /* Con opacidad 50% */
+
+  /* CASAS - GRYFFINDOR */
+  --gryffindor-gradient-from: #991b1b;
+  --gryffindor-gradient-to: #d97706;
+  --gryffindor-accent: #fbbf24;
+  --gryffindor-bg: #7f1d1d; /* Con opacidad 10% */
+  --gryffindor-border: #7f1d1d; /* Con opacidad 50% */
+  --gryffindor-hover: #f59e0b;
+
+  /* CASAS - SLYTHERIN */
+  --slytherin-gradient-from: #064e3b;
+  --slytherin-gradient-to: #059669;
+  --slytherin-accent: #34d399;
+  --slytherin-bg: #064e3b; /* Con opacidad 10% */
+  --slytherin-border: #064e3b; /* Con opacidad 50% */
+  --slytherin-hover: #10b981;
+
+  /* CASAS - RAVENCLAW */
+  --ravenclaw-gradient-from: #1e3a8a;
+  --ravenclaw-gradient-to: #2563eb;
+  --ravenclaw-accent: #60a5fa;
+  --ravenclaw-bg: #1e3a8a; /* Con opacidad 10% */
+  --ravenclaw-border: #1e3a8a; /* Con opacidad 50% */
+  --ravenclaw-hover: #3b82f6;
+
+  /* CASAS - HUFFLEPUFF (Aunque no se usa en el diseño actual) */
+  --hufflepuff-gradient-from: #78350f;
+  --hufflepuff-gradient-to: #eab308;
+  --hufflepuff-accent: #fbbf24;
+  --hufflepuff-bg: #78350f; /* Con opacidad 10% */
+  --hufflepuff-border: #78350f; /* Con opacidad 50% */
+  --hufflepuff-hover: #eab308;
+}
+
+.devathonIX-container {
+  padding: 10px 20px;
+}
+
+.teams__container {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 2rem;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+}
+.title {
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.title--secondary {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.teams__icon {
+  width: clamp(1.5rem, 2vw, 1.5rem);
+}
+
+.team-card {
+  position: relative;
+  border-radius: 0.5rem;
+  border: 0.125rem solid var(--gryffindor-border);
+  color: var(--title-color);
+
+  background-color: hsl(240, 10%, 3.9%);
+  isolation: isolate;
+}
+.team-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/devathon-ix/team-card-bg.svg');
+  z-index: -1;
+  opacity: 0.14;
+}
+
+.team-card--slytherin {
+  border-color: var(--slytherin-border);
+}
+.team-card__name--slytherin {
+  color: var(--slytherin-accent);
+}
+.team-card__name--slytherin {
+  color: var(--slytherin-accent);
+}
+.team-card__header--slytherin {
+  background-color: color-mix(in srgb, var(--slytherin-bg) 10%, transparent);
+  border-color: var(--slytherin-border);
+  border-bottom: 0.125rem solid var(--slytherin-border);
+}
+.team-card__avatar--slytherin {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  border: 0.125rem solid var(--slytherin-border);
+  background-color: rebeccapurple;
+}
+.team-card__respostory-link--slytherin {
+  padding: 0.5rem 2rem;
+  border-radius: 999999px;
+  text-decoration: none;
+  background-color: color-mix(in srgb, var(--slytherin-gradient-from) 15%, transparent);
+  border: 0.125rem solid transparent;
+  transition:
+    background-color 0.3s,
+    border 0.3s;
+}
+.team-card__respostory-link--slytherin:hover {
+  background-color: color-mix(in srgb, var(--slytherin-gradient-from) 30%, transparent);
+  border: 0.125rem solid var(--slytherin-hover);
+}
+.team-card__number--slytherin {
+  padding: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  background-color: var(--slytherin-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.team-card--ravenclaw {
+  border-color: var(--ravenclaw-border);
+}
+.team-card__name--ravenclaw {
+  color: var(--ravenclaw-accent);
+}
+.team-card__name--ravenclaw {
+  color: var(--ravenclaw-accent);
+}
+.team-card__header--ravenclaw {
+  background-color: color-mix(in srgb, var(--ravenclaw-bg) 10%, transparent);
+  border-color: var(--ravenclaw-border);
+  border-bottom: 0.125rem solid var(--ravenclaw-border);
+}
+.team-card__avatar--ravenclaw {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  border: 0.125rem solid var(--ravenclaw-border);
+  background-color: rebeccapurple;
+}
+.team-card__respostory-link--ravenclaw {
+  padding: 0.5rem 2rem;
+  border-radius: 999999px;
+  text-decoration: none;
+  background-color: color-mix(in srgb, var(--ravenclaw-gradient-from) 15%, transparent);
+  border: 0.125rem solid transparent;
+  transition:
+    background-color 0.3s,
+    border 0.3s;
+}
+.team-card__respostory-link--ravenclaw:hover {
+  background-color: color-mix(in srgb, var(--ravenclaw-gradient-from) 30%, transparent);
+  border: 0.125rem solid var(--ravenclaw-hover);
+}
+.team-card__number--ravenclaw {
+  padding: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  background-color: var(--ravenclaw-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.team-card--hufflepuff {
+  border-color: var(--hufflepuff-border);
+}
+.team-card__name--hufflepuff {
+  color: var(--hufflepuff-accent);
+}
+.team-card__name--hufflepuff {
+  color: var(--hufflepuff-accent);
+}
+.team-card__header--hufflepuff {
+  background-color: color-mix(in srgb, var(--hufflepuff-bg) 10%, transparent);
+  border-color: var(--hufflepuff-border);
+  border-bottom: 0.125rem solid var(--hufflepuff-border);
+}
+.team-card__avatar--hufflepuff {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  border: 0.125rem solid var(--hufflepuff-border);
+  background-color: rebeccapurple;
+}
+.team-card__respostory-link--hufflepuff {
+  padding: 0.5rem 2rem;
+  border-radius: 999999px;
+  text-decoration: none;
+  background-color: color-mix(in srgb, var(--hufflepuff-gradient-from) 15%, transparent);
+  border: 0.125rem solid transparent;
+  transition:
+    background-color 0.3s,
+    border 0.3s;
+}
+.team-card__respostory-link--hufflepuff:hover {
+  background-color: color-mix(in srgb, var(--hufflepuff-gradient-from) 30%, transparent);
+  border: 0.125rem solid var(--hufflepuff-hover);
+}
+.team-card__number--hufflepuff {
+  padding: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  background-color: var(--hufflepuff-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.team-card--gryffindor {
+  border-color: var(--gryffindor-border);
+}
+.team-card__name--gryffindor {
+  color: var(--gryffindor-accent);
+}
+.team-card__name--gryffindor {
+  color: var(--gryffindor-accent);
+}
+.team-card__header--gryffindor {
+  background-color: color-mix(in srgb, var(--gryffindor-bg) 10%, transparent);
+  border-color: var(--gryffindor-border);
+  border-bottom: 0.125rem solid var(--gryffindor-border);
+}
+.team-card__avatar--gryffindor {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  border: 0.125rem solid var(--gryffindor-border);
+  background-color: rebeccapurple;
+}
+.team-card__respostory-link--gryffindor {
+  padding: 0.5rem 2rem;
+  border-radius: 999999px;
+  text-decoration: none;
+  background-color: color-mix(in srgb, var(--gryffindor-gradient-from) 15%, transparent);
+  border: 0.125rem solid transparent;
+  transition:
+    background-color 0.3s,
+    border 0.3s;
+}
+.team-card__respostory-link--gryffindor:hover {
+  background-color: color-mix(in srgb, var(--gryffindor-gradient-from) 30%, transparent);
+  border: 0.125rem solid var(--gryffindor-hover);
+}
+.team-card__number--gryffindor {
+  padding: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  background-color: var(--gryffindor-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.team-card__header {
+  padding: 1.5rem;
+}
+.team-card__header__info {
+  margin-bottom: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.team-card__name {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.team-card__subname {
+  font-style: italic;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+.team-card__project {
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+
+  color: var(--text-secondary);
+}
+.team-card__italic {
+  font-weight: 500;
+  font-style: italic;
+  color: var(--title-color);
+}
+.team-card__body {
+  padding: 1.5rem;
+}
+.team-card__subtitle {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+
+  margin-bottom: 1rem;
+}
+.team-card__members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+.team-card__member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.team-card__member-name {
+  text-decoration: none;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+}
+.team-card__repository {
+  padding: 1.5rem;
+}
+.repository-title {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+
+  margin-bottom: 1rem;
+}
+.team-card__repository-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.menthors {
+  border: 0.125rem solid var(--border-common);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: rgb(15 15 26 / 0.8);
+  margin-bottom: 3rem;
+}
+.menthors__description {
+  color: var(--title-color);
+  margin-bottom: 2rem;
+}
+.menthors__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+.menthor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.menthors-title {
+  margin-bottom: 2rem;
+}
+.menthor__avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  border: 0.125rem solid var(--border-common);
+}
+
+.menthor__link {
+  text-decoration: none;
+}
+
+.sponsor-container {
+  margin-bottom: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  @media screen and (min-width: 600px) {
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  }
+}
+.judges-title {
+  margin-bottom: 2.5rem;
+}
+
+.evaluation-criteria__list {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}

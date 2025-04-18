@@ -1,0 +1,144 @@
+---
+import supporters from '../../data/supporters.json';
+import SupporterCard from '../../components/astro/SupporterCard/index.astro';
+import Layout from '../../layouts/Layout.astro';
+
+// Calculamos aquí las dos secciones
+const youtubeSupporters = supporters.filter(s => s.platform === 'youtube');
+const twitchSupporters = supporters.filter(s => s.platform === 'twitch');
+---
+
+<Layout title="Retos de programación">
+  <div class="wrapper">
+    <main class="container">
+      <img src="/public/favicon.png" width="100px" />
+      <h1 class="title">Agradecimiento</h1>
+      <p>
+        Infinitas gracias a todos los suscriptores de Twitch y miembros del canal de YouTube que apoyan el
+        contenido y me animan a seguir compartiendo. ¡Que tengan buen código!
+      </p>
+      <!-- YouTube -->
+      {
+        youtubeSupporters.length > 0 && (
+          <div>
+            <div class="network-header">
+              <img src="/img/networks/youtube.png" alt="YouTube" width="32" height="32" class="icon" />
+              <h2 class="subtitle">YouTube</h2>
+              <a
+                href="https://www.youtube.com/channel/UCNliuGyPizt7uNcdCrUoduQ/join"
+                class="sub-link"
+                target="_blank"
+              >
+                Conviértete en miembro del canal
+              </a>
+            </div>
+            <section class="grid">
+              {youtubeSupporters.map(s => (
+                <SupporterCard platform={s.platform} username={s.username} url={s.url} />
+              ))}
+            </section>
+          </div>
+        )
+      }
+
+      <!-- Twitch -->
+      {
+        twitchSupporters.length > 0 && (
+          <div>
+            <div class="network-header">
+              <img src="/img/networks/twitch.png" alt="YouTube" width="32" height="32" class="icon" />
+              <h2 class="subtitle">Twitch</h2>
+              <a href="https://twitch.tv/programacion_es" target="_blank" class="sub-link">
+                Suscríbete al canal de Twitch
+              </a>
+            </div>
+            <section class="grid">
+              {twitchSupporters.map(s => (
+                <SupporterCard platform={s.platform} username={s.username} url={s.url} />
+              ))}
+            </section>
+          </div>
+        )
+      }
+    </main>
+  </div>
+</Layout>
+
+<style>
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 100dvh;
+    align-items: flex-start;
+  }
+
+  .container {
+    max-width: 72rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 1rem;
+    justify-content: center;
+  }
+
+  .container > img {
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .sub-link {
+    color: #fff;
+  }
+
+  .network-header {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .network-header h2,
+  .network-header a {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    .wrapper {
+      flex-direction: row;
+    }
+  }
+
+  .title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    display: flex;
+    gap: 0.5ch;
+    align-items: center;
+    justify-content: center;
+  }
+  .title code {
+    font-size: 0.75em;
+    background: #27272a;
+    padding: 0.25em 0.4em;
+    border-radius: 0.3em;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+  @media (min-width: 32rem) {
+    .grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+</style>

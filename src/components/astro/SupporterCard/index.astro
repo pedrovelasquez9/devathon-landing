@@ -1,0 +1,33 @@
+---
+// Elegimos el icono según la plataforma
+const iconPath = `/logos/${Astro.props.platform}.svg`;
+---
+
+<article class="card">
+  <!-- <img src={iconPath} alt={Astro.props.platform} width="32" height="32" class="icon" /> -->
+  <a href={Astro.props.url} rel="noopener noreferrer" target="_blank">{`< ${Astro.props.username} />`}</a>
+</article>
+
+<style>
+  .card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--card-bg, #18181b);
+    box-shadow: 0 0 0 2px #27272a inset;
+    transition: box-shadow 0.2s;
+  }
+  .card:hover {
+    box-shadow: 0 0 0 2px #4f46e5 inset;
+  }
+  .icon {
+    flex-shrink: 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+  }
+</style>
