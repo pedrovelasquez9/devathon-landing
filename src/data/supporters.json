@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "platform": "youtube",
+      "username": "DevJuan",
+      "url": "https://youtube.com/@DevJuan"
+    },
+    {
+      "id": 2,
+      "platform": "twitch",
+      "username": "CodeMar",
+      "url": "https://twitch.tv/codemar"
+    },
+    {
+      "id": 3,
+      "platform": "youtube",
+      "username": "HolaMundo",
+      "url": "https://youtube.com/@HolaMundo"
+    }
+  ]
+  

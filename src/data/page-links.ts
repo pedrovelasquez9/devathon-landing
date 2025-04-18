@@ -12,7 +12,6 @@ export const links: LinkItem[] = [
   { name: 'Redes', href: '/redes' },
   { name: 'Recursos', href: '/recursos' },
   { name: 'Devathon', href: '/devathon' },
-  { name: 'VIII edición del Devathon', href: '/devathon-viii-edition' },
   { name: 'IX edición del Devathon', href: '/devathon-ix-edition' },
 
   { name: 'Retos de programación', href: '/retos' },

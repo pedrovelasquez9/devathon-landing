@@ -1,0 +1,102 @@
+---
+import supporters from '../../data/supporters.json';
+import SupporterCard from '../../components/astro/SupporterCard/index.astro';
+import Layout from '../../layouts/Layout.astro';
+
+// Calculamos aquí las dos secciones
+const youtubeSupporters = supporters.filter(s => s.platform === 'youtube');
+const twitchSupporters = supporters.filter(s => s.platform === 'twitch');
+---
+
+<Layout title="Retos de programación">
+  <div class="wrapper">
+    <main class="container">
+      <h1 class="title"><code>&lt;/&gt;</code> Supporters</h1>
+
+      <!-- YouTube -->
+      {
+        youtubeSupporters.length > 0 && (
+          <div>
+            <h2 class="subtitle">YouTube</h2>
+            <section class="grid">
+              {youtubeSupporters.map(s => (
+                <SupporterCard platform={s.platform} username={s.username} url={s.url} />
+              ))}
+            </section>
+          </div>
+        )
+      }
+
+      <!-- Twitch -->
+      {
+        twitchSupporters.length > 0 && (
+          <div>
+            <h2 class="subtitle">Twitch</h2>
+            <section class="grid">
+              {twitchSupporters.map(s => (
+                <SupporterCard platform={s.platform} username={s.username} url={s.url} />
+              ))}
+            </section>
+          </div>
+        )
+      }
+    </main>
+  </div>
+</Layout>
+
+<style>
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 100dvh;
+    align-items: flex-start;
+  }
+
+  .container {
+    max-width: 42rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 1rem;
+    justify-content: center;
+  }
+
+  @media (min-width: 768px) {
+    .wrapper {
+      flex-direction: row;
+    }
+  }
+
+  .title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    display: flex;
+    gap: 0.5ch;
+    align-items: center;
+    justify-content: center;
+  }
+  .title code {
+    font-size: 0.75em;
+    background: #27272a;
+    padding: 0.25em 0.4em;
+    border-radius: 0.3em;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  @media (min-width: 32rem) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

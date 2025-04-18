@@ -9,15 +9,19 @@
   flex: 1;
 }
 
+.judge-card-container h3 {
+  text-align: center;
+}
+
 .judge-photo-container {
-  background-image: url("/img/pattern.webp");
+  background-image: url('/img/pattern.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .judge-photo {
-  width: 300px;
+  width: 270px;
   height: auto;
   object-fit: cover;
   filter: grayscale(1);
@@ -25,6 +29,7 @@
   max-height: 350px;
   max-width: max-content;
   align-self: center;
+  min-height: 350px;
 }
 
 .judge-photo:hover,
@@ -44,12 +49,12 @@
 }
 
 .jude-networks-container::after {
-  content: "/>";
+  content: '/>';
   color: #fff6;
 }
 
 .jude-networks-container::before {
-  content: "<";
+  content: '<';
   color: #fff6;
 }
 
@@ -88,6 +93,7 @@
 
   .sponsor-container {
     gap: 10px;
+    justify-items: center;
   }
 }
 
@@ -116,5 +122,6 @@
 
   .sponsor-container {
     gap: 10px;
+    justify-items: center;
   }
 }

@@ -16,7 +16,7 @@ const teamClases = {
   Gryffindor: {
     border: 'team-card--gryffindor',
     color: 'team-card__name--gryffindor',
-    header: ''
+    header: 'team-card__header--gryffindor'
   },
   Slytherin: {
     border: 'team-card--slytherin',
@@ -26,7 +26,7 @@ const teamClases = {
   Ravenclaw: {
     border: 'team-card--ravenclaw',
     color: 'team-card__name--ravenclaw',
-    header: 'team-card__header--avenclaw'
+    header: 'team-card__header--ravenclaw'
   },
   Hufflepuff: {
     border: 'team-card--hufflepuff',
@@ -53,7 +53,7 @@ const TeamImages = {
           class="teams__icon"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#fbbf24"
+          stroke="#00d9ff"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -71,7 +71,7 @@ const TeamImages = {
           class="teams__icon"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#fbbf24"
+          stroke="#00d9ff"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -99,17 +99,16 @@ const TeamImages = {
                       srcset={teamImage.src}
                       width={200}
                       height={200}
-                      class="team-card__number"
+                      class={`team-card__number--${team?.toLowerCase()}`}
                       alt={name}
                     />
                     <div class="team-card__name-container">
                       <h2 class={`team-card__name ${teamClasses.color}`}>{team}</h2>
-                      <p class="team-card__subname">Valor, Fuerza, Osadía:</p>
                     </div>
                   </div>
                   <div>
                     <p class="team-card__project">
-                      Proyecto Mágico: <span class="team-card__italic">Mapa del Merodeador Digital</span>
+                      Proyecto Mágico: <span class="team-card__italic">{project}</span>
                     </p>
                   </div>
                 </article>
@@ -123,7 +122,7 @@ const TeamImages = {
                             <Image
                               width={400}
                               height={400}
-                              class="team-card__avatar"
+                              class={`team-card__avatar--${team?.toLowerCase()}`}
                               src={member.img}
                               alt={member.name}
                             />
@@ -137,15 +136,14 @@ const TeamImages = {
                     })}
                   </ul>
                 </div>
-
                 <div class="team-card__repository">
                   <h3 class="repository-title">Pergaminos Mágicos:</h3>
                   <div class="team-card__repository-links">
-                    <a class={`team-card__respostory-link`} href="#">
-                      Repo
+                    <a class={`team-card__respostory-link--${team?.toLowerCase()}`} href={frontendRepo}>
+                      Repo frontend
                     </a>
-                    <a class="team-card__respostory-link" href="#">
-                      Demo
+                    <a class={`team-card__respostory-link--${team?.toLowerCase()}`} href={backendRepo}>
+                      Repo backend
                     </a>
                   </div>
                 </div>
@@ -162,7 +160,7 @@ const TeamImages = {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#fbbf24"
+          stroke="#00d9ff"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -176,7 +174,7 @@ const TeamImages = {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="#fbbf24"
+          stroke="#00d9ff"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -224,7 +222,7 @@ const TeamImages = {
           height="24"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="currentColor"
+          stroke="#00d9ff"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -239,7 +237,7 @@ const TeamImages = {
           height="24"
           viewBox="0 0 24 24"
           fill="none"
-          stroke="currentColor"
+          stroke="#00d9ff"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -306,4 +304,3 @@ const TeamImages = {
     </section>
   </main>
 </Layout>
-<script is:inline></script>
