@@ -11,10 +11,12 @@
 
   // Conectar al backend y suscribirse a los eventos del socket
   onMount(() => {
-    socket = io(window.location.origin, { path: '/socket.io', transports: ['websocket'] });
+    socket = io('http://localhost:3001');
+    // socket = io(window.location.origin, { path: '/socket.io', transports: ['websocket'] });
 
     // Actualiza los puntos en tiempo real
     socket.on('pointsUpdate', data => {
+      console.log('Puntos actualizados:', data);
       houses = houses.map(house => {
         if (house.name === data.houseName) {
           return { ...house, points: data.newPoints };
@@ -46,6 +48,14 @@
 
   function incrementPoints(houseName) {
     socket.emit('increment', { houseName }, response => {
+      if (response.status !== 'ok') {
+        errorMsg = response.message;
+      }
+    });
+  }
+
+  function restartPoints(houseName) {
+    socket.emit('restart', { houseName }, response => {
       if (response.status !== 'ok') {
         errorMsg = response.message;
       }
@@ -92,6 +102,7 @@
           <div class="info">
             <p>{house.name} - {house.points} / {house.maxPoints} puntos</p>
             <button on:click={() => incrementPoints(house.name)}>Sumar 5 puntos</button>
+            <button on:click={() => restartPoints(house.name)}>Reiniciar puntos</button>
           </div>
         </div>
       {/each}
