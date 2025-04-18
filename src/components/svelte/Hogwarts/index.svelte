@@ -11,7 +11,7 @@
 
   // Conectar al backend y suscribirse a los eventos del socket
   onMount(() => {
-    socket = io('http://localhost:3001');
+    socket = io(window.location.origin, { path: '/socket.io', transports: ['websocket'] });
 
     // Actualiza los puntos en tiempo real
     socket.on('pointsUpdate', data => {
