@@ -5,7 +5,7 @@ const iconPath = `/logos/${Astro.props.platform}.svg`;
 
 <article class="card">
   <!-- <img src={iconPath} alt={Astro.props.platform} width="32" height="32" class="icon" /> -->
-  <a href={Astro.props.url} rel="noopener noreferrer" target="_blank">{Astro.props.username}</a>
+  <a href={Astro.props.url} rel="noopener noreferrer" target="_blank">{`< ${Astro.props.username} />`}</a>
 </article>
 
 <style>

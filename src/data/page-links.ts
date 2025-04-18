@@ -6,6 +6,10 @@ export const links: LinkItem[] = [
     href: '/'
   },
   {
+    name: 'Agradecimientos',
+    href: '/agradecimiento'
+  },
+  {
     name: 'Newsletter',
     href: '/newsletter'
   },
