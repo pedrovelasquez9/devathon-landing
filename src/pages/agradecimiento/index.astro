@@ -10,8 +10,10 @@ const twitchSupporters = supporters.filter(s => s.platform === 'twitch');
 
 <Layout title="Retos de programación">
   <main class="main-container thanks-container">
-    <img src="/favicon.png" width="100px" />
-    <h1 class="title">Agradecimiento</h1>
+    <div class="container">
+      <img src="/favicon.png" width="100px" />
+      <h1 class="title">Agradecimiento</h1>
+    </div>
     <p>
       Infinitas gracias a todos los suscriptores de Twitch y miembros del canal de YouTube que apoyan el
       contenido y me animan a seguir compartiendo. ¡Que tengan buen código!
@@ -68,7 +70,7 @@ const twitchSupporters = supporters.filter(s => s.platform === 'twitch');
     display: flex;
     flex-direction: column;
   }
-  .container > img {
+  .container {
     width: 100px;
     margin: 0 auto;
     text-align: center;
