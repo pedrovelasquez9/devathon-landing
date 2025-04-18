@@ -4,17 +4,17 @@
 
   let socket;
   let registered = false;
-  let userName = "";
+  let userName = '';
   let houses = [];
   let participants = [];
-  let errorMsg = "";
+  let errorMsg = '';
 
   // Conectar al backend y suscribirse a los eventos del socket
   onMount(() => {
-    socket = io("http://localhost:3000");
+    socket = io('http://localhost:3001');
 
     // Actualiza los puntos en tiempo real
-    socket.on('pointsUpdate', (data) => {
+    socket.on('pointsUpdate', data => {
       houses = houses.map(house => {
         if (house.name === data.houseName) {
           return { ...house, points: data.newPoints };
@@ -24,17 +24,17 @@
     });
 
     // Actualiza la lista de participantes conectados
-    socket.on('userList', (data) => {
+    socket.on('userList', data => {
       participants = data;
     });
   });
 
   function register() {
-    if (userName.trim() === "") {
-      errorMsg = "Ingresa tu nombre.";
+    if (userName.trim() === '') {
+      errorMsg = 'Ingresa tu nombre.';
       return;
     }
-    socket.emit('register', { name: userName }, (response) => {
+    socket.emit('register', { name: userName }, response => {
       if (response.status === 'ok') {
         registered = true;
         houses = response.houses; // Se espera que el backend envíe la lista de casas con sus puntos
@@ -45,13 +45,59 @@
   }
 
   function incrementPoints(houseName) {
-    socket.emit('increment', { houseName }, (response) => {
+    socket.emit('increment', { houseName }, response => {
       if (response.status !== 'ok') {
         errorMsg = response.message;
       }
     });
   }
 </script>
+
+<div class="container">
+  <!-- Lista de participantes conectados -->
+  <div class="participants">
+    <h3>Participantes:</h3>
+    <ul>
+      {#each participants as participant}
+        <li>{participant.name}</li>
+      {/each}
+    </ul>
+  </div>
+
+  {#if !registered}
+    <!-- Formulario de registro -->
+    <div class="register-form">
+      <h1>Bienvenido al Gran Comedor de Hogwarts</h1>
+      <p>Ingresa tu nombre para unirte a la experiencia</p>
+      <input type="text" bind:value={userName} placeholder="Tu nombre" />
+      <button on:click={register}>Entrar</button>
+      {#if errorMsg}
+        <div class="error">{errorMsg}</div>
+      {/if}
+    </div>
+  {:else}
+    <h1>Gran Comedor de Hogwarts</h1>
+    <div class="houses">
+      {#each houses as house (house.name)}
+        <div class="house {house.name.toLowerCase()}">
+          <div class="tube-wrapper">
+            <div class="crest"></div>
+            <div class="tube-top"></div>
+            <div class="progress-container">
+              <!-- El alto del relleno se ajusta según los puntos (0 a 100%) -->
+              <div class="fill" style="height: {house.points}%"></div>
+            </div>
+            <div class="tube-bottom"></div>
+          </div>
+          <div class="info">
+            <p>{house.name} - {house.points} / {house.maxPoints} puntos</p>
+            <button on:click={() => incrementPoints(house.name)}>Sumar 5 puntos</button>
+          </div>
+        </div>
+      {/each}
+    </div>
+  {/if}
+</div>
 
 <style>
   .container {
@@ -63,14 +109,12 @@
     padding: 0;
     margin: 0;
     color: #fff;
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ), url("../assets/sorting-hat-bg.webp");
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/sorting-hat-bg.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: "Cinzel Decorative", cursive;
+    font-family: 'Cinzel Decorative', cursive;
   }
 
   /* ===== PARTICIPANTES (ESQUINA SUPERIOR DERECHA) ===== */
@@ -189,7 +233,7 @@
     height: 30px;
     background-color: #b5912f;
     border-radius: 40px 40px 0 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5) inset;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset;
     z-index: 1;
   }
 
@@ -201,7 +245,7 @@
     transform: translateX(-50%);
     width: 70px;
     height: 70%;
-    background: rgba(255,255,255,0.25);
+    background: rgba(255, 255, 255, 0.25);
     border: 2px solid #b5912f;
     border-radius: 35px;
     overflow: hidden;
@@ -218,7 +262,7 @@
     height: 10%;
     background-color: #b5912f;
     border-radius: 0 0 40px 40px;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.5) inset;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5) inset;
     z-index: 1;
   }
 
@@ -264,10 +308,10 @@
     background-image: url('../assets/hufflepuff.webp');
   }
   .hufflepuff .fill {
-    background: linear-gradient(180deg, #FFD800, #EEE117);
+    background: linear-gradient(180deg, #ffd800, #eee117);
   }
   .hufflepuff .info button {
-    background-color: #EEE117;
+    background-color: #eee117;
     color: #000;
   }
 
@@ -275,65 +319,19 @@
     background-image: url('../assets/ravenclaw.webp');
   }
   .ravenclaw .fill {
-    background: linear-gradient(180deg, #222F5B, #4B6D9B);
+    background: linear-gradient(180deg, #222f5b, #4b6d9b);
   }
   .ravenclaw .info button {
-    background-color: #4B6D9B;
+    background-color: #4b6d9b;
   }
 
   .slytherin .crest {
     background-image: url('../assets/slytherin.webp');
   }
   .slytherin .fill {
-    background: linear-gradient(180deg, #1A472A, #2A623D);
+    background: linear-gradient(180deg, #1a472a, #2a623d);
   }
   .slytherin .info button {
-    background-color: #2A623D;
+    background-color: #2a623d;
   }
 </style>
-
-<div class="container">
-  <!-- Lista de participantes conectados -->
-  <div class="participants">
-    <h3>Participantes:</h3>
-    <ul>
-      {#each participants as participant}
-        <li>{participant.name}</li>
-      {/each}
-    </ul>
-  </div>
-
-  {#if !registered}
-    <!-- Formulario de registro -->
-    <div class="register-form">
-      <h1>Bienvenido al Gran Comedor de Hogwarts</h1>
-      <p>Ingresa tu nombre para unirte a la experiencia</p>
-      <input type="text" bind:value={userName} placeholder="Tu nombre" />
-      <button on:click={register}>Entrar</button>
-      {#if errorMsg}
-        <div class="error">{errorMsg}</div>
-      {/if}
-    </div>
-  {:else}
-    <h1>Gran Comedor de Hogwarts</h1>
-    <div class="houses">
-      {#each houses as house (house.name)}
-        <div class="house {house.name.toLowerCase()}">
-          <div class="tube-wrapper">
-            <div class="crest"></div>
-            <div class="tube-top"></div>
-            <div class="progress-container">
-              <!-- El alto del relleno se ajusta según los puntos (0 a 100%) -->
-              <div class="fill" style="height: {house.points}%"></div>
-            </div>
-            <div class="tube-bottom"></div>
-          </div>
-          <div class="info">
-            <p>{house.name} - {house.points} / {house.maxPoints} puntos</p>
-            <button on:click={() => incrementPoints(house.name)}>Sumar 5 puntos</button>
-          </div>
-        </div>
-      {/each}
-    </div>
-  {/if}
-</div>
