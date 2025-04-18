@@ -18,20 +18,20 @@ body {
 .devathonIX {
   /* COLORES BASE COMUNES */
   --bg: #0a0a14;
-  --text-primary: #fef3c7;
-  --text-secondary: #fef3c7; /* Con opacidad 70% */
-  --title-color: #fcd34d;
-  --accent-color: #fbbf24;
+  --text-primary: #fff;
+  --text-secondary: #fff; /* Con opacidad 70% */
+  --title-color: #fff;
+  --accent-color: #fff;
   --border-common: #78350f; /* Con opacidad 30% */
-  --gradient-title-from: #fcd34d;
-  --gradient-title-to: #ca8a04;
+  --gradient-title-from: #00d9ff;
+  --gradient-title-to: #00d9ff;
 
   /* EFECTOS Y DECORACIONES */
   --stars: #fde68a;
-  --magic-elements: #fbbf24;
+  --magic-elements: #00d9ff;
   --hover-elements: #92400e; /* Con opacidad 50% */
   --button-bg: #78350f; /* Con opacidad 30% */
-  --hover-border: #f59e0b; /* Con opacidad 50% */
+  --hover-border: #00d9ff; /* Con opacidad 50% */
 
   /* CASAS - GRYFFINDOR */
   --gryffindor-gradient-from: #991b1b;
@@ -67,9 +67,9 @@ body {
 }
 
 .devathonIX-container {
-  background-color: var(--bg);
-  padding: 1rem;
+  padding: 10px 20px;
 }
+
 .teams__container {
   margin-bottom: 5rem;
   display: grid;
@@ -121,35 +121,9 @@ body {
   z-index: -1;
   opacity: 0.14;
 }
+
 .team-card--slytherin {
   border-color: var(--slytherin-border);
-}
-.team-card__header {
-  padding: 1.5rem;
-  background-color: color-mix(in srgb, var(--gryffindor-bg) 10%, transparent);
-  border-bottom: 0.125rem solid var(--gryffindor-border);
-}
-.team-card__header__info {
-  margin-bottom: 1.5rem;
-
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.team-card__number {
-  padding: 0.5rem;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 9999999px;
-  background-color: var(--border-common);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-}
-.team-card__name {
-  font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 .team-card__name--slytherin {
   color: var(--slytherin-accent);
@@ -160,7 +134,197 @@ body {
 .team-card__header--slytherin {
   background-color: color-mix(in srgb, var(--slytherin-bg) 10%, transparent);
   border-color: var(--slytherin-border);
+  border-bottom: 0.125rem solid var(--slytherin-border);
 }
+.team-card__avatar--slytherin {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  border: 0.125rem solid var(--slytherin-border);
+  background-color: rebeccapurple;
+}
+.team-card__respostory-link--slytherin {
+  padding: 0.5rem 2rem;
+  border-radius: 999999px;
+  text-decoration: none;
+  background-color: color-mix(in srgb, var(--slytherin-gradient-from) 15%, transparent);
+  border: 0.125rem solid transparent;
+  transition:
+    background-color 0.3s,
+    border 0.3s;
+}
+.team-card__respostory-link--slytherin:hover {
+  background-color: color-mix(in srgb, var(--slytherin-gradient-from) 30%, transparent);
+  border: 0.125rem solid var(--slytherin-hover);
+}
+.team-card__number--slytherin {
+  padding: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  background-color: var(--slytherin-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.team-card--ravenclaw {
+  border-color: var(--ravenclaw-border);
+}
+.team-card__name--ravenclaw {
+  color: var(--ravenclaw-accent);
+}
+.team-card__name--ravenclaw {
+  color: var(--ravenclaw-accent);
+}
+.team-card__header--ravenclaw {
+  background-color: color-mix(in srgb, var(--ravenclaw-bg) 10%, transparent);
+  border-color: var(--ravenclaw-border);
+  border-bottom: 0.125rem solid var(--ravenclaw-border);
+}
+.team-card__avatar--ravenclaw {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  border: 0.125rem solid var(--ravenclaw-border);
+  background-color: rebeccapurple;
+}
+.team-card__respostory-link--ravenclaw {
+  padding: 0.5rem 2rem;
+  border-radius: 999999px;
+  text-decoration: none;
+  background-color: color-mix(in srgb, var(--ravenclaw-gradient-from) 15%, transparent);
+  border: 0.125rem solid transparent;
+  transition:
+    background-color 0.3s,
+    border 0.3s;
+}
+.team-card__respostory-link--ravenclaw:hover {
+  background-color: color-mix(in srgb, var(--ravenclaw-gradient-from) 30%, transparent);
+  border: 0.125rem solid var(--ravenclaw-hover);
+}
+.team-card__number--ravenclaw {
+  padding: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  background-color: var(--ravenclaw-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.team-card--hufflepuff {
+  border-color: var(--hufflepuff-border);
+}
+.team-card__name--hufflepuff {
+  color: var(--hufflepuff-accent);
+}
+.team-card__name--hufflepuff {
+  color: var(--hufflepuff-accent);
+}
+.team-card__header--hufflepuff {
+  background-color: color-mix(in srgb, var(--hufflepuff-bg) 10%, transparent);
+  border-color: var(--hufflepuff-border);
+  border-bottom: 0.125rem solid var(--hufflepuff-border);
+}
+.team-card__avatar--hufflepuff {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  border: 0.125rem solid var(--hufflepuff-border);
+  background-color: rebeccapurple;
+}
+.team-card__respostory-link--hufflepuff {
+  padding: 0.5rem 2rem;
+  border-radius: 999999px;
+  text-decoration: none;
+  background-color: color-mix(in srgb, var(--hufflepuff-gradient-from) 15%, transparent);
+  border: 0.125rem solid transparent;
+  transition:
+    background-color 0.3s,
+    border 0.3s;
+}
+.team-card__respostory-link--hufflepuff:hover {
+  background-color: color-mix(in srgb, var(--hufflepuff-gradient-from) 30%, transparent);
+  border: 0.125rem solid var(--hufflepuff-hover);
+}
+.team-card__number--hufflepuff {
+  padding: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  background-color: var(--hufflepuff-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.team-card--gryffindor {
+  border-color: var(--gryffindor-border);
+}
+.team-card__name--gryffindor {
+  color: var(--gryffindor-accent);
+}
+.team-card__name--gryffindor {
+  color: var(--gryffindor-accent);
+}
+.team-card__header--gryffindor {
+  background-color: color-mix(in srgb, var(--gryffindor-bg) 10%, transparent);
+  border-color: var(--gryffindor-border);
+  border-bottom: 0.125rem solid var(--gryffindor-border);
+}
+.team-card__avatar--gryffindor {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  border: 0.125rem solid var(--gryffindor-border);
+  background-color: rebeccapurple;
+}
+.team-card__respostory-link--gryffindor {
+  padding: 0.5rem 2rem;
+  border-radius: 999999px;
+  text-decoration: none;
+  background-color: color-mix(in srgb, var(--gryffindor-gradient-from) 15%, transparent);
+  border: 0.125rem solid transparent;
+  transition:
+    background-color 0.3s,
+    border 0.3s;
+}
+.team-card__respostory-link--gryffindor:hover {
+  background-color: color-mix(in srgb, var(--gryffindor-gradient-from) 30%, transparent);
+  border: 0.125rem solid var(--gryffindor-hover);
+}
+.team-card__number--gryffindor {
+  padding: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999999px;
+  background-color: var(--gryffindor-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.team-card__header {
+  padding: 1.5rem;
+}
+.team-card__header__info {
+  margin-bottom: 1.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.team-card__name {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
 .team-card__subname {
   font-style: italic;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
@@ -196,13 +360,7 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
-.team-card__avatar {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 9999999px;
-  border: 0.125rem solid var(--gryffindor-border);
-  background-color: rebeccapurple;
-}
+
 .team-card__member-name {
   text-decoration: none;
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
@@ -220,20 +378,6 @@ body {
   gap: 1rem;
   align-items: center;
 }
-.team-card__respostory-link {
-  padding: 0.5rem 2rem;
-  border-radius: 999999px;
-  text-decoration: none;
-  background-color: color-mix(in srgb, var(--gryffindor-gradient-from) 15%, transparent);
-  border: 0.125rem solid transparent;
-  transition:
-    background-color 0.3s,
-    border 0.3s;
-}
-.team-card__respostory-link:hover {
-  background-color: color-mix(in srgb, var(--gryffindor-gradient-from) 30%, transparent);
-  border: 0.125rem solid var(--gryffindor-hover);
-}
 
 .menthors {
   border: 0.125rem solid var(--border-common);
@@ -248,7 +392,7 @@ body {
 }
 .menthors__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   gap: 1rem;
 }
 .menthor {
@@ -283,4 +427,10 @@ body {
 }
 .judges-title {
   margin-bottom: 2.5rem;
+}
+
+.evaluation-criteria__list {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }

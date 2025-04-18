@@ -7,39 +7,44 @@ export const devathonData = {
       team: 'Gryffindor',
       isWinner: true,
       isRetired: false,
-      project: 'Dashboard navideño',
-      frontendRepo: 'https://github.com/alejandroluisacosta/devathon-8-frontend',
-      backendRepo: 'https://github.com/jvngarcia/devathon-8-backend',
+      project: 'Sistema de duelos mágicos',
+      frontendRepo: 'https://github.com/alejandroluisacosta/devathon-9-frontend',
+      backendRepo: 'https://github.com/Manuelentrena/devathon-9-backend',
       members: [
         {
-          name: 'Jose Gonzales',
-          img: '/img/ed7-team2/joselu.webp',
-          linkedin: 'https://www.linkedin.com/in/j0selu/'
+          name: 'Oscar Bermudez',
+          img: '/img/devathon-ix/gryffindor/oscar.webp',
+          linkedin: 'https://www.linkedin.com/in/oscarbermudezdev/'
+        },
+        {
+          name: 'Fidel (dev_ficho)',
+          img: '/img/devathon-ix/gryffindor/fidel.webp',
+          linkedin: 'https://github.com/fidelChoqueDev'
+        },
+        {
+          name: 'Manuel Entrena',
+          img: '/img/devathon-ix/gryffindor/manuel.webp',
+          linkedin: 'https://www.linkedin.com/in/manuelentrena/'
+        },
+        {
+          name: 'Daniel Huaman',
+          img: '/img/devathon-ix/gryffindor/daniel.webp',
+          linkedin: 'https://www.linkedin.com/in/daniel-h-35aa637b/'
+        },
+        {
+          name: 'Bolívar Delgado',
+          img: '/img/devathon-ix/gryffindor/bolivar.webp',
+          linkedin: 'https://www.linkedin.com/in/bolivar-delgado-5522b0108/'
         },
         {
           name: 'Alejandro Acosta',
-          img: '/img/ed7-team1/aliester.webp',
+          img: '/img/devathon-ix/gryffindor/alejandro.webp',
           linkedin: 'https://www.linkedin.com/in/alejandroluisacosta/'
         },
         {
-          name: 'Miguel Lema',
-          img: '/img/ed7-team1/alejandro.webp',
-          linkedin: 'https://www.linkedin.com/in/miguel-lema-garcía/'
-        },
-        {
-          name: 'Juan José Romero',
-          img: '/img/devathon-avatar.webp',
-          linkedin: 'https://www.linkedin.com/in/juan-josé-romero-montes-b65293280/'
-        },
-        {
-          name: 'Darío Ramírez',
-          img: '/img/devathon-avatar.webp',
-          linkedin: 'https://www.linkedin.com/in/darío-j-ramírez-49a422303/'
-        },
-        {
-          name: 'Angel Garcia',
-          img: '/img/ed7-team1/matdev.webp',
-          linkedin: 'https://www.linkedin.com/in/jvngarcia/'
+          name: 'Abril Sabatini',
+          img: '/img/devathon-ix/gryffindor/abril.webp',
+          linkedin: 'https://www.linkedin.com/in/abril-sabatini-62a806234/'
         }
       ]
     },
@@ -47,179 +52,95 @@ export const devathonData = {
       id: '2',
       name: 'EQUIPO 2',
       team: 'Slytherin',
-
       isWinner: false,
       isRetired: false,
-      project: 'Dashboard navideño',
-      frontendRepo: 'https://github.com/joserangel25/devathon-8',
-      backendRepo: 'https://github.com/DiegoVega87/santas-dashboard-backend.git',
+      project: 'Marketplace Callejón Nocturno',
+      frontendRepo: 'https://github.com/temeriamos/Devathon-Slytherin-Front',
+      backendRepo: 'https://github.com/temeriamos/Devathon-Slytherin-Back',
       members: [
         {
-          name: 'Jose Gonzales',
-          img: '/img/ed7-team2/joselu.webp',
-          linkedin: 'https://www.linkedin.com/in/j0selu/'
+          name: 'Carlos Vega',
+          img: '/img/devathon-ix/slytherin/carlos.webp',
+          linkedin: 'https://www.linkedin.com/in/carlosmiguelvega/'
         },
         {
-          name: 'Alejandro Acosta',
-          img: '/img/ed7-team1/aliester.webp',
-          linkedin: 'https://www.linkedin.com/in/alejandroluisacosta/'
-        },
-        {
-          name: 'Miguel Lema',
-          img: '/img/ed7-team1/alejandro.webp',
-          linkedin: 'https://www.linkedin.com/in/miguel-lema-garcía/'
-        },
-        {
-          name: 'Juan José Romero',
+          name: 'Angie Gutiérrez',
           img: '/img/devathon-avatar.webp',
-          linkedin: 'https://www.linkedin.com/in/juan-josé-romero-montes-b65293280/'
+          linkedin: 'https://www.linkedin.com/in/angie-camarena-guti%C3%A9rrez-8b6bb0115/'
         },
         {
-          name: 'Darío Ramírez',
-          img: '/img/devathon-avatar.webp',
-          linkedin: 'https://www.linkedin.com/in/darío-j-ramírez-49a422303/'
+          name: 'Jaiver Martínez',
+          img: '/img/devathon-ix/slytherin/jaiver.webp',
+          linkedin: 'https://www.linkedin.com/in/jaiver-mart%C3%ADnez-bonilla-186b66147/'
         },
         {
-          name: 'Angel Garcia',
-          img: '/img/ed7-team1/matdev.webp',
-          linkedin: 'https://www.linkedin.com/in/jvngarcia/'
+          name: 'Moises Vegas',
+          img: '/img/devathon-ix/slytherin/moises.webp',
+          linkedin: 'https://www.linkedin.com/in/zail-vegas-padron/'
+        },
+        {
+          name: 'Raydberg Chuquival',
+          img: '/img/devathon-ix/slytherin/raydberg.webp',
+          linkedin: 'https://www.linkedin.com/in/raydbergchuquival/'
+        },
+        {
+          name: 'Jerson Navarro',
+          img: '/img/devathon-ix/slytherin/jerson.webp',
+          linkedin: 'www.linkedin.com/in/jerson-navarro-1370081b1'
         }
       ]
     },
     {
       id: '3',
       name: 'EQUIPO 3',
-      team: 'Ravenclaw',
+      team: 'Hufflepuff',
       isWinner: false,
       isRetired: false,
-      project: 'Dashboard navideño',
-      frontendRepo: 'https://github.com/TEAM3-ED8/front-end',
-      backendRepo: 'https://github.com/TEAM3-ED8/back-end',
+      project: 'Recetario mágico',
+      frontendRepo: 'https://github.com/Devathon-IX-Edicion/FrontEnd_DevathonIX',
+      backendRepo: 'https://github.com/Devathon-IX-Edicion/BackEnd_DevathonIX',
       members: [
         {
-          name: 'Jose Gonzales',
-          img: '/img/ed7-team2/joselu.webp',
-          linkedin: 'https://www.linkedin.com/in/j0selu/'
+          name: 'Mario Pazmiño',
+          img: '/img/devathon-ix/hufflepuff/mario.webp',
+          linkedin: 'https://www.linkedin.com/in/mario-pazmi%C3%B1o-a47372171/'
         },
         {
-          name: 'Alejandro Acosta',
-          img: '/img/ed7-team1/aliester.webp',
-          linkedin: 'https://www.linkedin.com/in/alejandroluisacosta/'
-        },
-        {
-          name: 'Miguel Lema',
-          img: '/img/ed7-team1/alejandro.webp',
-          linkedin: 'https://www.linkedin.com/in/miguel-lema-garcía/'
-        },
-        {
-          name: 'Juan José Romero',
+          name: 'Stefano Aguilar',
           img: '/img/devathon-avatar.webp',
-          linkedin: 'https://www.linkedin.com/in/juan-josé-romero-montes-b65293280/'
+          linkedin: 'https://www.linkedin.com/in/stefano-aguilar-a3219931a/'
         },
-        {
-          name: 'Darío Ramírez',
-          img: '/img/devathon-avatar.webp',
-          linkedin: 'https://www.linkedin.com/in/darío-j-ramírez-49a422303/'
-        },
-        {
-          name: 'Angel Garcia',
-          img: '/img/ed7-team1/matdev.webp',
-          linkedin: 'https://www.linkedin.com/in/jvngarcia/'
-        }
       ]
     },
     {
       id: '4',
       name: 'EQUIPO 4',
-      team: 'Gryffindor',
-
+      team: 'Ravenclaw',
       isWinner: false,
       isRetired: false,
-      project: 'Dashboard navideño',
-      frontendRepo: 'https://github.com/Devathon2024-Equipo4/frontend',
-      backendRepo: 'https://github.com/Devathon2024-Equipo4/backend',
+      project: 'Biblioteca mágica',
+      frontendRepo: 'https://github.com/TEAM3-ED9/magical-bookstore-front',
+      backendRepo: 'https://github.com/TEAM3-ED9/magical-bookstore-api',
       members: [
         {
-          name: 'Jose Gonzales',
-          img: '/img/ed7-team2/joselu.webp',
-          linkedin: 'https://www.linkedin.com/in/j0selu/'
+          name: 'José Mario',
+          img: '/img/devathon-ix/ravenclaw/jose.webp',
+          linkedin: 'https://www.linkedin.com/in/jos%C3%A9-mario-m-b0236037/'
         },
         {
-          name: 'Alejandro Acosta',
-          img: '/img/ed7-team1/aliester.webp',
-          linkedin: 'https://www.linkedin.com/in/alejandroluisacosta/'
+          name: 'Jesús de Freitas',
+          img: '/img/devathon-ix/ravenclaw/jesus.webp',
+          linkedin: 'https://www.linkedin.com/in/jesusmiguel/'
         },
         {
-          name: 'Miguel Lema',
-          img: '/img/ed7-team1/alejandro.webp',
-          linkedin: 'https://www.linkedin.com/in/miguel-lema-garcía/'
-        },
-        {
-          name: 'Juan José Romero',
-          img: '/img/devathon-avatar.webp',
-          linkedin: 'https://www.linkedin.com/in/juan-josé-romero-montes-b65293280/'
-        },
-        {
-          name: 'Darío Ramírez',
-          img: '/img/devathon-avatar.webp',
-          linkedin: 'https://www.linkedin.com/in/darío-j-ramírez-49a422303/'
-        },
-        {
-          name: 'Angel Garcia',
-          img: '/img/ed7-team1/matdev.webp',
-          linkedin: 'https://www.linkedin.com/in/jvngarcia/'
+          name: 'Daniel Valdivieso',
+          img: '/img/devathon-ix/ravenclaw/daniel.webp',
+          linkedin: 'https://www.linkedin.com/in/danielvaldivieso/'
         }
       ]
     },
-    {
-      id: '5',
-      name: 'EQUIPO 5',
-      team: 'Gryffindor',
-      isWinner: false,
-      isRetired: false,
-      project: 'Dashboard navideño',
-      frontendRepo: 'https://github.com/Devathon-TEAM5-ED8/santa-dashboard',
-      backendRepo: 'https://github.com/Devathon-TEAM5-ED8/santa-dashboard_backend',
-      members: [
-        {
-          name: 'Jose Gonzales',
-          img: '/img/ed7-team2/joselu.webp',
-          linkedin: 'https://www.linkedin.com/in/j0selu/'
-        },
-        {
-          name: 'Alejandro Acosta',
-          img: '/img/ed7-team1/aliester.webp',
-          linkedin: 'https://www.linkedin.com/in/alejandroluisacosta/'
-        },
-        {
-          name: 'Miguel Lema',
-          img: '/img/ed7-team1/alejandro.webp',
-          linkedin: 'https://www.linkedin.com/in/miguel-lema-garcía/'
-        },
-        {
-          name: 'Juan José Romero',
-          img: '/img/devathon-avatar.webp',
-          linkedin: 'https://www.linkedin.com/in/juan-josé-romero-montes-b65293280/'
-        },
-        {
-          name: 'Darío Ramírez',
-          img: '/img/devathon-avatar.webp',
-          linkedin: 'https://www.linkedin.com/in/darío-j-ramírez-49a422303/'
-        },
-        {
-          name: 'Angel Garcia',
-          img: '/img/ed7-team1/matdev.webp',
-          linkedin: 'https://www.linkedin.com/in/jvngarcia/'
-        }
-      ]
-    }
   ],
   menthors: [
-    {
-      name: 'Manuel Gil',
-      img: '/img/menthors/manuelgil.webp',
-      linkedin: 'https://imgil.dev/'
-    },
     {
       name: 'Santiago Rey',
       img: '/img/menthors/manuelgil.webp',
@@ -244,16 +165,6 @@ export const devathonData = {
       name: 'Mario Dante Mariani',
       img: '/img/menthors/mario.webp',
       linkedin: 'https://www.linkedin.com/in/mario-dante-mariani/'
-    },
-    {
-      name: 'David Ramón Thomen',
-      img: '/img/menthors/mario.webp',
-      linkedin: 'https://ar.linkedin.com/in/david-ramon-thomen'
-    },
-    {
-      name: 'Jeyson Guzman',
-      img: 'https://media.licdn.com/dms/image/v2/D4E03AQHX_SNHKCRQag/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1694454115930?e=1738800000&v=beta&t=o93yuBhn11WV60MXopGrq4g67wy_PrPk_RIs_2joUls',
-      linkedin: 'https://www.linkedin.com/in/jeyson-guzman/'
     }
   ],
   judges: [
@@ -369,18 +280,18 @@ export const devathonData = {
       ]
     },
     {
-      name: 'Isaac Pavón',
-      project: 'Altaskur',
-      img: 'altaskur.webp',
+      name: 'Ana Rangel',
+      project: 'UX Ana Rangel',
+      img: 'ana.webp',
       networks: [
         {
           name: 'linkedin',
-          link: 'https://www.linkedin.com/in/isaac-juli%C3%A1n/',
+          link: 'https://www.linkedin.com/in/ux-ana-rangel/',
           icon: 'linkedin.png'
         },
         {
           name: 'YouTube',
-          link: 'https://www.youtube.com/@altaskur',
+          link: 'https://youtube.com/channel/UC2gxu8X4t7hQ14q8t81PFlQ',
           icon: 'youtube.png'
         },
         {
@@ -390,40 +301,45 @@ export const devathonData = {
         },
         {
           name: 'Instagram',
-          link: 'https://www.instagram.com/altaskur',
+          link: 'https://www.instagram.com/ux.ana.rangel/?hl=es-la',
           icon: 'instagram.png'
         },
         {
-          name: 'X',
-          link: 'https://x.com/Altaskur',
-          icon: 'x.png'
-        },
-        {
-          name: 'TikTok',
-          link: 'https://www.tiktok.com/@altaskur',
-          icon: 'tiktok.png'
+          name: 'Discord',
+          link: 'https://discord.com/invite/yE2SyVduRB',
+          icon: 'discord-icon.webp'
         }
       ]
     },
     {
-      name: 'Dani Rodriguez',
-      project: 'Makigas',
-      img: 'danirod.webp',
+      name: 'David García',
+      project: 'DerteDark',
+      img: 'derte.webp',
       networks: [
         {
-          name: 'Mastodon',
-          link: 'https://masto.es/@danirod',
-          icon: 'mastodon.png'
+          name: 'LinkedIn',
+          link: 'https://www.linkedin.com/in/david-garcia-machado/',
+          icon: 'linkedin.png'
         },
         {
-          name: 'YouTube',
-          link: 'https://www.youtube.com/@makigas',
-          icon: 'youtube.png'
+          name: 'Instagram',
+          link: 'https://www.instagram.com/bodamagica2025/',
+          icon: 'instagram.png'
         },
         {
           name: 'Twitch',
-          link: 'https://www.twitch.tv/danirod_',
+          link: 'https://www.twitch.tv/dertedark',
           icon: 'twitch.png'
+        },
+        {
+          name: 'X',
+          link: 'https://x.com/bodamagica2025',
+          icon: 'x.png'
+        },
+        {
+          name: 'TikTok',
+          link: 'https://www.tiktok.com/@bodamagica2025',
+          icon: 'tiktok.png'
         }
       ]
     }

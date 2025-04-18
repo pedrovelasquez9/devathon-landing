@@ -1,0 +1,135 @@
+[
+    {
+      "id": 1,
+      "platform": "youtube",
+      "username": "Hanssel Leon",
+      "url": "https://www.youtube.com/channel/UCT1ZZIOHBORTk08p-Pm6WLg"
+    },
+    {
+      "id": 2,
+      "platform": "youtube",
+      "username": "Fidel Choque Viscarra",
+      "url": "https://www.youtube.com/channel/UCqCVbLuTiekWBEj6eKA1GJg"
+    },
+    {
+      "id": 3,
+      "platform": "youtube",
+      "username": "Raúl Caro Pastorino",
+      "url": "https://www.youtube.com/channel/UCZescg-D1m_yCSgTdCLRBpw"
+    },
+    {
+      "id": 4,
+      "platform": "youtube",
+      "username": "danirod",
+      "url": "https://www.youtube.com/channel/UClUpYGnh1_XrLIkNrBI5mwg"
+    },
+    {
+      "id": 5,
+      "platform": "twitch",
+      "username": "dertedark",
+      "url": "https://www.twitch.tv/dertedark"
+    },
+    {
+      "id": 6,
+      "platform": "twitch",
+      "username": "ivanfdp",
+      "url": "https://www.twitch.tv/ivanfdp"
+    },
+    {
+      "id": 7,
+      "platform": "twitch",
+      "username": "casacodev",
+      "url": "https://www.twitch.tv/casacodev"
+    },
+    {
+      "id": 8,
+      "platform": "twitch",
+      "username": "guamydev",
+      "url": "https://www.twitch.tv/guamydev"
+    },
+    {
+        "id": 9,
+        "platform": "twitch",
+        "username": "othamae",
+        "url": "https://www.twitch.tv/othamae"
+    },
+    {
+        "id": 10,
+        "platform": "twitch",
+        "username": "devcrash03",
+        "url": "https://www.twitch.tv/devcrash03"
+    },
+    {
+        "id": 11,
+        "platform": "twitch",
+        "username": "zhaka21",
+        "url": "https://www.twitch.tv/zhaka21"
+    },
+    {
+        "id": 12,
+        "platform": "twitch",
+        "username": "deskiziada",
+        "url": "https://www.twitch.tv/deskiziada"
+    },
+    {
+        "id": 13,
+        "platform": "twitch",
+        "username": "dariojdev",
+        "url": "https://www.twitch.tv/dariojdev"
+    },
+    {
+      "id": 14,
+      "platform": "twitch",
+      "username": "vngerus",
+      "url": "https://www.twitch.tv/vngerus"
+    },
+    {
+      "id": 14,
+      "platform": "twitch",
+      "username": "manuel_entrena",
+      "url": "https://www.twitch.tv/manuel_entrena"
+    },
+    {
+      "id": 15,
+      "platform": "twitch",
+      "username": "fitoikari",
+      "url": "https://www.twitch.tv/fitoikari"
+    },
+    {
+      "id": 16,
+      "platform": "twitch",
+      "username": "altaskur",
+      "url": "https://www.twitch.tv/altaskur"
+    },
+    {
+      "id": 17,
+      "platform": "twitch",
+      "username": "silverknight3",
+      "url": "https://www.twitch.tv/silverknight3"
+    },
+    {
+        "id": 18,
+        "platform": "twitch",
+        "username": "solrac901",
+        "url": "https://www.twitch.tv/solrac901"
+    },
+    {
+        "id": 19,
+        "platform": "twitch",
+        "username": "garb0nd",
+        "url": "https://www.twitch.tv/garb0nd"
+    },
+    {
+        "id": 20,
+        "platform": "twitch",
+        "username": "eduar_jose04",
+        "url": "https://www.twitch.tv/eduar_jose04"
+    },
+    {
+        "id": 21,
+        "platform": "twitch",
+        "username": "robertov507",
+        "url": "https://www.twitch.tv/robertov507"
+    }  
+  ]
+  

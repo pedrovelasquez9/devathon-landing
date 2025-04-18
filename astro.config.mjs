@@ -7,7 +7,7 @@ export default defineConfig({
   site: 'https://programacion-es.dev/',
   base: "./",
   server: {
-    port: 3000
+    port: 4321
   },
   integrations: [svelte()]
 });
