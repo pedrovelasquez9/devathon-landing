@@ -146,6 +146,13 @@ const TeamImages = {
                     <a class={`team-card__respostory-link--${team?.toLowerCase()}`} href={backendRepo}>
                       Repo backend
                     </a>
+                    {isWinner && (
+                      <img
+                        class="team-card__winner-copa"
+                        src="/img/devathon-ix/copa_devathon.webp"
+                        alt="Ganador de la novena edición del Devathon"
+                      />
+                    )}
                   </div>
                 </div>
               </section>
@@ -366,4 +373,3 @@ const TeamImages = {
     container.append(fragment);
   });
 </script>
-
