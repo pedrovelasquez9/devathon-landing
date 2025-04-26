@@ -110,6 +110,11 @@ export const devathonData = {
           img: '/img/devathon-avatar.webp',
           linkedin: 'https://www.linkedin.com/in/stefano-aguilar-a3219931a/'
         },
+        {
+          name: 'Luis Tenorio',
+          img: '/img/devathon-ix/hufflepuff/luis-tenorio.webp',
+          linkedin: 'https://github.com/luis-codex'
+        },
       ]
     },
     {
@@ -136,6 +141,11 @@ export const devathonData = {
           name: 'Daniel Valdivieso',
           img: '/img/devathon-ix/ravenclaw/daniel.webp',
           linkedin: 'https://www.linkedin.com/in/danielvaldivieso/'
+        },
+        {
+          name: 'Juan Taborda',
+          img: '/img/devathon-ix/ravenclaw/tabojc.webp',
+          linkedin: 'https://www.linkedin.com/in/juantaborda/'
         }
       ]
     },
