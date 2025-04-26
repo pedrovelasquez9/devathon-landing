@@ -45,6 +45,7 @@ const TeamImages = {
 
 <Layout title="Devathon: IX edición">
   <main class="devathonIX devathonIX-container">
+    <div class="stars-background" id="starsContainer"></div>
     <section class="teams wrapper">
       <h1 class="title">Devathon: IX edición</h1>
       <h1 class="title title--secondary">
@@ -304,3 +305,65 @@ const TeamImages = {
     </section>
   </main>
 </Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('#starsContainer') as HTMLElement;
+    const startCount = 50;
+
+    const fragment = document.createDocumentFragment();
+
+    const createStart = (): HTMLElement => {
+      const star = document.createElement('div');
+      star.classList.add('star');
+
+      const size = Math.random() * 2 + 1;
+
+      const randomPositiontop = Math.random() * 100;
+      const randomPositionleft = Math.random() * 100;
+
+      const duration = Math.random() * 5 + 3 + 's';
+      const delay = Math.random() * 5 + 's';
+
+      star.style.width = `${size}px`;
+      star.style.height = `${size}px`;
+      star.style.top = `${randomPositiontop}%`;
+      star.style.left = `${randomPositionleft}%`;
+      star.style.setProperty('--duration', duration);
+      star.style.setProperty('--delay', delay);
+
+      return star;
+    };
+
+    const createStarBurst = (): HTMLElement => {
+      const starBurst = document.createElement('div');
+      starBurst.className = 'star-burst';
+
+      const size = Math.random() * 50 + 40;
+      const top = Math.random() * 100;
+      const left = Math.random() * 100;
+      const rotation = Math.random() * 360;
+      const duration = Math.random() * 8 + 5;
+      const delay = Math.random() * 5;
+
+      starBurst.style.width = `${size}px`;
+      starBurst.style.height = `${size}px`;
+      starBurst.style.top = `${top}%`;
+      starBurst.style.left = `${left}%`;
+      starBurst.style.transform = `rotate(${rotation}deg)`;
+      starBurst.style.setProperty('--duration', `${duration}s`);
+      starBurst.style.setProperty('--delay', `${delay}s`);
+
+      return starBurst;
+    };
+    for (let i = 0; i < startCount; i++) {
+      fragment.appendChild(createStart());
+    }
+
+    for (let i = 0; i < 8; i++) {
+      fragment.appendChild(createStarBurst());
+    }
+    container.append(fragment);
+  });
+</script>
+
