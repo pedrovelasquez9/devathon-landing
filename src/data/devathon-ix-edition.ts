@@ -306,7 +306,7 @@ export const devathonData = {
         },
         {
           name: 'Twitch',
-          link: 'https://www.twitch.tv/altaskur',
+          link: 'https://www.twitch.tv/uxanarangel',
           icon: 'twitch.png'
         },
         {
