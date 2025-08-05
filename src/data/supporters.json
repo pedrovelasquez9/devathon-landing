@@ -64,6 +64,18 @@
         "platform": "twitch",
         "username": "oskrmayer",
         "url": "https://www.twitch.tv/oskrmayer"
+    },
+    {
+        "id": 12,
+        "platform": "twitch",
+        "username": "deskiziada",
+        "url": "https://www.twitch.tv/deskiziada"
+    },
+    {
+        "id": 13,
+        "platform": "twitch",
+        "username": "klofenix",
+        "url": "https://www.twitch.tv/klofenix"
     }
   ]
   
