@@ -88,6 +88,36 @@
         "platform": "youtube",
         "username": "Catuche",
         "url": "https://www.youtube.com/channel/UCTmm9wr4y12hzWXEFQSdVXg"
+    },
+    {
+        "id": 16,
+        "platform": "twitch",
+        "username": "silmir_",
+        "url": "https://www.twitch.tv/silmir_"
+    },
+    {
+        "id": 17,
+        "platform": "twitch",
+        "username": "eliasmg77",
+        "url": "https://www.twitch.tv/eliasmg77"
+    },
+    {
+        "id": 18,
+        "platform": "twitch",
+        "username": "niiccok",
+        "url": "https://www.twitch.tv/niiccok"
+    },
+    {
+        "id": 19,
+        "platform": "twitch",
+        "username": "genghyskan",
+        "url": "https://www.twitch.tv/genghyskan"
+    },
+    {
+        "id": 20,
+        "platform": "twitch",
+        "username": "mandresgn18",
+        "url": "https://www.twitch.tv/mandresgn18"
     }
   ]
   
