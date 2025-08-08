@@ -76,6 +76,18 @@
         "platform": "twitch",
         "username": "klofenix",
         "url": "https://www.twitch.tv/klofenix"
+    },
+    {
+        "id": 14,
+        "platform": "twitch",
+        "username": "danirod",
+        "url": "https://www.twitch.tv/danirod"
+    },
+    {
+        "id": 15,
+        "platform": "youtube",
+        "username": "Catuche",
+        "url": "https://www.youtube.com/channel/UCTmm9wr4y12hzWXEFQSdVXg"
     }
   ]
   
