@@ -62,8 +62,8 @@
     {
         "id": 11,
         "platform": "twitch",
-        "username": "oskrmayer",
-        "url": "https://www.twitch.tv/oskrmayer"
+        "username": "sergio_atreides",
+        "url": "https://www.twitch.tv/sergio_atreides"
     },
     {
         "id": 12,
@@ -74,14 +74,14 @@
     {
         "id": 13,
         "platform": "twitch",
-        "username": "klofenix",
-        "url": "https://www.twitch.tv/klofenix"
+        "username": "gartnerleandro",
+        "url": "https://www.twitch.tv/gartnerleandro"
     },
     {
         "id": 14,
         "platform": "twitch",
-        "username": "danirod",
-        "url": "https://www.twitch.tv/danirod"
+        "username": "dertedark",
+        "url": "https://www.twitch.tv/dertedark"
     },
     {
         "id": 15,
@@ -118,6 +118,18 @@
         "platform": "twitch",
         "username": "mandresgn18",
         "url": "https://www.twitch.tv/mandresgn18"
+    },
+    {
+        "id": 21,
+        "platform": "twitch",
+        "username": "srgomez13",
+        "url": "https://www.twitch.tv/srgomez13"
+    },
+    {
+        "id": 22,
+        "platform": "twitch",
+        "username": "zeuscomepapitas",
+        "url": "https://www.twitch.tv/zeuscomepapitas"
     }
   ]
   
