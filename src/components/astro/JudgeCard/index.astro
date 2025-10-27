@@ -1,13 +1,13 @@
 ---
 import type { Network } from "../../../interfaces/DevathonVIEdition.interface";
 import "./styles.css";
-const { name, networks, project, img } = Astro.props;
+const { name, networks, project, img, theme } = Astro.props;
 
 const isSmallImage = img.includes("dani");
 const additionalStyle = isSmallImage ? "width: 400px" : "";
 ---
 <div class="judge-card-container">
-    <div class="judge-photo-container">
+    <div  class={`judge-photo-container ${theme? theme : ''}`}>
         <img src=`/img/judges/${img}` style={additionalStyle} class="judge-photo background-grid-gradient" />
     </div>
     <h3>{name} ({project})</h3>

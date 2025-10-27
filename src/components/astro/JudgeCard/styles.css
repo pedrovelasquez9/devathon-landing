@@ -6,7 +6,7 @@
   max-width: 300px;
   text-wrap: balance;
   height: 450px;
-  flex: 1;
+  justify-content: space-between;
 }
 
 .judge-card-container h3 {
@@ -15,6 +15,13 @@
 
 .judge-photo-container {
   background-image: url('/img/pattern.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.halloween {
+  background-image: url('/img/devathon-x/halloween/spider-web.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -1,0 +1,220 @@
+a {
+  color: #fff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+body {
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+/* Halloween Theme Variables */
+.devathonX {
+  --bg: #0b0b0e;
+  --text-primary: #f8fafc;
+  --text-secondary: rgba(248, 250, 252, 0.75);
+  --title-color: #f8fafc;
+  --accent-color: #ff7a18; /* Pumpkin orange */
+  --accent-2: #6b21a8;     /* Witch purple */
+  --accent-3: #a3e635;     /* Slime green */
+  --border-common: rgba(255, 122, 24, 0.35);
+  --gradient-title-from: #ff7a18;
+  --gradient-title-to: #6b21a8;
+
+  --stars: #ffb86b; /* warm orange twinkle */
+  --hover-elements: rgba(163, 230, 53, 0.2);
+  --button-bg: rgba(107, 33, 168, 0.25);
+  --hover-border: rgba(255, 122, 24, 0.5);
+
+  /* Team accents (reused classes) */
+  --gryffindor-gradient-from: #3b0a0a;
+  --gryffindor-gradient-to: #9a3412;
+  --gryffindor-accent: #ff7a18;
+  --gryffindor-border: rgba(154, 52, 18, 0.5);
+
+  --slytherin-gradient-from: #052e2b;
+  --slytherin-gradient-to: #14532d;
+  --slytherin-accent: #a3e635;
+  --slytherin-border: rgba(20, 83, 45, 0.5);
+
+  --ravenclaw-gradient-from: #1e1b4b;
+  --ravenclaw-gradient-to: #4c1d95;
+  --ravenclaw-accent: #c4b5fd;
+  --ravenclaw-border: rgba(76, 29, 149, 0.5);
+
+  --hufflepuff-gradient-from: #3a2006;
+  --hufflepuff-gradient-to: #a16207;
+  --hufflepuff-accent: #ffb86b;
+  --hufflepuff-border: rgba(161, 98, 7, 0.5);
+}
+
+.devathonX-container {
+  padding: 10px 20px;
+}
+
+.stars-background {
+  position: absolute;
+  inset: 0; /* Fill container height, not viewport */
+  z-index: 0; /* Sit behind content but inside stacking context */
+  pointer-events: none; /* Never intercept clicks */
+  user-select: none;
+  overflow: hidden;
+}
+
+/* Ensure all main content is above the decorative layer */
+.devathonX-container > *:not(.stars-background) {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.2); }
+}
+@keyframes pulse { 0%,100%{opacity:.3} 50%{opacity:.9} }
+@keyframes drift { 0% { transform: translateY(0) rotate(var(--rotate, 0deg)); } 100% { transform: translateY(-20px) rotate(calc(var(--rotate, 0deg) + 8deg)); } }
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--stars);
+  box-shadow: 0 0 6px var(--stars);
+  opacity: 0.7;
+  animation: twinkle var(--duration) infinite var(--delay);
+}
+.star-burst {
+  position: absolute;
+  opacity: 0.7;
+  animation: pulse var(--duration) infinite var(--delay);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff7a18' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z'%3E%3C/path%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Decorative Halloween icons */
+.bg-icon {
+  position: absolute;
+  opacity: 0.65;
+  animation: drift var(--duration) ease-in-out infinite var(--delay) alternate;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(0 0 8px rgba(255, 120, 24, 0.534));
+}
+.bg-icon--cat {
+  background-image: url("/img/devathon-x/halloween/cat.svg");
+}
+.bg-icon--skull {
+  background-image: url("/img/devathon-x/halloween/ghost.svg");
+}
+
+.teams__container {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 2rem;
+  
+}
+@media screen and (max-width: 600px) {
+  .teams__container { grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); }
+}
+
+.title {
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-shadow: 0 0 10px rgba(255, 122, 24, 0.25);
+}
+.title--secondary {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.teams__icon { filter: drop-shadow(0 0 8px rgba(255, 122, 24, 0.3)); }
+
+/* Team card */
+.teams__card {
+  border: 0.125rem solid var(--border-common);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(255, 122, 24, 0.15), transparent 60%),
+    radial-gradient(1000px 500px at 110% 10%, rgba(107, 33, 168, 0.18), transparent 60%),
+    radial-gradient(900px 400px at 50% 120%, rgba(163, 230, 53, 0.08), transparent 60%);
+  background-color: rgba(15, 15, 26, 0.9);
+}
+.team-card__header {
+  padding: 1.25rem 1.25rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--hover-border);
+}
+.team-card__header__info { display: flex; align-items: center; gap: 1rem; }
+.team-card__name-container { display: flex; align-items: baseline; gap: .5rem; }
+.team-card__name { font-size: clamp(1.5rem, 2vw, 2.2rem); }
+.team-card__subname { font-style: italic; font-size: clamp(1rem, 1.4vw, 1.2rem); }
+
+.team-card__project { font-weight: 600; color: var(--text-secondary); }
+.team-card__italic { font-weight: 500; font-style: italic; color: var(--title-color); }
+.team-card__body { padding: 1.25rem; }
+.team-card__subtitle { font-size: clamp(1rem, 2vw, 1.2rem); margin-bottom: 0.75rem; }
+.team-card__members { display: grid; grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); gap: 1rem; }
+.team-card__member { display: flex; flex-direction: column; align-items: center; gap: .5rem; }
+.team-card__member-avatar { width: 64px; height: 64px; border-radius: 9999px; border: 2px solid var(--hover-border); object-fit: cover; }
+.team-card__member-name { text-decoration: none; color: var(--text-primary); }
+
+.team-card__repository { padding: 1.25rem; }
+.repository-title { margin-bottom: .75rem; }
+.team-card__repository-links { display: flex; gap: 1rem; align-items: center; justify-content: space-around; flex-wrap: wrap; }
+.team-card__repository-links a { border: 1px solid var(--hover-border); padding: .5rem .75rem; border-radius: .5rem; background: var(--button-bg); transition: border-color .2s, background-color .2s; }
+.team-card__repository-links a:hover { border-color: var(--accent-color); background: rgba(255, 122, 24, 0.18); }
+
+/* Team variants mapped to a Halloween palette */
+.team-card--gryffindor { box-shadow: inset 0 0 0 1px var(--gryffindor-border); }
+.team-card__header--gryffindor { background: linear-gradient(90deg, var(--gryffindor-gradient-from), transparent 60%), linear-gradient(270deg, var(--gryffindor-gradient-to), transparent 60%); }
+.team-card__name--gryffindor { color: var(--gryffindor-accent); }
+
+.team-card--slytherin { box-shadow: inset 0 0 0 1px var(--slytherin-border); }
+.team-card__header--slytherin { background: linear-gradient(90deg, var(--slytherin-gradient-from), transparent 60%), linear-gradient(270deg, var(--slytherin-gradient-to), transparent 60%); }
+.team-card__name--slytherin { color: var(--slytherin-accent); }
+
+.team-card--ravenclaw { box-shadow: inset 0 0 0 1px var(--ravenclaw-border); }
+.team-card__header--ravenclaw { background: linear-gradient(90deg, var(--ravenclaw-gradient-from), transparent 60%), linear-gradient(270deg, var(--ravenclaw-gradient-to), transparent 60%); }
+.team-card__name--ravenclaw { color: var(--ravenclaw-accent); }
+
+.team-card--hufflepuff { box-shadow: inset 0 0 0 1px var(--hufflepuff-border); }
+.team-card__header--hufflepuff { background: linear-gradient(90deg, var(--hufflepuff-gradient-from), transparent 60%), linear-gradient(270deg, var(--hufflepuff-gradient-to), transparent 60%); }
+.team-card__name--hufflepuff { color: var(--hufflepuff-accent); }
+
+/* Mentors and judges */
+.menthors { border: 0.125rem solid var(--border-common); border-radius: 0.5rem; padding: 1.5rem; background-color: rgba(15, 15, 26, 0.8); margin-bottom: 3rem; }
+.menthors__description { color: var(--title-color); margin-bottom: 2rem; text-align: center; }
+.menthors__list { display: grid; grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr)); gap: 1rem; justify-content: center; }
+.menthor { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 0.5rem; }
+.menthors-title { margin-bottom: 1.25rem; }
+.menthor__avatar { width: 4rem; height: 4rem; border-radius: 9999px; border: 0.125rem solid var(--border-common); object-fit: cover; }
+.menthor__link { text-decoration: none; color: var(--text-primary); }
+
+.sponsor-container { margin-bottom: 3.5rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); gap: 1.5rem; }
+@media screen and (min-width: 600px) { .sponsor-container { grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); } }
+.judges-title { margin-bottom: 2.5rem; }
+
+.evaluation-criteria__list { gap: 10px; display: flex; flex-direction: column; }
+.evaluation-criteria__item { color: var(--text-secondary); border-left: 3px solid var(--accent-color); padding-left: 0.75rem; }

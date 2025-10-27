@@ -1,0 +1,156 @@
+---
+import { Image } from 'astro:assets';
+import JudgeCard from '../../components/astro/JudgeCard/index.astro';
+import { devathonData } from '../../data/devathon-x-edition';
+import type { DevathonMenthor, Judge, Team, TeamMember } from '../../interfaces/DevathonVIEdition.interface';
+import Layout from '../../layouts/Layout.astro';
+import './styles.css';
+
+const { teams, judges, menthors } = devathonData;
+---
+
+<Layout title="Devathon: X edición">
+  <main class="devathonX devathonX-container">
+    <div class="stars-background" id="starsContainer"></div>
+    <section class="teams wrapper">
+      <h1 class="title">Devathon: X edición</h1>
+      <h1 class="title title--secondary">
+        <img src="/img/devathon-x/halloween/pumpkin.svg" width="100" alt="">
+        Equipos participantes
+        <img src="/img/devathon-x/halloween/pumpkin.svg" width="100" alt="">
+      </h1>
+      <div class="teams__container">
+        {
+          teams.map((teamData: Team): Object => {
+            const { name, team, id, isWinner, isRetired, project, frontendRepo, backendRepo, members, teamImage } =
+              teamData;
+            const teamClasses =  { border: '', color: '', header: '' };
+            return (
+              <section class={`teams__card team-card ${teamClasses.border}`}>
+                <article class={`team-card__header ${teamClasses.header}`}>
+                  <div class="team-card__header__info">
+                    {teamImage ? <img src={teamImage} alt={name} class="team-card__image" width="60" /> : ''}
+                    <div class="team-card__name-container">
+                      <h2 class={`team-card__name ${teamClasses.color}`}>{name}</h2>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="team-card__project">
+                      Proyecto: <span class="team-card__italic">{project}</span>
+                    </p>
+                  </div>
+                </article>
+                <div class="team-card__body">
+                  <p class="team-card__subtitle">Integrantes</p>
+                  <ul class="team-card__members">
+                    {members?.map((member: TeamMember) => {
+                      if (member.name) {
+                        return (
+                          <li class="team-card__member">
+                            <img src={member.img} alt={member.name} class="team-card__member-avatar" width="64" height="64" loading="lazy" />
+                            <a class="team-card__member-name" href={member.linkedin} target="_blank" rel="noopener noreferrer">{member.name}</a>
+                          </li>
+                        );
+                      }
+                    })}
+                  </ul>
+                </div>
+                <div class="team-card__repository">
+                  <p class="repository-title">Repositorios</p>
+                  <div class="team-card__repository-links">
+                    {frontendRepo && (
+                      <a href={frontendRepo} target="_blank" rel="noopener noreferrer">Frontend</a>
+                    )}
+                    {backendRepo && (
+                      <a href={backendRepo} target="_blank" rel="noopener noreferrer">Backend</a>
+                    )}
+                  </div>
+                </div>
+              </section>
+            );
+          })
+        }
+      </div>
+    </section>
+
+    <section class="wrapper menthors">
+      <h2 class="menthors-title">Mentores</h2>
+      <p class="menthors__description">Acompañan a los equipos durante el evento.</p>
+      <ul class="menthors__list">
+        {
+          menthors?.map((menthor: DevathonMenthor) => (
+            <li class="menthor">
+              <img class="menthor__avatar" src={menthor.img} alt={menthor.name} width="64" height="64" loading="lazy" />
+              <a class="menthor__link" href={menthor.linkedin} target="_blank" rel="noopener noreferrer">{menthor.name}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="wrapper">
+      <h2 class="judges-title">Jueces</h2>
+      <div class="sponsor-container">
+        {
+          judges?.map((judge: Judge) => {
+            const { networks, name, project, img } = judge;
+            return <JudgeCard name={name} networks={networks} project={project} img={img} theme="halloween" />;
+          })
+        }
+      </div>
+    </section>
+
+    <section class="event-info-section wrapper">
+      <h1>Acerca del evento</h1>
+      <div class="event-info-container">
+        <section class="evaluation-criteria">
+          <h2>Criterios de evaluación</h2>
+          <ul class="evaluation-criteria__list">
+            <li class="evaluation-criteria__item">Uso de repositorio y buenas prácticas.</li>
+            <li class="evaluation-criteria__item">Nivel funcional del proyecto.</li>
+            <li class="evaluation-criteria__item">Calidad visual y accesibilidad.</li>
+            <li class="evaluation-criteria__item">Aspectos técnicos y decisiones de arquitectura.</li>
+            <li class="evaluation-criteria__item">Documentación y modelado de datos.</li>
+            <li class="evaluation-criteria__item">Integración entre frontend y backend.</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.querySelector('#starsContainer') as HTMLElement;
+    const iconCount = 28; // total decorative icons
+    const fragment = document.createDocumentFragment();
+
+    const createIcon = (kind: 'cat' | 'skull'): HTMLElement => {
+      const icon = document.createElement('div');
+      icon.className = `bg-icon bg-icon--${kind}`;
+
+      const size = Math.random() * 36 + 24; // 24-60px
+      const top = Math.random() * 100;
+      const left = Math.random() * 100;
+      const duration = Math.random() * 6 + 6; // 6-12s
+      const delay = Math.random() * 6; // 0-6s
+      const rotate = Math.random() * 20 - 10; // -10 to 10deg
+
+      icon.style.width = `${size}px`;
+      icon.style.height = `${size}px`;
+      icon.style.top = `${top}%`;
+      icon.style.left = `${left}%`;
+      icon.style.setProperty('--duration', `${duration}s`);
+      icon.style.setProperty('--delay', `${delay}s`);
+      icon.style.setProperty('--rotate', `${rotate}deg`);
+
+      return icon;
+    };
+
+    for (let i = 0; i < iconCount; i++) {
+      const kind = Math.random() > 0.5 ? 'cat' : 'skull';
+      fragment.appendChild(createIcon(kind));
+    }
+    container.append(fragment);
+  });
+</script>

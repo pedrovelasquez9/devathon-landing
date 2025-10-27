@@ -1,5 +1,5 @@
 export const devathonData = {
-  devathon_edition: 8,
+  devathon_edition: 10,
   teams: [
     {
       id: '1',
