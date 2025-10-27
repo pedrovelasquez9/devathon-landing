@@ -7,6 +7,7 @@ export interface Team {
   project?: string;
   frontendRepo?: string;
   backendRepo?: string;
+  teamImage?: string;
   members?: TeamMember[];
 }
 
