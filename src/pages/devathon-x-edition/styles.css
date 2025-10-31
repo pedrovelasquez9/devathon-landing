@@ -18,6 +18,11 @@ body {
   margin-inline: auto;
 }
 
+.title__icon {
+  filter: drop-shadow(0 0 8px rgba(255, 122, 24, 0.3));
+  width: 4rem;
+}
+
 /* Halloween Theme Variables */
 .devathonX {
   --bg: #0b0b0e;
@@ -127,7 +132,7 @@ body {
   
 }
 @media screen and (max-width: 600px) {
-  .teams__container { grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); }
+  .teams__container { grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); }
 }
 
 .title {
@@ -218,3 +223,14 @@ body {
 
 .evaluation-criteria__list { gap: 10px; display: flex; flex-direction: column; }
 .evaluation-criteria__item { color: var(--text-secondary); border-left: 3px solid var(--accent-color); padding-left: 0.75rem; }
+
+@media screen and (width <= 390px) {
+  .title__icon {
+    display: none;
+  }
+  
+  .team-card__header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
