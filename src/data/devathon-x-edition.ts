@@ -6,51 +6,36 @@ export const devathonData = {
       name: 'EQUIPO 1',
       team: 'Equipo 1',
       teamImage: '/img/devathon-x/halloween/hat.svg',
-      isWinner: false,
+      isWinner: true,
       isRetired: false,
       project: 'Simulador de lectura de cartas',
       frontendRepo: 'https://github.com/DEVATHON-TEAM1-ED10/simulador-lectura-cartas-front',
       backendRepo: 'https://github.com/DEVATHON-TEAM1-ED10/simulador-lectura-cartas-backend',
       members: [
         {
-          name: 'tuliobast',
+          name: 'Federico Musa',
           img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          linkedin: 'https://www.linkedin.com/in/federico-musa-413516212/'
         },
         {
-          name: 'vnietodev',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Mirko Stamm',
+          img: '/img/devathon-x/team1/mirko.jpg',
+          linkedin: 'https://www.linkedin.com/in/mirko-stamm-b82980273/'
         },
         {
-          name: 'Fede Musa',
+          name: 'Matías Ortega',
           img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          linkedin: 'https://www.linkedin.com/in/matias-ortega-330121246/'
         },
         {
-          name: 'SrStamm19',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Alejandro Navarro',
+          img: '/img/devathon-x/team1/alejandro.jpg',
+          linkedin: 'https://www.linkedin.com/in/alejandro-navarro-dev'
         },
         {
-          name: 'papulo_soy',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'alexnavdev',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'dev_ficho',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'Quitsss',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Fidel Choque',
+          img: '/img/devathon-x/team1/ficho.jpg',
+          linkedin: 'https://www.linkedin.com/in/fichovis'
         }
       ]
     },
@@ -66,44 +51,29 @@ export const devathonData = {
       backendRepo: 'https://github.com/carloslpz1/whos-that-monster-backend',
       members: [
         {
-          name: 'acoro47',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Juan Pino',
+          img: '/img/devathon-x/team2/juan.jpg',
+          linkedin: 'https://www.linkedin.com/in/jvpinoc/'
         },
         {
-          name: 'tonym_developer',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Carlos Lopez',
+          img: '/img/devathon-x/team2/carlos.jpg',
+          linkedin: 'https://www.linkedin.com/in/carloslopez98'
         },
         {
-          name: 'Alexishub',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Karina Huamani',
+          img: '/img/devathon-x/team2/karina.jpg',
+          linkedin: 'https://www.linkedin.com/in/karina-huamani-gpt/'
         },
         {
-          name: 'carloslpz',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Alexis Marcas',
+          img: '/img/devathon-x/team2/alexis.jpg',
+          linkedin: 'https://www.linkedin.com/in/alexis-marcas-9b9988340/'
         },
         {
-          name: 'Mod812#8041',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'karinaC',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'JPDev',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'adunmorat',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Tony Medina',
+          img: '/img/devathon-x/team2/tony.png',
+          linkedin: 'https://www.linkedin.com/in/tonydvlp/'
         }
       ]
     },
@@ -119,44 +89,19 @@ export const devathonData = {
       backendRepo: 'https://github.com/jonatanSoto04/backOUija',
       members: [
         {
-          name: 'juanma_e_r',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Charlie Chan',
+          img: '/img/devathon-x/team3/charlie.webp',
+          linkedin: 'https://www.linkedin.com/in/charliechan-dev/'
         },
         {
-          name: 'el cholo#4833',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Roger Parada',
+          img: '/img/devathon-x/team3/roger.jpg',
+          linkedin: 'https://www.linkedin.com/in/rogerparada/'
         },
         {
-          name: 'ignacio martin',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'JaviZ',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'fallenangel666_43504',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'rogeirop',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'galmoth',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'angel ocampo',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Javier Zader',
+          img: '/img/devathon-x/team3/javier.webp',
+          linkedin: 'https://www.linkedin.com/in/jnzader/'
         }
       ]
     },
@@ -172,43 +117,18 @@ export const devathonData = {
       backendRepo: 'https://github.com/itanortega/DevathonXG4B',
       members: [
         {
-          name: 'Headshot507',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Bolivar Delgado',
+          img: '/img/devathon-x/team4/bolivar.webp',
+          linkedin: 'https://www.linkedin.com/in/bolivar-delgado-5522b0108/'
         },
         {
-          name: 'elkrmas',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
+          name: 'Rodrigo Gomez',
+          img: '/img/devathon-x/team4/rodrigo.jpg',
+          linkedin: 'https://www.linkedin.com/in/rodrigo-g%C3%B3mez-16bab6192'
         },
         {
-          name: 'itanortega',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'darkdmario',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'syscat29',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'danielrodriguez',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: 'lunari_roxx',
-          img: '/img/devathon-avatar.webp',
-          linkedin: ''
-        },
-        {
-          name: '.elder_lich',
-          img: '/img/devathon-avatar.webp',
+          name: 'Angel',
+          img: '/img/devathon-x/team4/angel.png',
           linkedin: ''
         }
       ]

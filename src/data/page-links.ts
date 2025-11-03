@@ -16,7 +16,7 @@ export const links: LinkItem[] = [
   { name: 'Redes', href: '/redes' },
   { name: 'Recursos', href: '/recursos' },
   { name: 'Devathon', href: '/devathon' },
-  { name: 'IX edición del Devathon', href: '/devathon-ix-edition' },
+  { name: 'X edición del Devathon', href: '/devathon-x-edition' },
 
   { name: 'Retos de programación', href: '/retos' },
   { name: 'Jugar a Órbita', href: '/orbita' }
