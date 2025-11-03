@@ -64,6 +64,13 @@ const { teams, judges, menthors } = devathonData;
                     {backendRepo && (
                       <a href={backendRepo} target="_blank" rel="noopener noreferrer">Backend</a>
                     )}
+                    {isWinner && (
+                      <img
+                        class="team-card__winner-copa"
+                        src="/img/devathon-x/calabarbaza.webp"
+                        alt="Ganador de la décima edición del Devathon"
+                      />
+                    )}
                   </div>
                 </div>
               </section>

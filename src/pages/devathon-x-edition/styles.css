@@ -224,6 +224,11 @@ body {
 .evaluation-criteria__list { gap: 10px; display: flex; flex-direction: column; }
 .evaluation-criteria__item { color: var(--text-secondary); border-left: 3px solid var(--accent-color); padding-left: 0.75rem; }
 
+.team-card__winner-copa {
+  width: 150px;
+  float: right;
+}
+
 @media screen and (width <= 390px) {
   .title__icon {
     display: none;
