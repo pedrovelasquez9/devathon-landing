@@ -14,7 +14,7 @@ export const devathonData = {
       members: [
         {
           name: 'Federico Musa',
-          img: '/img/devathon-avatar.webp',
+          img: '/img/devathon-x/team1/fede_m.jpg',
           linkedin: 'https://www.linkedin.com/in/federico-musa-413516212/'
         },
         {
