@@ -1,135 +1,123 @@
 [
-    {
-      "id": 1,
-      "platform": "youtube",
-      "username": "Altaskur",
-      "url": "https://www.youtube.com/channel/UCPVXNJr8wvcN-qdHBXPPl4g"
-    },
-    {
-      "id": 2,
-      "platform": "youtube",
-      "username": "Fidel Choque Viscarra",
-      "url": "https://www.youtube.com/channel/UCqCVbLuTiekWBEj6eKA1GJg"
-    },
-    {
-      "id": 3,
-      "platform": "youtube",
-      "username": "Raúl Caro Pastorino",
-      "url": "https://www.youtube.com/channel/UCZescg-D1m_yCSgTdCLRBpw"
-    },
-    {
-      "id": 4,
-      "platform": "youtube",
-      "username": "danirod",
-      "url": "https://www.youtube.com/channel/UClUpYGnh1_XrLIkNrBI5mwg"
-    },
-    {
-        "id": 5,
-        "platform": "twitch",
-        "username": "othamae",
-        "url": "https://www.twitch.tv/othamae"
-    },
-    {
-        "id": 6,
-        "platform": "twitch",
-        "username": "devcrash03",
-        "url": "https://www.twitch.tv/devcrash03"
-    },
-    {
-        "id": 7,
-        "platform": "twitch",
-        "username": "zhaka21",
-        "url": "https://www.twitch.tv/zhaka21"
-    },
-    {
-      "id": 8,
-      "platform": "twitch",
-      "username": "fitoikari",
-      "url": "https://www.twitch.tv/fitoikari"
-    },
-    {
-      "id": 9,
-      "platform": "twitch",
-      "username": "altaskur",
-      "url": "https://www.twitch.tv/altaskur"
-    },
-    {
-        "id": 10,
-        "platform": "twitch",
-        "username": "robertov507",
-        "url": "https://www.twitch.tv/robertov507"
-    },
-    {
-        "id": 11,
-        "platform": "twitch",
-        "username": "sergio_atreides",
-        "url": "https://www.twitch.tv/sergio_atreides"
-    },
-    {
-        "id": 12,
-        "platform": "twitch",
-        "username": "deskiziada",
-        "url": "https://www.twitch.tv/deskiziada"
-    },
-    {
-        "id": 13,
-        "platform": "twitch",
-        "username": "gartnerleandro",
-        "url": "https://www.twitch.tv/gartnerleandro"
-    },
-    {
-        "id": 14,
-        "platform": "twitch",
-        "username": "dertedark",
-        "url": "https://www.twitch.tv/dertedark"
-    },
-    {
-        "id": 15,
-        "platform": "youtube",
-        "username": "Catuche",
-        "url": "https://www.youtube.com/channel/UCTmm9wr4y12hzWXEFQSdVXg"
-    },
-    {
-        "id": 16,
-        "platform": "twitch",
-        "username": "silmir_",
-        "url": "https://www.twitch.tv/silmir_"
-    },
-    {
-        "id": 17,
-        "platform": "twitch",
-        "username": "eliasmg77",
-        "url": "https://www.twitch.tv/eliasmg77"
-    },
-    {
-        "id": 18,
-        "platform": "twitch",
-        "username": "niiccok",
-        "url": "https://www.twitch.tv/niiccok"
-    },
-    {
-        "id": 19,
-        "platform": "twitch",
-        "username": "genghyskan",
-        "url": "https://www.twitch.tv/genghyskan"
-    },
-    {
-        "id": 20,
-        "platform": "twitch",
-        "username": "mandresgn18",
-        "url": "https://www.twitch.tv/mandresgn18"
-    },
-    {
-        "id": 21,
-        "platform": "twitch",
-        "username": "srgomez13",
-        "url": "https://www.twitch.tv/srgomez13"
-    },
-    {
-        "id": 22,
-        "platform": "twitch",
-        "username": "zeuscomepapitas",
-        "url": "https://www.twitch.tv/zeuscomepapitas"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "platform": "youtube",
+    "username": "Gabriel Vargas",
+    "url": "https://www.youtube.com/channel/UCnCHSFuqfxGjAx67P3753Rg/"
+  },
+  {
+    "id": 2,
+    "platform": "youtube",
+    "username": "Fidel Choque Viscarra",
+    "url": "https://www.youtube.com/channel/UCqCVbLuTiekWBEj6eKA1GJg"
+  },
+  {
+    "id": 3,
+    "platform": "youtube",
+    "username": "Raúl Caro Pastorino",
+    "url": "https://www.youtube.com/channel/UCZescg-D1m_yCSgTdCLRBpw"
+  },
+  {
+    "id": 4,
+    "platform": "youtube",
+    "username": "danirod",
+    "url": "https://www.youtube.com/channel/UClUpYGnh1_XrLIkNrBI5mwg"
+  },
+  {
+    "id": 5,
+    "platform": "youtube",
+    "username": "Federico Musa",
+    "url": "https://www.youtube.com/channel/UCGfV-VLqbFFt5nTK6c3W9zg/"
+  },
+  {
+    "id": 5,
+    "platform": "twitch",
+    "username": "othamae",
+    "url": "https://www.twitch.tv/othamae"
+  },
+  {
+    "id": 6,
+    "platform": "twitch",
+    "username": "devcrash03",
+    "url": "https://www.twitch.tv/devcrash03"
+  },
+  {
+    "id": 7,
+    "platform": "twitch",
+    "username": "zhaka21",
+    "url": "https://www.twitch.tv/zhaka21"
+  },
+  {
+    "id": 8,
+    "platform": "twitch",
+    "username": "mannyort",
+    "url": "https://www.twitch.tv/mannyort"
+  },
+  {
+    "id": 9,
+    "platform": "twitch",
+    "username": "altaskur",
+    "url": "https://www.twitch.tv/altaskur"
+  },
+  {
+    "id": 10,
+    "platform": "twitch",
+    "username": "jlfloresmonzon",
+    "url": "https://www.twitch.tv/jlfloresmonzon"
+  },
+  {
+    "id": 11,
+    "platform": "twitch",
+    "username": "durant14k",
+    "url": "https://www.twitch.tv/durant14k"
+  },
+  {
+    "id": 12,
+    "platform": "twitch",
+    "username": "srgomez13",
+    "url": "https://www.twitch.tv/srgomez13"
+  },
+  {
+    "id": 13,
+    "platform": "twitch",
+    "username": "dcarrillomora31",
+    "url": "https://www.twitch.tv/dcarrillomora31"
+  },
+  {
+    "id": 14,
+    "platform": "twitch",
+    "username": "dertedark",
+    "url": "https://www.twitch.tv/dertedark"
+  },
+
+  {
+    "id": 16,
+    "platform": "twitch",
+    "username": "expired9119",
+    "url": "https://www.twitch.tv/expired9119"
+  },
+  {
+    "id": 17,
+    "platform": "twitch",
+    "username": "joselu___",
+    "url": "https://www.twitch.tv/joselu___"
+  },
+  {
+    "id": 18,
+    "platform": "twitch",
+    "username": "rogeirox",
+    "url": "https://www.twitch.tv/rogeirox"
+  },
+  {
+    "id": 19,
+    "platform": "twitch",
+    "username": "ssssebitasss",
+    "url": "https://www.twitch.tv/ssssebitasss"
+  },
+  {
+    "id": 20,
+    "platform": "twitch",
+    "username": "tonyx720e",
+    "url": "https://www.twitch.tv/tonyx720e"
+  }
+]
